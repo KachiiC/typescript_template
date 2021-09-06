@@ -1,0 +1,197 @@
+/* Grid System */
+.site-grid {
+    display: grid;
+}
+
+.site-grid-system {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.site-col-1 {
+    grid-column: span 1;
+}
+
+.site-col-2 {
+    grid-column: span 2;
+}
+
+.site-col-3 {
+    grid-column: span 3;
+}
+
+.site-col-4 {
+    grid-column: span 4;
+}
+
+.site-col-5 {
+    grid-column: span 5;
+}
+
+.site-col-6 {
+    grid-column: span 6;
+}
+
+.site-col-7 {
+    grid-column: span 7;
+}
+
+.site-col-8 {
+    grid-column: span 8;
+}
+
+.site-col-9 {
+    grid-column: span 9;
+}
+
+.site-col-10 {
+    grid-column: span 10;
+}
+
+.site-col-11 {
+    grid-column: span 11;
+}
+
+.site-col-12 {
+    grid-column: span 12;
+}
+
+.site-border {
+    border: 1px solid black;
+}
+
+.site-border-white {
+    border: 1px solid white;
+}
+
+.site-responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+.site-external-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Width and Height */
+.w-100 {
+    width: 100%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-90 {
+    height: 90%;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-60 {
+    height: 60%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-40 {
+    height: 40%;
+}
+
+.h-30 {
+    height: 30%;
+}
+
+.h-20 {
+    height: 20%;
+}
+
+.h-10 {
+    height: 10%;
+}
+
+/* Auto */
+.h-auto {
+    height: auto;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* overflow */
+.site-overflow {
+    overflow: scroll;
+}
+
+/** Cursor **/
+.cursor-pointer {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+    .site-col-6 {
+        grid-column: span 12;
+    }
+}

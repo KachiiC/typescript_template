@@ -1,0 +1,15 @@
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 10px 0px 20px;
+}
+
+.footer-site-logo a{
+    color: white;
+}
+
+footer p {
+    margin: 25px;
+}
