@@ -1,19 +1,18 @@
+// PAGES
+import HiddenOne from "Sections/Main/Pages/Hidden/HiddenOne"
+import HiddenTwo from "Sections/Main/Pages/Hidden/HiddenTwo"
 // TOOLS
 import { LinkRenderer } from "Tools/RoutersRender"
 
 const HiddenPagesData = [
     {
         title: "Hidden Page 1",
-        content: <h1>Hidden Page 1</h1>
+        content: HiddenOne
     },
     {
         title: "Hidden Page 2",
-        content: <h1>Hidden Page 2</h1>
+        content: HiddenTwo
     },
-    {
-        title: "Hidden Page 3",
-        content: <h1>Hidden Page 3</h1>
-    }
 ]
 
 LinkRenderer(HiddenPagesData)

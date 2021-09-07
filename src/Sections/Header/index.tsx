@@ -3,7 +3,7 @@ import SiteNavbar from "./SiteNavbar"
 // CSS
 import './Header.css'
 // DATA
-import DisplayedPagesData from "Data/Main/Pages/Displayed/ExampleDisplayedPages"
+import DisplayedPagesData from "Data/Main/Displayed/ExampleDisplayedPages"
 
 const SiteHeader = (
     <header>

@@ -1,6 +1,6 @@
 // DATA
-import DisplayedData from "Data/Main/Pages/Displayed/ExampleDisplayedPages";
-import HiddenData from "Data/Main/Pages/Hidden/ExampleHiddenPages";
+import DisplayedData from "Data/Main/Displayed/ExampleDisplayedPages";
+import HiddenData from "Data/Main/Hidden/ExampleHiddenPages";
 // COMPONENTS
 import { Switch, Route } from "react-router-dom";
 import { RoutesRender } from "Tools/RoutersRender";
