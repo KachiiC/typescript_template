@@ -1,20 +1,11 @@
+// DATA
 import DataOverview from 'Data/DataOverview'
+// COMPONENTS
+import {ObjectDataRender} from 'Tools/ObjectDataTools'
+import { LinkRenderer } from "Tools/RoutersRender"
 
-const social = DataOverview.social_media
+export const FooterLogoData = ObjectDataRender(DataOverview.social_media, "social")
 
-const FooterLogoData = [
-    {
-        link: "https://www.facebook.com/" + social.facebook,
-        icon: "facebook"
-    },
-    {
-        link: "https://www.twitter.com/" + social.twitter,
-        icon: "twitter"
-    },
-    {
-        link: "https://www.instagram.com/" + social.instagram,
-        icon: "instagram"
-    },
-]
+export const FooterPages = ObjectDataRender(DataOverview.footer_pages, "footer")
 
-export default FooterLogoData
+LinkRenderer(FooterPages)

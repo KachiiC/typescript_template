@@ -2,14 +2,12 @@
 import SiteNavbar from "./SiteNavbar"
 // CSS
 import './Header.css'
-// DATA
-import DisplayedPagesData from "Data/Main/Displayed/ExampleDisplayedPages"
 
-const SiteHeader = (
+const SiteHeader = (props: any) => (
     <header>
         <SiteNavbar
             title="Example Title" 
-            data={DisplayedPagesData}
+            data={props.data}
         />
     </header>
 )

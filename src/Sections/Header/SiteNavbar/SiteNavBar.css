@@ -3,7 +3,6 @@
 .small-menu-block {
     width: 100%;
     background-color: black;
-    text-decoration: none;
     text-transform: uppercase;
     font-size: 15px;
     text-align: center;
@@ -21,7 +20,7 @@
 .site-nav-logo a {
     border-right: 1px solid white;
     font-weight: 900;
-    padding-right: 10px
+    padding-right: 10px;
 }
 
 /* Nav Link Colors */
@@ -31,12 +30,13 @@
 .small-menu-icon {
     color: #f2f2f2;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .site-topnav a:hover,
 .site-small-link a:hover,
 .small-menu-icon:hover {
-    color: rgb(126, 126, 126);
+    color: rgb(187, 187, 187);
 }
 
 /* Full nav link attributes */
@@ -73,7 +73,7 @@
 }
 
 /** SMALL MENU LOGIC **/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1080px) {
     /* when it gets get 800px width links will vanish */
     .site-nav-link {
         display: none;

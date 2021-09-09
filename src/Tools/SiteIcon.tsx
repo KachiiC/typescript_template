@@ -1,5 +1,15 @@
-import { faFacebook, faHtml5, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { 
+    faFacebook, 
+    faGithub, 
+    faHtml5, 
+    faInstagram, 
+    faPinterest, 
+    faSnapchat, 
+    faTiktok, 
+    faTwitter, 
+    faYoutube 
+} from "@fortawesome/free-brands-svg-icons";
 
 const SiteIcon = (props: { type: any; size: any; }) => {
 
@@ -12,12 +22,26 @@ const SiteIcon = (props: { type: any; size: any; }) => {
         case "facebook":
             icon = faFacebook
             break;
+        case "github":
+            icon = faGithub
+            break;
         case "instagram":
             icon = faInstagram
             break;
+        case "pintrest":
+            icon = faPinterest
+            break;
+        case "snapchat":
+            icon = faSnapchat
+            break;
+        case "tiktok":
+            icon = faTiktok
+            break;
+        case "youtube":
+            icon = faYoutube
+            break;
         default:
             icon = faHtml5
-
     }
 
     const sizeLogic = props.size ? props.size : "2x" 

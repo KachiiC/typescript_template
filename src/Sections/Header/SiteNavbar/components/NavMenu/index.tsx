@@ -2,6 +2,8 @@ import SiteNavLink from "./SiteNavLink"
 
 const NavMenu = (props: any) => {
 
+    const sliceLogic  = props.menu_number ? props.menu_number : 5
+
     return props.data.map((page: { link: any; title: any }) => {
 
         return props.menu_type === "full" ? 
@@ -18,7 +20,7 @@ const NavMenu = (props: any) => {
                 click={props.click}
             />
 
-    })
+    }).slice(0, sliceLogic)
 }
 
 export default NavMenu

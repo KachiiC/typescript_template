@@ -1,23 +1,23 @@
-import { StrictMode } from 'react';
+import { StrictMode } from 'react'
+// DATA
+import PagesData from "Data/Main/Displayed/ExampleDisplayedPages"
 // CSS
-import 'CSS/App.css';
+import 'CSS/App.css'
 import 'CSS/KachiiStrap.css'
 // SECTIONS
-import SiteMain from 'Sections/Main';
-import SiteHeader from 'Sections/Header';
-import SiteFooter from 'Sections/Footer';
-import { BrowserRouter } from 'react-router-dom';
-// DATA
+import SiteMain from 'Sections/Main'
+import SiteHeader from 'Sections/Header'
+import SiteFooter from 'Sections/Footer'
+import { BrowserRouter } from 'react-router-dom'
 
 const App = (
   <StrictMode>
     <BrowserRouter>
-      {SiteHeader}
+      <SiteHeader data={PagesData} />
       {SiteMain}
-      {SiteFooter}
+      <SiteFooter />
     </BrowserRouter>
   </StrictMode>
 )
 
-
-export default App;
+export default App

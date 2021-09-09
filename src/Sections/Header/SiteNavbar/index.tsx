@@ -1,11 +1,9 @@
-// DATA
-import SiteNavLogo from './components/SiteNavLogo'
+import { useState } from 'react'
 // CSS
 import './SiteNavBar.css'
 // COMPONENTS
+import SiteNavLogo from './components/SiteNavLogo'
 import NavMenu from './components/NavMenu'
-import { useState } from 'react'
-// COMPONENTS
 import SmallMenuBlock from './components/SmallMenu/SmallMenuBlock'
 import SmallMenuIcon from './components/SmallMenu/SmallMenuIcon'
 
@@ -20,7 +18,11 @@ const SiteNavbar = (props: { title: string; data: {title: string}[] }) => {
         <>
             <div className="site-topnav">
                 <SiteNavLogo title={props.title} />
-                <NavMenu data={props.data} menu_type="full" />
+                <NavMenu 
+                    data={props.data} 
+                    menu_type="full"
+                    menu_number="4"
+                />
                 <SmallMenuIcon click={displayLogic}/>
             </div>
             {smallMenu && (
