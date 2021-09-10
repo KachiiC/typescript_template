@@ -1,13 +1,13 @@
+// DATA
+import PagesData from "Data/Main/Displayed/PagesData"
 // COMPONENTS
 import SiteNavbar from "./SiteNavbar"
-// CSS
-import './Header.css'
 
-const SiteHeader = (props: any) => (
+const SiteHeader = (
     <header>
         <SiteNavbar
             title="Example Title" 
-            data={props.data}
+            data={PagesData}
         />
     </header>
 )

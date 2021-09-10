@@ -1,11 +1,19 @@
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+// PROPS
+import { SiteNavLinkProps } from 'Props/HeaderProps'
 
-const SiteNavLogo = (props: { title: string }) => (
-    <div className="site-nav-logo">
-        <Link to="/">
-            {props.title}
-        </Link>
-    </div>
-)
+
+const SiteNavLogo = (props: SiteNavLinkProps ) => {
+
+    const linkLogic = props.link ? props.link : ""
+
+    return (
+        <div className="site-nav-logo">
+            <Link to={`/${linkLogic}`}>
+                {props.title}
+            </Link>
+        </div>
+    )
+}
 
 export default SiteNavLogo

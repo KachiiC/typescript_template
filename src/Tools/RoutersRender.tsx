@@ -1,24 +1,37 @@
+import { pageDataProps } from "Props/MainProps";
 import { Route } from "react-router-dom";
 
-export const LinkRenderer = (data: any[]) => {
+interface LinkRendererProps {
+    title?: string | undefined; 
+    link?: string | undefined;
+    icon?: string;
+    content?: string | JSX.Element;
+}
 
-    return data.map((page) => {
-    
-        if (page.title.length > 1) {
-            page.link = page.title.split(" ").join("-")
-        } else {
-            page.link = page.title
+export const LinkRenderer = (data: LinkRendererProps[]) => {
+
+    return data.map(page => {
+
+        if (page.title) { 
+            if (page.title.length > 1) {
+                page.link = page.title.split(" ").join("-")
+            } else {
+                page.link = page.title
+            }
         }
-
+            
         return page
     })
 }
 
-export const RoutesRender = (dataSet: any[]) => {
+export const RoutesRender = (dataSet: pageDataProps[]) => {
 
-    return dataSet.map((pages) => (
-        <Route path={`/${pages.link}`} key={pages.title}>
-            {pages.content}
+    return dataSet.map(page => (
+        <Route 
+            path={`/${page.link}`} 
+            key={page.title}
+        >
+            {page.content}
         </Route>
     ))
 }

@@ -1,4 +1,7 @@
-export const ObjectDataRender = (data: { [x: string]: any }, type: string) => {
+// PROPS
+import { ObjectDataProps } from "Props/ToolProps"
+
+export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
 
     const data_keys = Object.keys(data).filter(key => data[key])
   
@@ -19,3 +22,4 @@ export const ObjectDataRender = (data: { [x: string]: any }, type: string) => {
 
     return data_links
 }
+

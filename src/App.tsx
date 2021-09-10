@@ -1,6 +1,5 @@
 import { StrictMode } from 'react'
-// DATA
-import PagesData from "Data/Main/Displayed/ExampleDisplayedPages"
+import { BrowserRouter } from 'react-router-dom'
 // CSS
 import 'CSS/App.css'
 import 'CSS/KachiiStrap.css'
@@ -8,14 +7,13 @@ import 'CSS/KachiiStrap.css'
 import SiteMain from 'Sections/Main'
 import SiteHeader from 'Sections/Header'
 import SiteFooter from 'Sections/Footer'
-import { BrowserRouter } from 'react-router-dom'
 
 const App = (
   <StrictMode>
     <BrowserRouter>
-      <SiteHeader data={PagesData} />
+      {SiteHeader}
       {SiteMain}
-      <SiteFooter />
+      <SiteFooter heading="Example Footer Heading" />
     </BrowserRouter>
   </StrictMode>
 )

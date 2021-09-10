@@ -2,7 +2,7 @@
 import { ExampleContentRender } from "Tools/ExampleTools"
 import { LinkRenderer } from "Tools/RoutersRender"
 
-const DisplayedPagesData = [
+const PagesData = [
     {
         title: "Page 1",
     },
@@ -18,9 +18,9 @@ const DisplayedPagesData = [
 ]
 
 // Renders content for each object (for example use only)
-ExampleContentRender(DisplayedPagesData)
+ExampleContentRender(PagesData)
 
 // Returns the data as links before export
-LinkRenderer(DisplayedPagesData)
+LinkRenderer(PagesData)
 
-export default DisplayedPagesData
+export default PagesData

@@ -1,13 +1,15 @@
 import { useState } from 'react'
+// PROPS
+import { SiteNavbarProps } from 'Props/HeaderProps'
 // CSS
 import './SiteNavBar.css'
 // COMPONENTS
-import SiteNavLogo from './components/SiteNavLogo'
 import NavMenu from './components/NavMenu'
-import SmallMenuBlock from './components/SmallMenu/SmallMenuBlock'
-import SmallMenuIcon from './components/SmallMenu/SmallMenuIcon'
+import SiteNavLogo from './components/SiteNavLogo'
+import SmallMenuBlock from './components/SmallMenuBlock'
+import SmallMenuIcon from './components/SmallMenuIcon'
 
-const SiteNavbar = (props: { title: string; data: {title: string}[] }) => {
+const SiteNavbar = (props: SiteNavbarProps) => {
 
     const [smallMenu, setSmallMenu] = useState(false)
     const displayLogic = () => {
@@ -20,8 +22,8 @@ const SiteNavbar = (props: { title: string; data: {title: string}[] }) => {
                 <SiteNavLogo title={props.title} />
                 <NavMenu 
                     data={props.data} 
+                    menu_number={4}
                     menu_type="full"
-                    menu_number="4"
                 />
                 <SmallMenuIcon click={displayLogic}/>
             </div>

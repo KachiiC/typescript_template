@@ -6,9 +6,12 @@ footer {
     padding: 10px 0px 20px;
 }
 
+.footer-section {
+    margin: 30px auto
+}
+
 .footer-section a,
 .footer-copyright {
     color: white;
-    margin: 30px auto;
     text-transform: uppercase;
 }

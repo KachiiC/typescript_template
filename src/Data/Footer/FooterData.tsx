@@ -1,8 +1,8 @@
 // DATA
 import DataOverview from 'Data/DataOverview'
-// COMPONENTS
-import {ObjectDataRender} from 'Tools/ObjectDataTools'
+// TOOLS
 import { LinkRenderer } from "Tools/RoutersRender"
+import { ObjectDataRender } from 'Tools/ObjectDataTools'
 
 export const FooterLogoData = ObjectDataRender(DataOverview.social_media, "social")
 
