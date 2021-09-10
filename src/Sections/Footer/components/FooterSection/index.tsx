@@ -1,30 +1,41 @@
-import SiteIcon from "Tools/SiteIcon"
+import {FooterLogos, FooterLinks} from './FooterItems'
 
 interface footerInterface { 
-    data: { icon: any; link: any }[] 
+    data: { 
+        icon?: any; 
+        link?: any 
+        title?: any;
+    }[]
+    type?: string 
 }
 
 const FooterSection = (props: footerInterface) => {
-    const displayLogos = props.data.map((data: { icon: any; link: any }) => (
-        <div className="site-span-1 footer-site-logo">
-            <a href={data.link} 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <SiteIcon 
-                    type={data.icon} 
-                    size="2x"
-                />
-            </a>
-        </div>
-    ))
+
+    const displayFooterItems = props.type === "logos" ? 
+        props.data.map((data) => (
+            <FooterLogos
+                link={data.link}
+                icon={data.icon} 
+            />
+        ))
+        :
+        props.data.map((data) => (
+            <FooterLinks
+                link={data.link}
+                title={data.title} 
+            />
+        ))
+
+    const gridTemplateLogic = {
+        "gridTemplateColumns": `repeat(${props.data.length}, 1fr)`
+    }
 
     return (
-        <div className="footer-logos w-80 m-auto">
+        <div className="footer-section w-80 m-auto">
             <div className="site-grid" 
-                style={{"gridTemplateColumns": `repeat(${props.data.length}, 1fr)`}}
+                style={gridTemplateLogic}
             >
-                {displayLogos}
+                {displayFooterItems}
             </div>
         </div>
     )

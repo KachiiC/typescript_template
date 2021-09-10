@@ -6,13 +6,9 @@ footer {
     padding: 10px 0px 20px;
 }
 
-.footer-links a,
-.footer-site-logo a{
-    color: white;
-    text-transform: uppercase;
-}
-.footer-logos,
-.footer-links,
+.footer-section a,
 .footer-copyright {
-    margin: 30px auto 0px;
+    color: white;
+    margin: 30px auto;
+    text-transform: uppercase;
 }

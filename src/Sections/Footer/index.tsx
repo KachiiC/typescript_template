@@ -3,8 +3,8 @@ import { FooterLogoData, FooterPages } from 'Data/Footer/FooterData'
 // CSS
 import './Footer.css'
 // COMPONENTS
-import FooterLogos from './components/FooterLogos'
-import FooterLinks from './components/FooterLinks'
+import FooterSection from './components/FooterSection'
+import { FooterCopyRight } from './components/FooterSection/FooterItems'
 
 const SiteFooter = (props: any) => {
 
@@ -16,11 +16,9 @@ const SiteFooter = (props: any) => {
     return (
         <footer>
             {headingLogic()}
-            <FooterLogos data={FooterLogoData} />
-            <FooterLinks data={FooterPages} />
-            <div className="footer-copyright">
-                &copy; <i>Designed by Kachi Cheong 2021</i>
-            </div>
+            <FooterSection data={FooterLogoData} type="logos"/>
+            <FooterSection data={FooterPages} type="links"/>
+            <FooterCopyRight name="Kachi Cheong" year="2021" />
         </footer>
     )
 }
