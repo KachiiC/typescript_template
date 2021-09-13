@@ -1,6 +1,6 @@
 export interface pageDataProps {
     title?: string;
-    content?: any;
+    content?: string | JSX.Element | undefined;
     link?: string
 }
 

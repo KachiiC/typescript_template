@@ -1,7 +1,5 @@
-import { ReactChild, ReactFragment, ReactPortal } from "react";
-
 export interface SiteFooterProps { 
-    heading: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined 
+    heading?: string | undefined;
 }
 
 export interface footerSectionDataProps { 
