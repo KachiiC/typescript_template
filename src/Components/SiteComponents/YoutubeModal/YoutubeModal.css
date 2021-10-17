@@ -1,0 +1,79 @@
+.youtube-modal-content {
+    height: 100%;
+    overflow: hidden;
+}
+
+.youtube-modal-content .site-col-6 {
+    height: 100%
+}
+
+/* VIDEO PLAYER */
+.modal-video-player h2 {
+    padding-bottom: 5px;
+}
+
+.modal-description-container {
+    margin: 10px 20px 10px;
+}
+
+/* VIDEO SUGGESTIONS */
+.suggestion-list-title {
+    color: white;
+    background: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.youtube-suggestions {
+    overflow-y: scroll;
+}
+
+.youtube-suggestion-title {
+    font-weight: 900;
+    padding: 0px 20px;
+}
+
+.youtube-thumbnail {
+    margin: 25px;
+}
+
+.modal-description-container p {
+    width: 90%;
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .youtube-modal-content {
+        overflow-y: scroll;
+    }
+
+    .youtube-modal-content .site-col-6 {
+        grid-column: span 12;
+    }
+
+    .suggestion-list-title {
+        margin: 25px auto 0px;
+    }
+
+    .suggestion-row {
+        margin: auto;
+    }
+    .suggestion-list-title,
+    .suggestion-row {
+        width: 90%;
+    }
+    
+    .youtube-suggestions {
+        height: 100%;
+        overflow-y: unset;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+}
+

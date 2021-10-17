@@ -1,37 +1,23 @@
-// PROPS
-import { SiteFooterProps } from 'Props/FooterProps'
 // DATA
 import { FooterLogoData, FooterPages } from 'Data/Footer/FooterData'
 // CSS
 import './Footer.css'
 // COMPONENTS
-import FooterSection from './components/FooterSection'
-import { FooterCopyRight } from './components/FooterItems'
+import SiteFooter from './components/SiteFooter'
+import DataOverview from 'Data/DataOverview'
 
+const footerData = DataOverview.footer_data
 
-const SiteFooter = (props: SiteFooterProps) => {
+const Footer = (
+    <footer>
+        <SiteFooter 
+            heading={footerData.heading}
+            logo_data={FooterLogoData}
+            links_data={FooterPages}
+            name={footerData.name}
+            year={footerData.year}
+        />
+    </footer>
+)
 
-    // IF HEADING, display heading
-    const headingLogic = () => {
-        if (props.heading) return <h3>{props.heading}</h3>
-    }
-
-    return (
-        <footer>
-            {headingLogic()}
-            <FooterSection 
-                data={FooterLogoData} 
-                type="logos"
-            />
-            <FooterSection 
-                data={FooterPages} 
-                type="links"
-            />
-            <FooterCopyRight 
-                name="Kachi Cheong" 
-                year="2021" 
-            />
-        </footer>
-    )
-}
-export default SiteFooter
+export default Footer

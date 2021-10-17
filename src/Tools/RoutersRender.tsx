@@ -1,23 +1,17 @@
-import { pageDataProps } from "Props/MainProps";
 import { Route } from "react-router-dom";
-
-interface LinkRendererProps {
-    title?: string | undefined; 
-    link?: string | undefined;
-    icon?: string;
-    content?: string | JSX.Element;
-}
+// PROPS
+import { LinkRendererProps } from "Props/ToolProps";
+import { pageDataProps } from "Props/MainProps";
 
 export const LinkRenderer = (data: LinkRendererProps[]) => {
 
     return data.map(page => {
 
         if (page.title) { 
-            if (page.title.length > 1) {
+            page.title.length > 1 ?
                 page.link = page.title.split(" ").join("-")
-            } else {
+                :
                 page.link = page.title
-            }
         }
             
         return page

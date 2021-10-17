@@ -1,0 +1,40 @@
+.tabs-title {
+    text-transform: uppercase;
+}
+
+.tabs-description {
+    min-height: 50px;
+}
+
+.tabs-description,
+.tabs-content {
+    width: 85%;
+    margin: 25px auto;
+    animation: fadeInUp 1s;
+}
+
+@media screen and (max-width: 1080px) {
+    .tabs-description,
+    .tabs-content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .tabs-description,
+    .tabs-content {
+        width: 100%;
+    }
+
+    .tabs-content {
+        height: 60vh;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tabs-content {
+        height: 45vh;
+        overflow-x: scroll;
+    }
+}

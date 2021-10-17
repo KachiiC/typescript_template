@@ -1,0 +1,31 @@
+.site-table-overflow {
+    height: 60vh;
+    overflow-x: scroll;
+}
+
+.site-table {
+    margin: 20px auto;
+}
+
+.site-table tr {
+    border: 1px solid black;
+}
+
+.site-table th {
+    border: 1px solid black;
+}
+
+.site-table td,
+.site-table th {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.site-table tr th {
+    background: black;
+    color: white;
+}
+
+.site-table tr:nth-child(odd) {
+    background: rgb(230, 230, 230);
+}

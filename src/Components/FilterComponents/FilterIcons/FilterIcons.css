@@ -1,0 +1,41 @@
+.filter-icons {
+    margin: 25px auto;
+}
+
+.filter-icons-icon {
+    margin: 10px;
+}
+
+.filter-icon-buttons {
+    margin: 20px auto;
+}
+
+.filter-icon-buttons  button {
+    background: black;
+    color: white;
+    border: none;
+    margin: 0px 15px;
+    padding: 5px;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px) {
+    .filter-icons .site-col-2 {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* SKILLS */
+    .filter-icons .site-col-2 {
+        grid-column: span 4;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* SKILLS */
+    .filter-icons .site-col-2 {
+        grid-column: span 6;
+    }
+}

@@ -1,0 +1,16 @@
+.filter-list {
+    margin: 25px auto;
+    animation: fadeIn 2s;
+}
+
+.filter-search select {
+    padding: 10px
+}
+
+.filter-search input {
+    padding: 8px 15px;
+}
+
+.filter-table-container {
+    margin: 25px auto;
+}

@@ -9,7 +9,8 @@ const FooterSection = (props: footerSectionProps) => {
         props.data.map(data => 
             <FooterLogos
                 link={data.link}
-                icon={data.icon} 
+                icon={data.icon}
+                key={data.icon}
             />
         )
         :
@@ -17,6 +18,7 @@ const FooterSection = (props: footerSectionProps) => {
             <FooterLinks
                 link={data.link}
                 title={data.title} 
+                key={data.title}
             />
         )
 

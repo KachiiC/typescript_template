@@ -1,39 +1,40 @@
-import { useState } from 'react'
+import { useReducer } from 'react'
 // PROPS
 import { SiteNavbarProps } from 'Props/HeaderProps'
 // CSS
 import './SiteNavBar.css'
 // COMPONENTS
 import NavMenu from './components/NavMenu'
-import SiteNavLogo from './components/SiteNavLogo'
 import SmallMenuBlock from './components/SmallMenuBlock'
-import SmallMenuIcon from './components/SmallMenuIcon'
 
 const SiteNavbar = (props: SiteNavbarProps) => {
 
-    const [smallMenu, setSmallMenu] = useState(false)
-    const displayLogic = () => {
-        !smallMenu ? setSmallMenu(true) : setSmallMenu(false)
-    }
+    // PROPS
+    const {title, data, menu_number } = props
+
+    const [smallMenu, toggleMenu] = useReducer(
+        smallMenu => !smallMenu, false
+    )
+
+    // Menu which is displayed on click for small screen
+    const SmallScreenMenu = (
+        <SmallMenuBlock 
+            data={data} 
+            click={toggleMenu} 
+        />
+    )
     
     return (
-        <>
-            <div className="site-topnav">
-                <SiteNavLogo title={props.title} />
-                <NavMenu 
-                    data={props.data} 
-                    menu_number={4}
-                    menu_type="full"
-                />
-                <SmallMenuIcon click={displayLogic}/>
-            </div>
-            {smallMenu && (
-                <SmallMenuBlock 
-                    data={props.data} 
-                    click={displayLogic} 
-                />
-            )}
-        </>
+        <header>
+            <NavMenu
+                title={title}
+                data={data} 
+                menu_number={menu_number}
+                menu_type="full"
+                small_menu_click={toggleMenu}
+            />
+            {smallMenu && SmallScreenMenu}
+        </header>
     )
 }
 

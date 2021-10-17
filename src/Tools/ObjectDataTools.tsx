@@ -23,3 +23,28 @@ export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
     return data_links
 }
 
+export const UnqiueValues = (data: any[], value: string) =>  {
+
+    const allValues = data.map(obj => obj[value])
+
+    const uniqueArray = allValues.filter(function(item, pos) {
+        return allValues.indexOf(item) === pos;
+    })
+
+    return uniqueArray
+}
+
+export const setLogic = (first: number | string, last: number | string, setFunction: Function) => {
+    return setFunction({
+        first: first,
+        last: last
+    })
+}
+
+export const ArrrayObjectKeys = (data: Object[]) => {
+    return Object.keys(data[0])
+}
+
+export const EmptyObjectChecker = (obj: {}) => {
+    return Object.keys(obj).length === 0 ? true : false
+}

@@ -3,6 +3,10 @@
     display: grid;
 }
 
+.site-flex {
+    display: flex;
+}
+
 .site-grid-system {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -180,9 +184,16 @@
     text-align: right;
 }
 
+.text-white {
+    color: white;
+}
 /* overflow */
 .site-overflow {
     overflow: scroll;
+}
+
+.site-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /** Cursor **/

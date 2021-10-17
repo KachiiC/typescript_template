@@ -1,0 +1,28 @@
+.filter-buttons-container {
+    display: flex;
+    overflow-x: scroll;
+    user-select: none;
+    -webkit-user-select: none;
+    border-bottom: 1px solid rgb(208, 208, 208);
+    animation: fadeIn 2s;
+}
+
+.filter-button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: white;
+    margin: 20px;
+    font-weight: 800;
+    min-width: 150px;
+}
+
+.filter-buttons-container::-webkit-scrollbar {
+    user-select: none;
+}
+
+@media screen and (max-width: 640px) {
+    .filter-buttons-container {
+        width: 95%;
+    }
+}

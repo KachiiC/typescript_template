@@ -4,6 +4,16 @@ import { footerCopyrightProps, footerSectionDataProps } from "Props/FooterProps"
 // TOOLS
 import SiteIcon from "Tools/SiteIcon";
 
+export const FooterHeading = (props: {heading?: string}) => {
+    // IF HEADING, display heading
+    const headingLogic = () => {
+        if (props.heading) return props.heading
+    }
+
+    return <h3>{headingLogic()}</h3>
+    
+}
+
 export const FooterLogos = (props: footerSectionDataProps) => (
     <div className="site-span-1">
         <a href={props.link} 

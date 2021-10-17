@@ -13,7 +13,7 @@ const FooterRoutes = RoutesRender(FooterPages)
 const HiddenRoutes = RoutesRender(HiddenData)
 
 HiddenRoutes.push(
-    <Route>
+    <Route key="home">
         {Home}
     </Route>
 )

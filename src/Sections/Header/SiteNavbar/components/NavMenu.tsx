@@ -1,35 +1,37 @@
 // PROPS
 import { NavMenuProps } from "Props/HeaderProps"
+// TOOLS
+import { RenderLogic } from "Tools/FunctionTools"
 // COMPONENTS
-import SiteNavLink from "./SiteNavLink"
+import { SiteNavLink, SiteNavLogo, SmallMenuIcon } from "./SiteNavLink"
 
 
 const NavMenu = (props: NavMenuProps) => {
 
-    const sliceLogic  = props.menu_number ? props.menu_number : 5
+    // PROPS
+    const { title, data, menu_number, small_menu_click } = props
 
-    const displayedNavLinks = props.data.map(page => {
+    // Detirmines how many menus shown, default is 5
+    const sliceLogic  = RenderLogic(menu_number, 5)
 
-        return props.menu_type === "full" ? 
-            <SiteNavLink
-                link={page.link}
-                title={page.title}
-                type="full"
-            /> 
-            : 
-            <SiteNavLink
-                click={props.click}
-                link={page.link}
-                title={page.title}
-                type="small"
-            />
-
-    }).slice(0, sliceLogic)
+    // Returns a menu for each object in data array
+    const displayedNavLinks = data.map(page => (
+        <SiteNavLink 
+            data={page}
+            key={page.title}
+        /> 
+    )).slice(0, sliceLogic)
 
     return (
-        <>
+        <div className="site-topnav">
+            <SiteNavLogo 
+                title={title} 
+            />
             {displayedNavLinks} 
-        </>
+            <SmallMenuIcon 
+                click={small_menu_click}
+            />
+        </div>
     )
 }
 

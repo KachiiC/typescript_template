@@ -1,7 +1,3 @@
-export interface SiteFooterProps { 
-    heading?: string | undefined;
-}
-
 export interface footerSectionDataProps { 
     icon?: string; 
     link?: string; 
@@ -16,4 +12,12 @@ export interface footerCopyrightProps {
 export interface footerSectionProps { 
     data: footerSectionDataProps[]
     type?: string | undefined
+}
+
+export interface SiteFooterProps {
+    links_data: footerSectionDataProps[];
+    logo_data: footerSectionDataProps[];
+    heading: string | undefined;
+    name: string ;
+    year: string | number ;
 }

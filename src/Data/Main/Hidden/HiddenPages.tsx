@@ -1,20 +1,20 @@
+import Test from "Sections/Main/Pages/Hidden/Test"
 // TOOLS
-import { ExampleContentRender } from "Tools/ExampleTools"
 import { LinkRenderer } from "Tools/RoutersRender"
+// import { ExampleContentRender } from "Tools/ExampleTools"
 
 // Pages are hidden from navbar
 const HiddenPagesData = [
     {
-        title: "Hidden Page 1",
-    },
-    {
-        title: "Hidden Page 2",
-    },
+        title: "Test",
+        content: <Test />
+    }
 ]
 
 // Renders content for each object (for example use only)
-ExampleContentRender(HiddenPagesData)
+// ExampleContentRender(HiddenPagesData)
 // Returns the data as links before export
+
 LinkRenderer(HiddenPagesData)
 
 export default HiddenPagesData

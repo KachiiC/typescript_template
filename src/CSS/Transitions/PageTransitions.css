@@ -1,0 +1,27 @@
+/* HOME */
+.home-header {
+    animation: fadeIn 2s;
+}
+
+.home-portfolio {
+    animation: fadeInUp 1.5s;
+}
+
+/* PROJECTS */
+.projects-page {
+    animation: fadeInUp 2s;
+}
+
+/* COMPONENTS */
+.components-page-container {
+    animation: fadeInUp 2s;
+}
+
+/* ABOUT */
+.about-title,
+.about-introduction,
+.about-description,
+.about-contact,
+.about-skills-container {
+    animation: fadeInUp 2s;
+}

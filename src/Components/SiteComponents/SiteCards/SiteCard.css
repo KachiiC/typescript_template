@@ -1,0 +1,34 @@
+.site-single-card,
+.site-single-card img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.site-single-card {
+    margin: 25px auto;
+    animation: fadeIn 2s;
+}
+
+.site-text-container {
+    padding: 10px;
+}
+
+.site-text-container p {
+    color:lightslategrey;
+}
+
+@media screen and (max-width: 1080px) {
+    .site-col-2,
+    .site-col-3,
+    .site-col-4 {
+        grid-column: span 6;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .site-col-2,
+    .site-col-3,
+    .site-col-4,
+    .site-col-6 {
+        grid-column: span 12;
+    }
+}

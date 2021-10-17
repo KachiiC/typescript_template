@@ -1,0 +1,36 @@
+.site-tabs-component {
+    animation: fadeIn 2s;
+}
+
+.site-tab-rows {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.site-tab-link {
+    background-color: black;
+    border-right: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 15px;
+    font-size: 15px;
+    min-width: 200px;
+    user-select: none;
+}
+
+.site-tab-link:last-child {
+    border: none;
+}
+
+.site-tab-content {
+    color: white;
+    padding: 20px;
+    min-height: 350px;
+    overflow-y: scroll;
+}
+
+.site-tab-rows::-webkit-scrollbar,
+.site-tab-content::-webkit-scrollbar {
+    display: none;
+}

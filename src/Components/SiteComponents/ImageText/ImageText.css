@@ -1,0 +1,39 @@
+.image-text-container .row-image {
+    float: right;
+
+}
+
+.row-image,
+.row-description {
+    width: 50%;
+    padding: 20px
+}
+
+/* .row-description h2, 
+.row-description p {
+    margin-top: 10px;
+    text-align: center;
+} */
+
+@media screen and (max-width: 800px) {
+
+    .row-image {
+        margin: 0px auto;
+    }
+    
+    .row-description {
+        border-bottom: 1px solid black;
+        margin: 0px auto 20px;
+    }
+
+    .row-description h2 {
+        margin-top: 0px;
+    }
+
+    .row-image, 
+    .row-description {
+        grid-column: span 12;
+        width: 90%;
+    }
+    
+}

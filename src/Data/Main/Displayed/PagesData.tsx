@@ -1,24 +1,13 @@
 // TOOLS
-import { ExampleContentRender } from "Tools/ExampleTools"
 import { LinkRenderer } from "Tools/RoutersRender"
+// PAGES
 
 const PagesData = [
     {
-        title: "Page 1",
-    },
-    {
-        title: "Page 2",
-    },
-    {
-        title: "Page 3",
-    },
-    {
-        title: "Page 4",
+        title: "Code",
+        external_link: "https://github.com/KachiiC/"
     }
 ]
-
-// Renders content for each object (for example use only)
-ExampleContentRender(PagesData)
 
 // Returns the data as links before export
 LinkRenderer(PagesData)
