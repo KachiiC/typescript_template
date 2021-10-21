@@ -26,7 +26,7 @@ const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
 const YoutubeSuggestions = (props: YoutubeSuggestionProps) => {
 
     // PROPS
-    const { data } = props
+    const { data, setFunction } = props
 
     const displaySuggestions = data.map(obj => (
         // Sets the object as
@@ -35,7 +35,7 @@ const YoutubeSuggestions = (props: YoutubeSuggestionProps) => {
             video_title={obj.video_title}
             video_thumbnail={obj.video_thumbnail}
             // Sets the object which is clicked as the current displayedVideo on level above
-            click={() => props.setFunction(obj)}
+            click={() => setFunction(obj)}
         />
     ))
 

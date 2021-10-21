@@ -1,11 +1,9 @@
-import { YoutubeProps } from "Props/ComponentProps"
+import { YoutubeProps } from "Props/Components/ComponentProps"
+import { RenderLogic } from "Tools/FunctionTools"
 
 const YoutubePlayer = (props: YoutubeProps) => {
 
     const { height, width, id } = props
-
-    const heightLogic = height ? height : "315" 
-    const widthLogic = width ? width : "560"
 
     return (
         <iframe 
@@ -17,8 +15,8 @@ const YoutubePlayer = (props: YoutubeProps) => {
                 picture-in-picture" 
             allowFullScreen 
             frameBorder="0"
-            height={heightLogic}
-            width={widthLogic}
+            height={RenderLogic(height, "315")}
+            width={RenderLogic(width, "560")}
             src={`https://www.youtube.com/embed/${id}?controls=0&rel=0`}
             title={`${id}`}
         />

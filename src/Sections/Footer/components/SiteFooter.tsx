@@ -4,24 +4,29 @@ import { FooterHeading, FooterCopyRight } from './FooterItems'
 // PROPS
 import { SiteFooterProps } from 'Props/FooterProps'
 
-const SiteFooter = (props: SiteFooterProps) => (
-    <>
-        <FooterHeading 
-            heading={props.heading}
-        />
-        <FooterSection 
-            data={props.logo_data} 
-            type="logos"
-        />
-        <FooterSection 
-            data={props.links_data} 
-            type="links"
-        />
-        <FooterCopyRight 
-            name={props.name}
-            year={props.year}
-        />
-    </>
-)
+const SiteFooter = (props: SiteFooterProps) => {
+
+    const { heading, logo_data, links_data, name, year } = props
+    
+    return (
+        <>
+            <FooterHeading 
+                heading={heading}
+            />
+            <FooterSection 
+                data={logo_data} 
+                type="logos"
+            />
+            <FooterSection 
+                data={links_data} 
+                type="links"
+            />
+            <FooterCopyRight 
+                name={name}
+                year={year}
+            />
+        </>
+    )
+}
 
 export default SiteFooter

@@ -1,40 +1,45 @@
 // PROPS
-import { AntdTabsProps} from './AntdTabsProps'
+import { AntdTabsProps} from 'Props/Components/AntdProps/AntdTabsProps'
 // CSS
 import 'antd/dist/antd.css';
 import './AntdTabs.css'
 // COMPONENTS
 import { Tabs } from 'antd';
 import SingleTab from './components/SingleTab';
+// TOOLS
 import { RenderLogic } from 'Tools/FunctionTools';
 
 const AntdTabs = (props: AntdTabsProps) => {
 
+    // PROPS
+    const { data, position, size } = props
     const { TabPane } = Tabs;
-
-    const sizeLogic = RenderLogic(props.size, "small")
-    const positionLogic = RenderLogic (props.position, "top")
     
-    const renderTabs = props.data.map(tab =>
-        <TabPane 
-            key={tab.title}
-            tab={tab.title} 
-        >
-            <SingleTab
-                link={tab.link}
-                title={tab.title}
-                content={tab.content}
-                description={tab.description}
-            />
-        </TabPane>
-    )
+    const renderTabs = data.map(tab => {
+
+        const {title, description, content, link } = tab
+
+        return (
+            <TabPane 
+                key={title}
+                tab={title} 
+            >
+                <SingleTab
+                    title={title}
+                    description={description}
+                    content={content}
+                    link={link}
+                />
+            </TabPane>
+        )
+    })
 
     return (
-        <Tabs 
-            tabPosition={positionLogic}
+        <Tabs
             centered
             defaultActiveKey="0"
-            size={sizeLogic}
+            size={RenderLogic(size, "small")}
+            tabPosition={RenderLogic (position, "top")}
             type="card"
         >
             {renderTabs}

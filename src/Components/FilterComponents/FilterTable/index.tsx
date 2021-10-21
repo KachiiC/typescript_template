@@ -26,9 +26,7 @@ const FilterTable = (props: FilterProps) => {
     const [column, setColumn] = useState(columnLogic)
 
     // Column can be changed and can be set in form  
-    const columnFunction = (e : TargetProps) => {
-        setColumn(e.target.value)
-    }
+    const columnFunction = (e : TargetProps) => setColumn(e.target.value)
 
     // The input string used to filter
     const [input, setInput] = useState('')

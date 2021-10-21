@@ -14,8 +14,8 @@ const YoutubeModal = (props: YoutubeModalProps) => {
 
     // Thumbnail of current object
     const currentThumbnail = (
-        <img src={props.current.video_thumbnail} 
-            alt={props.current.video_title} 
+        <img src={current.video_thumbnail} 
+            alt={current.video_title} 
         />
     )
     

@@ -4,8 +4,7 @@ const FooterHeading = (props: {heading?: string}) => {
         if (props.heading) return <h3>{props.heading}</h3>
     }
 
-    return <>{headingLogic()}</>
-    
+    return <>{headingLogic()}</> 
 }
 
 export default FooterHeading

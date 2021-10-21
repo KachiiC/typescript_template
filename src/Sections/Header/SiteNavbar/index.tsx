@@ -10,7 +10,7 @@ import SmallMenuBlock from './components/SmallMenuBlock'
 const SiteNavbar = (props: SiteNavbarProps) => {
 
     // PROPS
-    const {title, data, menu_number } = props
+    const { title, data, menu_number } = props
 
     const [smallMenu, toggleMenu] = useReducer(
         smallMenu => !smallMenu, false

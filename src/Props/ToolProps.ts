@@ -6,7 +6,6 @@ export interface ObjectDataProps {
     [x: string]: string | JSX.Element | undefined
 }
 
-
 export interface TargetProps {
     preventDefault: ChangeEventHandler<HTMLInputElement>
     target: { 
@@ -41,6 +40,6 @@ export interface SiteRenderProps {
         loading: boolean; 
         error: boolean; 
         response: Object | never[]
-    }; 
+    }
     component: JSX.IntrinsicAttributes; 
 }
