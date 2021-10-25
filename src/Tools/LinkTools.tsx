@@ -5,7 +5,7 @@ import { SiteLinkProps } from "Props/ToolProps"
 export const SiteLink = (props: SiteLinkProps) => {
 
     // PROPS
-    const {link, type, placeholder} = props
+    const { link, type, placeholder } = props
 
     const LinkLogic = type === "external" ?
         <a href={link} 

@@ -8,6 +8,7 @@ export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
     const data_links = data_keys.map((key) => {
 
         const social_data = {
+            title: key,
             icon: key,
             link: `https://www.${key}.com/${data[key]}`
         }

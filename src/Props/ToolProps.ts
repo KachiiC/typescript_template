@@ -1,5 +1,6 @@
 import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import { ChangeEventHandler } from "react";
+import { pageDataProps } from "./MainProps";
 
 // EXAMPLE TOOLS
 export interface ObjectDataProps { 
@@ -21,11 +22,12 @@ export interface SiteIconProps {
 }
 
 export interface LinkRendererProps {
-    title?: string | undefined; 
+    title: string;
     link?: string | undefined;
     icon?: string;
     content?: string | JSX.Element;
-    external_link?: string 
+    external_link?: string
+    sub_menu?: pageDataProps[]
 }
 
 // Site Link Props

@@ -1,21 +1,27 @@
+import { useReducer } from "react"
 // PROPS
-import { NavLinkProps, SiteNavLinkProps, SmallMenuIconProps } from 'Props/HeaderProps'
+import { 
+    NavLinkProps, 
+    SiteNavDropdownProps, 
+    SiteNavLinkProps, 
+    SmallMenuIconProps, 
+    SmallMenuProps 
+} from "Props/HeaderProps"
 // TOOLS
-import { SiteLink } from 'Tools/LinkTools'
-import { RenderLogic } from 'Tools/FunctionTools'
-import SiteIcon from 'Tools/SiteIcon'
+import { DisplayMenuType } from "../tools/SiteNavbarTools"
+import { RenderLogic } from "Tools/FunctionTools"
+import SiteIcon from "Tools/SiteIcon"
+import { SiteLink } from "Tools/LinkTools"
+import { StringJoiner } from "Tools/StringTools"
 
-export const SiteNavLogo = (props: NavLinkProps ) => {
+export const SiteLogo = (props: NavLinkProps) => {
 
-    // PROPS 
-    const {title, link} = props
-
-    const linkLogic = RenderLogic(link, "")
-
+    const { link, title } = props
+    
     return (
         <div className="site-nav-logo">
             <SiteLink
-                link={`/${linkLogic}`}
+                link={`/${RenderLogic(link, "")}`}
                 placeholder={title}
                 type="local"
             />
@@ -23,44 +29,103 @@ export const SiteNavLogo = (props: NavLinkProps ) => {
     )
 }
 
+export const SiteNavLink = (props: SiteNavLinkProps) => {
+
+    const { 
+        click,
+        link,
+        link_type, 
+        title,
+    } = props
+
+    const NavLinkLogic = () => link ?
+        <SiteLink 
+            placeholder={title} 
+            type="external" 
+            link={link} 
+        />
+        :
+        <SiteLink
+            placeholder={title}
+            type="local"
+            link={`/${StringJoiner(title)}`}
+        />
+
+    return (
+        <div className={`site-${link_type}-link`} 
+            onClick={click}
+        >
+            {NavLinkLogic()}
+        </div>
+    )
+}
+
+
+export const SiteNavDropdown = (props: SiteNavDropdownProps) => {
+
+    const { data, title } = props
+    
+    const sub_menu_list = data.map(sub => (
+            <DisplayMenuType 
+                type="dropdown" 
+                data={sub}
+            />
+        )
+    )
+
+    return (
+        <div className="site-dropdown">
+            <div className="site-dropbtn">
+                {title}
+            </div>
+            <div className="site-dropdown-content">
+                {sub_menu_list}
+            </div>
+        </div>
+    )
+}
+
 export const SmallMenuIcon = (props:SmallMenuIconProps) => (
 
-    <div className="small-menu-icon" onClick={props.click}>
-        <SiteIcon type="bars" size="lg" />
+    <div className="small-menu-icon" 
+        onClick={props.click}
+    >
+        <SiteIcon 
+            type="bars" 
+            size="lg" 
+        />
     </div>
     
 )
 
-export const SiteNavLink = (props: SiteNavLinkProps) => {
+export const SmallMenuDropdownLink = (props: SmallMenuProps) => {
 
     // PROPS
-    const {data, type, click } = props
+    const { click, data, title } = props
+    // STATES
+    const [menu, toggleMenu] = useReducer(menu => !menu, false)
 
-    // Logic dealing with size of the link 
-    const linkSizeLogic = type === "small" ? 
-        "site-small-link"
-        : 
-        "site-nav-link"
-
-    // Logic dealing with link type
-    const linkType = data.external_link ? 
-        <SiteLink
-            link={data.external_link}
-            placeholder={data.title}
-            type="external"
-        />
-        :
-        <SiteLink
-            link={`/${data.link}`}
-            placeholder={data.title}
-            type="local"
-        />
+    const Submenu = () => {
+        
+        const display_subs = data.map(sub => (
+            <DisplayMenuType 
+                data={sub}
+                type="small"
+                click={click}
+            />
+        ))
+        
+        return <>{display_subs}</>
+    }
 
     return (
-        <div className={linkSizeLogic} 
-            onClick={click}
-        >
-            {linkType}
-        </div>
+        <>
+            <div className="site-small-link" 
+                onClick={toggleMenu}
+            >
+                {title}
+            </div>
+            {menu && <Submenu />}
+        </>
     )
 }

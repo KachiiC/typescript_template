@@ -2,30 +2,46 @@ import { Route } from "react-router-dom";
 // PROPS
 import { LinkRendererProps } from "Props/ToolProps";
 import { pageDataProps } from "Props/MainProps";
+import { StringJoiner } from "./StringTools";
 
 export const LinkRenderer = (data: LinkRendererProps[]) => {
 
-    return data.map(page => {
-
-        if (page.title) { 
-            page.title.length > 1 ?
-                page.link = page.title.split(" ").join("-")
-                :
-                page.link = page.title
+    const link_create = (input: string) => {
+        if (input.length > 1) {
+            return StringJoiner(input)
         }
+        return input
+    }
+
+    return data.map(menu => {
+
+        menu.sub_menu ?
+
+            menu.sub_menu.map(sub => sub.link = link_create(sub.title))
+        : 
+            menu.link = StringJoiner(menu.title)
             
-        return page
+        return menu
     })
 }
 
+export const Menu_Routes = (input: pageDataProps) => (
+    <Route 
+        path={`/${input.link}`} 
+        key={input.title}
+    >
+        {input.content}
+    </Route>
+)
+
 export const RoutesRender = (dataSet: pageDataProps[]) => {
 
-    return dataSet.map(page => (
-        <Route 
-            path={`/${page.link}`} 
-            key={page.title}
-        >
-            {page.content}
-        </Route>
-    ))
+    const Routes_list = dataSet.map(
+        menu => menu.sub_menu ?
+            menu.sub_menu.map(sub => Menu_Routes(sub))
+        :
+            Menu_Routes(menu)
+    )
+
+    return Routes_list
 }
