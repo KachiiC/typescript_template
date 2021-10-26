@@ -4,7 +4,6 @@ import "./SiteNavbar.css"
 // PROPS
 import { SiteNavbarProps } from "Props/HeaderProps"
 // COMPONENTS
-import { SiteLogo } from "./components/SiteNavLink"
 import { SiteNavMenu, SmallNavMenu } from "./components/SiteNavMenu"
 
 const SiteNavbar = (props: SiteNavbarProps) => {
@@ -17,21 +16,20 @@ const SiteNavbar = (props: SiteNavbarProps) => {
 
     const SmallScreenMenu = (
         <SmallNavMenu
-            data={data} 
             click={toggleMenu}
+            data={data} 
+            title="Small Menu"
         />
     )
     
     return (
-        <header>
-            <div className="site-navbar">
-                <SiteLogo title={title}/>
-                <SiteNavMenu 
-                    data={data}
-                    small_click={toggleMenu}
-                />
-            </div>
-            {smallMenu && SmallScreenMenu}
+        <header>     
+            <SiteNavMenu 
+                data={data}
+                click={toggleMenu}
+                title={title}
+            />
+            { smallMenu && SmallScreenMenu }
         </header>
     )
 }

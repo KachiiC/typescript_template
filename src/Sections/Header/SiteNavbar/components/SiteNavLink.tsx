@@ -1,12 +1,11 @@
 import { useReducer } from "react"
 // PROPS
 import { 
-    NavLinkProps, 
-    SiteNavDropdownProps, 
+    SiteNavbarProps, 
     SiteNavLinkProps, 
-    SmallMenuIconProps, 
-    SmallMenuProps 
+    SmallMenuIconProps
 } from "Props/HeaderProps"
+import { subMenuProps } from "Props/MainProps"
 // TOOLS
 import { DisplayMenuType } from "../tools/SiteNavbarTools"
 import { RenderLogic } from "Tools/FunctionTools"
@@ -14,23 +13,10 @@ import SiteIcon from "Tools/SiteIcon"
 import { SiteLink } from "Tools/LinkTools"
 import { StringJoiner } from "Tools/StringTools"
 
-export const SiteLogo = (props: NavLinkProps) => {
-
-    const { link, title } = props
-    
-    return (
-        <div className="site-nav-logo">
-            <SiteLink
-                link={`/${RenderLogic(link, "")}`}
-                placeholder={title}
-                type="local"
-            />
-        </div>
-    )
-}
-
+// NAV LINK
 export const SiteNavLink = (props: SiteNavLinkProps) => {
 
+    // PROPS
     const { 
         click,
         link,
@@ -38,31 +24,32 @@ export const SiteNavLink = (props: SiteNavLinkProps) => {
         title,
     } = props
 
-    const NavLinkLogic = () => link ?
+    const NavLinkLogic = link ?
         <SiteLink 
-            placeholder={title} 
-            type="external" 
-            link={link} 
+            link={link}
+            placeholder={title}
+            type="external"
         />
         :
         <SiteLink
+            link={`/${StringJoiner(title)}`}
             placeholder={title}
             type="local"
-            link={`/${StringJoiner(title)}`}
         />
 
     return (
         <div className={`site-${link_type}-link`} 
             onClick={click}
         >
-            {NavLinkLogic()}
+            {NavLinkLogic}
         </div>
     )
 }
 
+// NAV DROPDOWN
+export const SiteNavDropdown = (props: SiteNavbarProps) => {
 
-export const SiteNavDropdown = (props: SiteNavDropdownProps) => {
-
+    // PROPS
     const { data, title } = props
     
     const sub_menu_list = data.map(sub => (
@@ -85,20 +72,43 @@ export const SiteNavDropdown = (props: SiteNavDropdownProps) => {
     )
 }
 
-export const SmallMenuIcon = (props:SmallMenuIconProps) => (
+// LOGO
+export const SiteLogo = (props: subMenuProps) => {
 
-    <div className="small-menu-icon" 
-        onClick={props.click}
-    >
-        <SiteIcon 
-            type="bars" 
-            size="lg" 
-        />
-    </div>
+    // PROPS
+    const { link, title } = props
     
-)
+    return (
+        <div className="site-nav-logo">
+            <SiteLink
+                link={`/${RenderLogic(link, "")}`}
+                placeholder={title}
+                type="local"
+            />
+        </div>
+    )
+}
 
-export const SmallMenuDropdownLink = (props: SmallMenuProps) => {
+// SMALL MENU ICON
+export const SmallMenuIcon = (props: SmallMenuIconProps) => {
+
+    // PROPS
+    const { click } = props
+
+    return (
+        <div className="small-menu-icon" 
+            onClick={click}
+        >
+            <SiteIcon 
+                type="bars" 
+                size="lg" 
+            />
+        </div>
+    )
+}
+
+// SMALL MENU DROPDOWN
+export const SmallMenuDropdown = (props: SiteNavbarProps) => {
 
     // PROPS
     const { click, data, title } = props

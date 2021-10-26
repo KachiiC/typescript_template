@@ -1,48 +1,51 @@
 // PROPS
-import { SiteNavMenuProps, SmallMenuProps } from "Props/HeaderProps"
+import { SiteNavbarProps } from "Props/HeaderProps"
 // COMPONENTS
-import { SmallMenuDropdownLink, SmallMenuIcon } from "./SiteNavLink"
+import { SiteLogo, SmallMenuDropdown, SmallMenuIcon } from "./SiteNavLink"
 // TOOLS
 import { DisplayMenuList, DisplayMenuType } from "../tools/SiteNavbarTools"
 
+// NAV MENU
+export const SiteNavMenu = (props: SiteNavbarProps) => {
 
-export const SiteNavMenu = (props: SiteNavMenuProps) => {
+    const { click, data, title } = props
 
-    const { data, small_click } = props
+    const SiteNav = (
+        <div className="site-nav-menu">
+            <DisplayMenuList 
+                data={data} 
+                type="nav"
+            />
+        </div>
+    )
 
     return (
-        <>
-            <div className="site-nav-menu">
-                <DisplayMenuList 
-                    data={data} 
-                    type="nav"
-                />
-            </div>
-            <SmallMenuIcon 
-                click={small_click}
-            />
-        </>
+        <div className="site-navbar">
+            <SiteLogo title={title} />
+            {SiteNav}
+            <SmallMenuIcon click={click} />
+        </div>
     )
 }
 
-export const SmallNavMenu = (props: SmallMenuProps) => {
+// SMALL  MENU
+export const SmallNavMenu = (props: SiteNavbarProps) => {
 
-    const { data, click } = props
+    const { click, data } = props
 
     const menu_block = data.map(obj => 
         obj.sub_menu ? 
-            <SmallMenuDropdownLink 
-                data={obj.sub_menu}
+            <SmallMenuDropdown
                 click={click}
+                data={obj.sub_menu}
                 title={obj.title}
             />
             : 
             <DisplayMenuType
+                click={click} 
                 data={obj} 
                 type="small" 
-                click={click} 
             />
-
     )
 
     return (
