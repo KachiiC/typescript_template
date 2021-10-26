@@ -56,6 +56,7 @@ export const SiteNavDropdown = (props: SiteNavbarProps) => {
             <DisplayMenuType 
                 type="dropdown" 
                 data={sub}
+                key={sub.title}
             />
         )
     )
@@ -122,6 +123,7 @@ export const SmallMenuDropdown = (props: SiteNavbarProps) => {
                 data={sub}
                 type="small"
                 click={click}
+                key={sub.title}
             />
         ))
         

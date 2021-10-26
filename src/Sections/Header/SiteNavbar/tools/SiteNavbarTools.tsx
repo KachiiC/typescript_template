@@ -13,12 +13,14 @@ export const DisplayMenuType = (props: DisplayMenuTypeProps) => {
             link={data.external_link}
             link_type={type}
             title={data.title}
+            key={data.title}
         />
         :
         <SiteNavLink
             click={click}
             link_type={type}
             title={data.title}
+            key={data.title}
         />
 }
 
@@ -37,10 +39,14 @@ export const DisplayMenuList = (props: DisplayMenuListProps) => {
             <DisplayMenuType 
                 data={sub} 
                 type={type} 
-                click={click} 
+                click={click}
             />
 
-        return <> {subLogic} </>
+        return (
+            <div key={sub.title}>
+                {subLogic}
+            </div>
+        )
     })
 
     return <>{menu_list}</>
