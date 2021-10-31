@@ -42,7 +42,7 @@ export const SiteRender = (props: SiteRenderProps) => {
     const { error, loading } = props.fetch
 
     const displayLogic = loading ? 
-        SiteLoading
+        <SiteLoading />
         : 
         error ?
             SiteError

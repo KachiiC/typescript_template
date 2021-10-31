@@ -2,7 +2,7 @@ import { useReducer } from "react"
 // CSS
 import "./SiteNavbar.css"
 // PROPS
-import { SiteNavbarProps } from "Props/HeaderProps"
+import { SiteNavbarProps } from "Props/Sections/HeaderProps"
 // COMPONENTS
 import { SiteNavMenu, SmallNavMenu } from "./components/SiteNavMenu"
 

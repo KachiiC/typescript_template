@@ -1,5 +1,5 @@
 // PROPS
-import { pageDataProps } from "Props/MainProps"
+import { pageDataProps } from "Props/Sections/MainProps"
 import { ObjectDataProps } from "Props/ToolProps"
 // TOOLS
 import PageTemplate from "Tools/PageTemplate"

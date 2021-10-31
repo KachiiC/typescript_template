@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 // PROPS
 import { LinkRendererProps } from "Props/ToolProps";
-import { pageDataProps } from "Props/MainProps";
+import { pageDataProps } from "Props/Sections/MainProps";
 import { StringJoiner } from "./StringTools";
 
 export const LinkRenderer = (data: LinkRendererProps[]) => {

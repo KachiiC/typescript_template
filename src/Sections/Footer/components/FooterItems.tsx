@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // PROPS
-import { footerCopyrightProps, footerSectionDataProps } from "Props/FooterProps";
+import { footerCopyrightProps, footerSectionDataProps } from "Props/Sections/FooterProps";
 // TOOLS
 import SiteIcon from "Tools/SiteIcon";
 

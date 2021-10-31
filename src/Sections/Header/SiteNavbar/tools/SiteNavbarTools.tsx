@@ -1,5 +1,5 @@
 // PROPS
-import { DisplayMenuListProps, DisplayMenuTypeProps } from "Props/HeaderProps"
+import { DisplayMenuListProps, DisplayMenuTypeProps } from "Props/Sections/HeaderProps"
 // COMPONENTS
 import { SiteNavLink, SiteNavDropdown } from "../components/SiteNavLink"
 

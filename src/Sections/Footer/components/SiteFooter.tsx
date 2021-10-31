@@ -2,7 +2,7 @@
 import FooterSection from './FooterSection'
 import { FooterHeading, FooterCopyRight } from './FooterItems'
 // PROPS
-import { SiteFooterProps } from 'Props/FooterProps'
+import { SiteFooterProps } from 'Props/Sections/FooterProps'
 
 const SiteFooter = (props: SiteFooterProps) => {
 

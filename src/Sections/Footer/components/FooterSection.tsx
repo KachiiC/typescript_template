@@ -1,5 +1,5 @@
 // PROPS
-import { footerSectionProps } from 'Props/FooterProps'
+import { footerSectionProps } from 'Props/Sections/FooterProps'
 // COMPONENTS
 import { FooterLogos, FooterLinks } from './FooterItems'
 
