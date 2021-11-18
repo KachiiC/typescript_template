@@ -1,7 +1,7 @@
 // PROPS
 import { FilterInputProps, FilterSelectProps } from "Props/Components/FilterComponentProps/FilterTableProps"
 // TOOLS
-import { StringUppercase } from "Tools/StringTools"
+import { StringJoin } from "Tools/StringTools"
 
 export const FilterInput = (props: FilterInputProps) => {
     
@@ -26,13 +26,13 @@ export const FilterSelect = (props: FilterSelectProps) => {
     const { column_function, data, default_value } = props
 
     // Takes a array of strings and returns an option for each one
-    const displayOptions = data.map(column => (
+    const displayOptions = data.map(column => 
         <option value={column} 
             key={column}
         >
-            {StringUppercase(column)}
+            {StringJoin(column, "_", " ")}
         </option>
-    ))
+    )
 
     return (
         // When column is selected, the level above sets the column for useState

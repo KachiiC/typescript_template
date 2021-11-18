@@ -7,10 +7,10 @@ import 'CSS/Transitions/Transitions.css'
 import 'CSS/Transitions/PageTransitions.css'
 
 // SECTIONS
+import ScrollToTop from 'CSS/Transitions/ScrollToTop'
 import SiteMain from 'Sections/Main'
 import SiteHeader from 'Sections/Header'
 import SiteFooter from 'Sections/Footer'
-import ScrollToTop from 'Tools/ScrollToTop'
 
 const App = (
   <StrictMode>

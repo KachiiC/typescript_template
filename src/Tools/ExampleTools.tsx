@@ -1,23 +1,25 @@
 // PROPS
 import { pageDataProps } from "Props/Sections/MainProps"
-import { ObjectDataProps } from "Props/ToolProps"
+import { ObjectDataProps } from "Props/Tools/ToolProps"
 // TOOLS
-import PageTemplate from "Tools/PageTemplate"
+import { ObjKeys } from "./ObjectDataTools"
 
+// If page has a title but no content use this to render an example
 export const ExampleContentRender = (data: pageDataProps[]) => {
     return data.map(page => {
 
-        page.content = <PageTemplate name={page.title} />
+        page.content = <h1>Displayed page: {page.title}</h1>
         
         return page
     })
 }
 
+// Takes the Footer Pages from DataOverview and creates example pages.
 export const FooterPagesExampleRender = (data: ObjectDataProps) => {
     
-    const keys = Object.keys(data).filter(value => value)
+    const keys = ObjKeys(data).filter(value => value)
     
-    keys.map(key => data[key] = <PageTemplate name={`${key} Page`} />)
+    keys.map(key => data[key] = <h1>Displayed page: {key}</h1>)
     
     return data
 

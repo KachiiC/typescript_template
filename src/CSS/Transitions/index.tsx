@@ -4,24 +4,18 @@ import LoadingError from 'Images/LoadingError.gif'
 import './SiteTransitions.css'
 
 export const SiteLoading = () => {
-    
-    const LoadingCirles = () => {
-        
-        const displayCircles = []
-        const total_circles = 12
 
-        for (var i=0; i < total_circles; i++) {
-            displayCircles.push(<div/>)
-        }
+    const displayCircles = []
 
-        return displayCircles
+    for (var i=0; i < 12; i++) {
+        displayCircles.push(<div/>)
     }
 
     return (
         <>
             <h3>Loading...</h3>
             <div className="lds-spinner">
-                {LoadingCirles()}
+                {displayCircles}
             </div>
         </>
     )

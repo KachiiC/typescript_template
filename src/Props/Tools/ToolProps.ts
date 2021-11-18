@@ -1,6 +1,6 @@
-import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 import { ChangeEventHandler } from "react";
-import { pageDataProps } from "./Sections/MainProps";
+import { SizeProp } from "@fortawesome/fontawesome-svg-core";
+import { pageDataProps } from "Props/Sections/MainProps";
 
 // EXAMPLE TOOLS
 export interface ObjectDataProps { 

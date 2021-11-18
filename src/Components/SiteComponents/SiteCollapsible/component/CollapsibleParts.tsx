@@ -6,7 +6,7 @@ import SiteIcon from "Tools/SiteIcon"
 export const CollapsibleHeading = (props: CollapsibleHeadingProps) => {
 
     // PROPS
-    const {click, direction, title} = props
+    const { click, direction, title } = props
     
     // Direction is detirmined by whether tab is open or not
     return (

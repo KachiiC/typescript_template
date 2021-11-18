@@ -9,8 +9,7 @@ const SiteCloseButton = (props: closeButtonProps) => {
     const { click, type } = props
 
     return (
-        <div 
-            className={`${type}-close cursor-pointer`}
+        <div className={`${type}-close cursor-pointer`}
             onClick={click}
         >
             <SiteIcon 

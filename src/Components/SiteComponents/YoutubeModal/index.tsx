@@ -1,16 +1,16 @@
+// COMPONENTS
+import SiteModalComponent from "../SiteModal"
+import YoutubeModalContent from "./components/YoutubeModalContent"
 // CSS
 import './YoutubeModal.css'
 // PROPS
 import { YoutubeModalProps } from "Props/Components/YoutubeModalProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
-// COMPONENTS
-import SiteModalComponent from "../SiteModal"
-import YoutubeModalContent from "./components/YoutubeModalContent"
 
 const YoutubeModal = (props: YoutubeModalProps) => {
 
-    const { current, component, data } = props
+    const { component, current, data } = props
 
     // Thumbnail of current object
     const currentThumbnail = (

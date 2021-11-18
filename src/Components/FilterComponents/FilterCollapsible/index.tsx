@@ -1,13 +1,13 @@
 import { useState } from "react"
+// COMPONENTS
+import SiteCollapsible from "Components/SiteComponents/SiteCollapsible"
 // CSS
 import './FilterCollapsible.css'
 // PROPS
 import { FilterCollapsibleProps } from "Props/Components/FilterComponentProps/FilterCollapsibleProps"
-import { TargetProps } from "Props/ToolProps"
+import { TargetProps } from "Props/Tools/ToolProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
-// COMPONENTS
-import SiteCollapsible from "Components/SiteComponents/SiteCollapsible"
 
 const FilterCollapsible = (props: FilterCollapsibleProps) => {
 
@@ -48,7 +48,6 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
         <div className="filter-collapsible">
             {/* Filter begins on change */}
             <input onChange={filterFunction}
-            
                 className={`w-${RenderLogic(width, 100)}`}
                 // If no placeholder is specified, "search" is used as the placeholder
                 placeholder={RenderLogic(placeholder, "search")}

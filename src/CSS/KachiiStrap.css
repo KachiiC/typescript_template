@@ -1,5 +1,6 @@
 /* Grid System */
-.site-grid {
+.site-grid,
+.site-grid-system {
     display: grid;
 }
 
@@ -8,7 +9,6 @@
 }
 
 .site-grid-system {
-    display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
@@ -187,6 +187,7 @@
 .text-white {
     color: white;
 }
+
 /* overflow */
 .site-overflow {
     overflow: scroll;

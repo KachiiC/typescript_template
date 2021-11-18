@@ -4,7 +4,7 @@ import { FilterIconButtonsProps } from "Props/Components/FilterComponentProps/Fi
 const FilterButtons = (props: FilterIconButtonsProps) => {
 
     // PROPS
-    const {data, setAll, setFunction } = props
+    const { data, setAll, setFunction } = props
     
     // For each string in the array, returns a SingleFilterButton.
     // The setFunction is fed in and sets the current button to the state on the level above

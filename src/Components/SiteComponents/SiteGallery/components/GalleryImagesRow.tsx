@@ -1,9 +1,9 @@
+// COMPONENTS
+import { GalleryImage } from "./GalleryImage"
 // PROPS
 import { GalleryImageProps, GalleryImageRowProps } from "Props/Components/GalleryProps"
 // TOOLS
 import { GridStyle } from "Tools/GridTools"
-// COMPONENTS
-import { GalleryImage } from "./GalleryImage"
 
 const SingleRowImage = (props: GalleryImageProps) => {
     

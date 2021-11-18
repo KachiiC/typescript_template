@@ -1,12 +1,12 @@
 import { useState } from "react"
-// PROPS
-import { SiteTabsProps } from "Props/Components/TabProps"
-// CSS
-import './SiteTabs.css'
-// TOOLS
-import { RenderLogic } from "Tools/FunctionTools"
 // COMPONENTS
 import { TabContent, TabLinksRow } from './components/TabComponents'
+// CSS
+import './SiteTabs.css'
+// PROPS
+import { SiteTabsProps } from "Props/Components/TabProps"
+// TOOLS
+import { RenderLogic } from "Tools/FunctionTools"
 
 const SiteTabs = (props: SiteTabsProps) => {
 

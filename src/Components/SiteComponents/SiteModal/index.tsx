@@ -1,12 +1,12 @@
 import { useReducer } from 'react'
+// COMPONENTS
+import ModalContent from './component/ModalContent'
 // CSS
 import './SiteModal.css'
 // PROPS
 import { ModalComponent } from 'Props/Components/ModalProps'
-// COMPONENTS
-import ModalContent from './component/ModalContent'
 
-const SiteModalComponent = (props: ModalComponent) => {
+const SiteModal = (props: ModalComponent) => {
 
     const { component, content, type } = props
 
@@ -35,4 +35,4 @@ const SiteModalComponent = (props: ModalComponent) => {
 
 }
 
-export default SiteModalComponent
+export default SiteModal

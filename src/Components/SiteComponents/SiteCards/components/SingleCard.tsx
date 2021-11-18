@@ -1,12 +1,19 @@
-// PROPS
-import { SiteSingleCardProps } from "Props/Components/CardProps"
 //COMPONENTS
 import { SiteLink } from "Tools/LinkTools"
+// PROPS
+import { SiteSingleCardProps } from "Props/Components/CardProps"
 
 const SingleCard = (props: SiteSingleCardProps) => {
 
     // PROPS
-    const { title, description, image, span, link, link_type } = props
+    const { 
+        description,
+        image,
+        link,
+        link_type,
+        span,
+        title,
+    } = props
 
     const cardImage = (
         <img className="site-responsive-image" 
@@ -28,7 +35,7 @@ const SingleCard = (props: SiteSingleCardProps) => {
             )
         }
         
-        return <> {cardImage} </>
+        return <>{cardImage}</>
     }
 
     return (

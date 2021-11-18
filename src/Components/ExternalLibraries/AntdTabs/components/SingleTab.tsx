@@ -1,24 +1,26 @@
-// PROPS
-import { SingleTabProps } from "Props/Components/AntdProps/AntdTabsProps"
-// TOOLS
+// COMPONENTS
 import { SiteLink } from "Tools/LinkTools"
+// PROPS
+import { SingleTabProps } from "../AntdTabsProps"
 
 const SingleTab = (props: SingleTabProps) => {
 
-    const { title, description, content, link } = props
+    const { content, description, link, title } = props
 
     const titleLogic = () => {
         if (title) {
-            if (link) return (
-                <h1 className="tabs-title">
-                    <SiteLink 
-                        placeholder={title}
-                        link={link}
-                        type="external"
-                    />
-                </h1>
-            )
-            
+            if (link) {
+                return (
+                    <h1 className="tabs-title">
+                        <SiteLink
+                            link={link}
+                            type="external"
+                            placeholder={title}
+                        />
+                    </h1>
+
+                )
+            }
             return (
                 <h1 className="tabs-title">
                     {title}

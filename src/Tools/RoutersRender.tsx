@@ -1,14 +1,15 @@
 import { Route } from "react-router-dom";
 // PROPS
-import { LinkRendererProps } from "Props/ToolProps";
-import { pageDataProps } from "Props/Sections/MainProps";
-import { StringJoiner } from "./StringTools";
+import { pageDataProps } from "Props/Sections/MainProps"
+// TOOLS
+import { StringJoin } from "./StringTools"
 
-export const LinkRenderer = (data: LinkRendererProps[]) => {
+// Creates links for each object in pages data
+export const LinkRenderer = (data: pageDataProps[]) => {
 
     const link_create = (input: string) => {
         if (input.length > 1) {
-            return StringJoiner(input)
+            return StringJoin(input, " ", "-")
         }
         return input
     }
@@ -16,32 +17,39 @@ export const LinkRenderer = (data: LinkRendererProps[]) => {
     return data.map(menu => {
 
         menu.sub_menu ?
-
             menu.sub_menu.map(sub => sub.link = link_create(sub.title))
-        : 
-            menu.link = StringJoiner(menu.title)
+            : 
+            menu.link = StringJoin(menu.title, " ", "-")
             
         return menu
     })
 }
 
-export const Menu_Routes = (input: pageDataProps) => (
-    <Route 
-        path={`/${input.link}`} 
-        key={input.title}
-    >
-        {input.content}
-    </Route>
-)
+// create route for single object in pages data
+export const Menu_Routes = (input: pageDataProps) => {
 
+    const { content, link, title} = input
+
+    return (
+        <Route 
+            path={`/${link}`} 
+            key={title}
+        >
+            {content}
+        </Route>
+    )
+}
+
+// creates routes for objects in pages data
 export const RoutesRender = (dataSet: pageDataProps[]) => {
 
-    const Routes_list = dataSet.map(
-        menu => menu.sub_menu ?
+    const Routes_list = dataSet.map(menu => 
+        menu.sub_menu ?
             menu.sub_menu.map(sub => Menu_Routes(sub))
-        :
+            :
             Menu_Routes(menu)
     )
 
     return Routes_list
 }
+

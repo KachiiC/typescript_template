@@ -1,5 +1,3 @@
-// PROPS
-import { SiteIconProps } from "Props/ToolProps";
 // ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { 
@@ -9,6 +7,7 @@ import {
     faHtml5, 
     faInstagram, 
     faJsSquare, 
+    faLinkedinIn, 
     faPinterest, 
     faPython, 
     faReact, 
@@ -33,13 +32,21 @@ import {
     faQuestion, 
     faScroll, 
     faTimes 
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons"
+// PROPS
+import { SiteIconProps } from "Props/Tools/ToolProps"
+// TOOLS
+import { RenderLogic } from "./FunctionTools"
 
+
+// Returns icon based on type, size and color
 const SiteIcon = (props: SiteIconProps) => {
+
+    const { type, size, color } = props
 
     var icon
 
-    switch(props.type) {
+    switch(type) {
         case "api":
             icon = faFont
             break;
@@ -73,6 +80,9 @@ const SiteIcon = (props: SiteIconProps) => {
         case "left":
             icon = faCaretLeft
             break;
+        case "linkedIn":
+            icon = faLinkedinIn
+            break
         case "mobile":
             icon = faMobile
             break;
@@ -125,9 +135,13 @@ const SiteIcon = (props: SiteIconProps) => {
             icon = faHtml5
     }
 
-    const sizeLogic = props.size ? props.size : "2x" 
-
-    return <FontAwesomeIcon icon={icon} size={sizeLogic} color={props.color}/>
+    return ( 
+        <FontAwesomeIcon
+            icon={icon} 
+            size={RenderLogic(size, "2x")} 
+            color={color}
+        />
+    )
 }
 
 export default SiteIcon

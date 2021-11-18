@@ -1,17 +1,17 @@
 import { useState } from 'react'
+// COMPONENTS
+import { FilterInput, FilterSelect } from './components/FilterSearch'
+import SiteTable from 'Components/SiteComponents/SiteTable'
 // CSS
-import './FilterList.css'
+import './FilterTable.css'
 // PROPS
 import { FilterProps } from "Props/Components/FilterComponentProps/FilterTableProps"
-import { TargetProps } from 'Props/ToolProps'
+import { TargetProps } from 'Props/Tools/ToolProps'
 // TOOLS
 import { ArrrayObjectKeys } from 'Tools/ObjectDataTools'
 import { parseIntChecker } from 'Tools/IntergerTools'
 import { RenderLogic } from 'Tools/FunctionTools'
-import { StringUppercase } from 'Tools/StringTools'
-// COMPONENTS
-import { FilterInput, FilterSelect } from './components/FilterSearch'
-import SiteTable from 'Components/SiteComponents/SiteTable'
+import { StringJoin } from 'Tools/StringTools'
 
 const FilterTable = (props: FilterProps) => {
 
@@ -36,7 +36,7 @@ const FilterTable = (props: FilterProps) => {
     // Width of table
     const widthLogic = RenderLogic(width, 90)
     // Placeholder for input detirmined by input search column
-    const placeholderLogic = RenderLogic(placeholder,`SEARCH ${StringUppercase(column)}S`)
+    const placeholderLogic = RenderLogic(placeholder,`SEARCH ${StringJoin(column, "_", " ")}S`)
     
     // Filters the data and returns the column type which begin with the same letters as input 
     const filterFunction = (e: TargetProps) => {

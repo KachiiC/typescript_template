@@ -1,4 +1,8 @@
 import { useState } from "react"
+// COMPONENTS
+import { GalleryModalImage, GallerySelectedImage } from "./components/GalleryImage"
+import GalleryImagesRow from "./components/GalleryImagesRow"
+import SiteModalComponent from "../SiteModal"
 // CSS
 import './SiteGallery.css'
 // PROPS
@@ -6,10 +10,6 @@ import { GalleryProps } from "Props/Components/GalleryProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import { TitleLogic } from "Tools/StringTools"
-// COMPONENTS
-import { GalleryModalImage, GallerySelectedImage } from "./components/GalleryImage"
-import GalleryImagesRow from "./components/GalleryImagesRow"
-import SiteModalComponent from "../SiteModal"
 
 
 const SiteGallery = (props: GalleryProps) => {

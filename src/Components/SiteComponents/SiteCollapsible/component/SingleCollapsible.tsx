@@ -1,14 +1,14 @@
 import { useReducer, useState } from "react"
-// PROPS
-import { singleCollapsibleProps } from "Props/Components/CollapsibleProps"
 // COMPONENTS
 import { CollapsibleContent, CollapsibleHeading } from "./CollapsibleParts"
-import CollapsibleTransition from "./CollapsibleTransition";
+import CollapsibleTransition from "./CollapsibleTransition"
+// PROPS
+import { singleCollapsibleProps } from "Props/Components/CollapsibleProps"
 
 const SingleCollapsible = (props: singleCollapsibleProps) => {
 
     // PROPS
-    const { title, content } = props
+    const { content, title } = props
 
     // Each tabs content is open or closed depending on this reducder
     const [displayContent, toggleContent] = useReducer(

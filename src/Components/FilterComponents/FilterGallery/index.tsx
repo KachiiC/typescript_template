@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react"
+// COMPONENTS
+import FilterGalleryButtons from "./components/FilterGalleryButtons"
+import FilterGalleryComponent from "./components/FilterGalleryComponent"
 // CSS 
 import './FilterGallery.css'
 // PROPS
@@ -6,9 +9,6 @@ import { SiteCardProps } from "Props/Components/CardProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import { UnqiueValues } from "Tools/ObjectDataTools"
-// COMPONENTS
-import FilterGalleryButtons from "./components/FilterGalleryButtons"
-import FilterGalleryComponent from "./components/FilterGalleryComponent"
 
 const FilterGallery = (props: SiteCardProps) => {
 

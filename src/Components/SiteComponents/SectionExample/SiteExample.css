@@ -1,0 +1,27 @@
+.section-example-container {
+    margin: 20px auto;
+}
+
+.section-example-container p,
+.section-example-container img {
+    margin-bottom: 20px;
+}
+
+.section-example-container,
+.example-image-container,
+.section-example-container p {
+    width: 90%;
+}
+
+.example-image-container {
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .section-example-container,
+    .section-example-container p {
+        width: 95%;
+    }
+
+}

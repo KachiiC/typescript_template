@@ -12,14 +12,25 @@ const SiteTimeline = (props: SiteTimelineProps) => {
     const { data, width } = props
 
     // A Timeline even is returned for each object in data
-    const displayEvents = data.map(event => (
-        <TimelineEvent
-            key={event.event}
-            event={event.event}
-            year={event.year}
-            description={event.description}
-        />
-    ))
+    const displayEvents = data.map(events => {
+
+        // PROPS
+        const { description, event, year } = events
+
+        // Timeline Event Props
+        const TimelineProps = {
+            key: event,
+            event: event,
+            year: year,
+            description: description
+        }
+
+        return (
+            <TimelineEvent
+                {...TimelineProps}
+            />
+        )
+    })
 
     return (
         // Width of component is 100% by default

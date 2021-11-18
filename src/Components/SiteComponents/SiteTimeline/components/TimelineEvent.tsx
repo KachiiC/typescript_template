@@ -4,7 +4,7 @@ import { TimelineEventProps } from "Props/Components/TimlineProps"
 const TimelineEvent = (props: TimelineEventProps) => {
 
     // PROPS
-    const {event, year, description } = props
+    const { description, event, year } = props
 
     return (
         <div className="timeline-container">

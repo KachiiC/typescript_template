@@ -10,7 +10,7 @@ import { IfStatement } from "Tools/FunctionTools"
 export const GalleryImage = (props:GalleryImageProps) => {
 
     // PROPS
-    const { title, click, image } = props
+    const { click, image, title } = props
 
     return (
         <img src={image} 
@@ -24,7 +24,7 @@ export const GalleryImage = (props:GalleryImageProps) => {
 export const GallerySelectedImage = (props: GallerySelectedImageProps) => {
 
     // PROPS
-    const { width, image } = props
+    const { image, width } = props
 
     return (
         <div className={`w-${width} m-auto`}>
@@ -39,7 +39,7 @@ export const GallerySelectedImage = (props: GallerySelectedImageProps) => {
 export const GalleryModalImage = (props: GalleryModalImageProps) => {
 
     // PROPS
-    const { title, width, image } = props
+    const { image, title, width } = props
 
     return (
         <>

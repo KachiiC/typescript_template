@@ -1,19 +1,19 @@
 import { useState, useEffect } from "react"
-// PROPS
-import { FilterIconProps } from "Props/Components/FilterComponentProps/FilterIconProps"
-// CSS 
-import './FilterIcons.css'
-// TOOLS
-import { TitleLogic } from "Tools/StringTools"
-import { UnqiueValues } from "Tools/ObjectDataTools"
 // COMPONENTS
 import FilterButtons from "./components/FilterButtons"
 import IconsList from "./components/IconList"
+// CSS 
+import './FilterIcons.css'
+// PROPS
+import { FilterIconProps } from "Props/Components/FilterComponentProps/FilterIconProps"
+// TOOLS
+import { TitleLogic } from "Tools/StringTools"
+import { UnqiueValues } from "Tools/ObjectDataTools"
 
 const FilterIcons = (props: FilterIconProps) => {
 
     // PROPS
-    const {data, title} = props
+    const { data, title } = props
 
     // The filter type's initial state is empty
     const [filterType, setFilterType] = useState('')

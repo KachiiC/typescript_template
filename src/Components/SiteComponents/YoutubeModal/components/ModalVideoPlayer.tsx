@@ -1,13 +1,18 @@
-// PROPS
-import { YoutubeItemProps } from "Props/Components/YoutubeModalProps";
-// TOOLS
-import { TitleTrimmer } from "Tools/StringTools";
 // COMPONENTS
-import YoutubePlayer from "Components/ExternalLibraries/YoutubePlayer";
+import YoutubePlayer from "Components/ExternalLibraries/YoutubePlayer"
+// PROPS
+import { YoutubeItemProps } from "Props/Components/YoutubeModalProps"
+// TOOLS
+import { TitleTrimmer } from "Tools/StringTools"
 
 const ModalVideoPlayer = (props: YoutubeItemProps) => {
 
-    const { video_title, video_id, upload_date, video_description } = props
+    const { 
+        upload_date,
+        video_description,
+        video_id,
+        video_title
+    } = props
 
     return (
     

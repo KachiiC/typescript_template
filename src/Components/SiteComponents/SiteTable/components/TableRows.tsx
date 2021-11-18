@@ -7,11 +7,11 @@ const SiteSingleRow = (props: SiteTableSingleRowProps) => {
     const values_list = Object.values(props.data)
 
     // creates a table row column for each value
-    const displayed_value = values_list.map(val => (
+    const displayed_value = values_list.map(val => 
         <td key={val}>
             {val}
         </td>
-    ))
+    )
 
     return (
         // returns row of columns for each value in object

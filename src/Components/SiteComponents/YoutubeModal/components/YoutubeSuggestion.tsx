@@ -6,7 +6,7 @@ import { TitleTrimmer } from "Tools/StringTools"
 const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
     
     // PROPS
-    const { click, video_title, video_thumbnail, } = props
+    const { click, video_title, video_thumbnail } = props
 
     return (
         <div className="site-flex suggestion-row w-90 m-auto">
@@ -28,16 +28,21 @@ const YoutubeSuggestions = (props: YoutubeSuggestionProps) => {
     // PROPS
     const { data, setFunction } = props
 
-    const displaySuggestions = data.map(obj => (
-        // Sets the object as
-        <SingleYoutubeSuggestion
-            key={obj.video_title}
-            video_title={obj.video_title}
-            video_thumbnail={obj.video_thumbnail}
-            // Sets the object which is clicked as the current displayedVideo on level above
-            click={() => setFunction(obj)}
-        />
-    ))
+    const displaySuggestions = data.map(obj => {
+
+        const { video_title, video_thumbnail } = obj
+
+        return (
+            // Sets the object as
+            <SingleYoutubeSuggestion
+                click={() => setFunction(obj)}
+                key={video_title}
+                video_title={video_title}
+                video_thumbnail={video_thumbnail}
+                // Sets the object which is clicked as the current displayedVideo on level above
+            />
+        )
+    })
 
     return (
         <div className="site-col-6 youtube-suggestions">

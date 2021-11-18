@@ -1,3 +1,6 @@
+// COMPONENTS
+import SiteTableHeaders from "./components/TableHeaders"
+import SiteTableRows from "./components/TableRows"
 // CSS
 import './SiteTable.css'
 // PROPS
@@ -5,9 +8,6 @@ import { SiteTableProps } from "Props/Components/TableProps"
 // TOOLS
 import { ArrrayObjectKeys } from "Tools/ObjectDataTools"
 import { RenderLogic } from "Tools/FunctionTools"
-// COMPONENTS
-import SiteTableHeaders from "./components/TableHeaders"
-import SiteTableRows from "./components/TableRows"
 
 const SiteTable = (props: SiteTableProps) => {
 

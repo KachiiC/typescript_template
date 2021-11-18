@@ -1,7 +1,21 @@
-.small-menu {
-    animation: fadeIn 1s;
+/* HOME */
+.home-header {
+    animation: fadeIn 2s;
 }
 
-.site-small-link {
-    animation: fadeIn 1.5s;
+.home-portfolio {
+    animation: fadeInUp 1.5s;
+}
+
+/* ABOUT */
+.about-contact,
+.about-description,
+.about-introduction,
+.about-skills-container, 
+.about-title,
+/* COMPONENTS */
+.components-page,
+/* PROJECTS */
+.projects-page {
+    animation: fadeInUp 2s;
 }
