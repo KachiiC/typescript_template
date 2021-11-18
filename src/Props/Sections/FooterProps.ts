@@ -1,7 +1,8 @@
 export interface footerSectionDataProps { 
-    icon?: string; 
+    title: string;
     link?: string; 
-    title?: string;
+    icon?: string; 
+    external_link?: string;
 }
 
 export interface footerCopyrightProps {

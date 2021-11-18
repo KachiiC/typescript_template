@@ -27,7 +27,7 @@ export const UnqiueValues = (data: any[], value: string) =>  {
 
 export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
 
-    const data_keys = ObjKeys(data).filter(key => data[key])
+    const data_keys = ObjKeys(data)
   
     const data_links = data_keys.map(key => {
 
@@ -36,13 +36,19 @@ export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
             icon: key,
             link: `https://www.${key}.com/${data[key]}`
         }
-        
-        const router_data = {
-            title: key,
-            content: data[key],
-        }
 
-        return type === "social" ? social_data : router_data
+        const routerLogic = typeof data[key] === "string" ? 
+            {
+                title: key,
+                external_link: ObjValue(data)[data_keys.indexOf(key)],
+            }
+            :
+            {
+                title: key,
+                content: data[key]
+            }
+
+        return type === "social" ? social_data : routerLogic
     })
 
     return data_links

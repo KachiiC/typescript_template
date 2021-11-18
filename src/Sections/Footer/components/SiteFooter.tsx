@@ -6,13 +6,17 @@ import { SiteFooterProps } from 'Props/Sections/FooterProps'
 
 const SiteFooter = (props: SiteFooterProps) => {
 
-    const { heading, logo_data, links_data, name, year } = props
-    
+    const {
+        heading,
+        logo_data,
+        links_data,
+        name,
+        year
+    } = props
+
     return (
         <>
-            <FooterHeading 
-                heading={heading}
-            />
+            <FooterHeading heading={heading} />
             <FooterSection 
                 data={logo_data} 
                 type="logos"

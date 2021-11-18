@@ -1,60 +1,52 @@
-import { Link } from "react-router-dom";
 // PROPS
-import { footerCopyrightProps, footerSectionDataProps } from "Props/Sections/FooterProps";
+import { footerCopyrightProps, footerSectionDataProps } from "Props/Sections/FooterProps"
 // TOOLS
-import SiteIcon from "Tools/SiteIcon";
+import { RenderLogic } from "Tools/FunctionTools"
+import SiteIcon from "Tools/SiteIcon"
+import { SiteLink } from "Tools/LinkTools"
+import { StringJoin } from "Tools/StringTools"
 
-export const FooterHeading = (props: {heading?: string}) => {
-    // IF HEADING, display heading
-    const headingLogic = () => {
-        if (props.heading) return props.heading
-    }
-
-    return <h3>{headingLogic()}</h3>
-    
-}
+export const FooterHeading = (props: {heading?: string}) => RenderLogic(<h3>{props.heading}</h3>, "")
 
 export const FooterLogos = (props: footerSectionDataProps) => {
 
     const { icon, link } = props
-    
+
     return (
         <div className="site-span-1">
-            <a href={link} 
-                target="_blank" 
-                rel="noreferrer"
-            >
-                <SiteIcon 
-                    type={icon} 
-                    size="2x"
-                />
-            </a>
+            <SiteLink
+                link={RenderLogic(link, "")}
+                placeholder={
+                    <SiteIcon 
+                        type={icon} 
+                        size="2x"
+                    />
+                }
+                type="external"  
+            />
         </div>
     )
 }
 
 export const FooterLinks = (props: footerSectionDataProps) => {
 
-    const { title, link } = props
+    const { external_link, link, title } = props 
 
     return (
         <div className="site-span-1" 
             key={title}
         >
-            <Link to={`/${link}`}>
-                {title}
-            </Link>
+            <SiteLink 
+                link={`${RenderLogic(external_link, `/${link}`)}`} 
+                type={external_link ? "external" : "local"}
+                placeholder={StringJoin(title, "_", " ")}
+            />
         </div>
     )
 }
 
-export const FooterCopyRight = (props: footerCopyrightProps) => {
-
-    const { name, year } = props
-
-    return (
-        <div className="footer-copyright">
-            &copy; <i>Designed by {name} {year}</i>
-        </div>
-    )
-}
+export const FooterCopyRight = (props: footerCopyrightProps) => (
+    <div className="footer-copyright">
+        &copy; <i>Designed by {props.name} {props.year}</i>
+    </div>
+)

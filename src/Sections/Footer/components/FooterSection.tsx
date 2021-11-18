@@ -5,24 +5,32 @@ import { FooterLogos, FooterLinks } from './FooterItems'
 
 const FooterSection = (props: footerSectionProps) => {
 
-    const { data, type } = props
+    const { data } = props
 
-    const displayFooterItems = type === "logos" ? 
-        data.map(data => 
+    const displayFooterItems = data.map(logo => {
+
+        // PROPS
+        const { external_link, link, title } = logo
+
+        const logoProps = {
+            external_link: external_link,
+            icon: title,
+            link: link,
+            key: title,
+            title: title,
+        }
+        
+        return props.type === "logos" ?
             <FooterLogos
-                link={data.link}
-                icon={data.icon}
-                key={data.icon}
+                {...logoProps} 
             />
-        )
-        :
-        data.map(data => 
+            :
             <FooterLinks
-                link={data.link}
-                title={data.title} 
-                key={data.title}
-            />
-        )
+                {...logoProps}
+            /> 
+        
+    })
+
 
     const gridTemplateLogic = {
         "gridTemplateColumns": `repeat(${data.length}, 1fr)`

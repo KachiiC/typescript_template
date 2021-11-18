@@ -8,14 +8,18 @@ import DataOverview from 'Data/DataOverview'
 
 const footerData = DataOverview.footer_data
 
+const SiteFooterProps = {
+    heading: footerData.heading,
+    logo_data: FooterLogoData,
+    links_data: FooterPages,
+    name: footerData.name,
+    year: footerData.year
+}
+
 const Footer = (
     <footer>
         <SiteFooter 
-            heading={footerData.heading}
-            logo_data={FooterLogoData}
-            links_data={FooterPages}
-            name={footerData.name}
-            year={footerData.year}
+            {...SiteFooterProps} 
         />
     </footer>
 )

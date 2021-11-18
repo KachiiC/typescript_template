@@ -1,10 +1,10 @@
 import { useReducer } from "react"
+// COMPONENTS
+import { SiteNavMenu, SmallNavMenu } from "./components/SiteNavMenu"
 // CSS
 import "./SiteNavbar.css"
 // PROPS
 import { SiteNavbarProps } from "Props/Sections/HeaderProps"
-// COMPONENTS
-import { SiteNavMenu, SmallNavMenu } from "./components/SiteNavMenu"
 
 const SiteNavbar = (props: SiteNavbarProps) => {
 
@@ -14,20 +14,23 @@ const SiteNavbar = (props: SiteNavbarProps) => {
         smallMenu => !smallMenu, false
     )
 
+    const MenuProps = {
+        click: toggleMenu,
+        data: data,
+    }
+
     const SmallScreenMenu = (
         <SmallNavMenu
-            click={toggleMenu}
-            data={data} 
             title="Small Menu"
+            {...MenuProps}
         />
     )
     
     return (
         <header>     
-            <SiteNavMenu 
-                data={data}
-                click={toggleMenu}
+            <SiteNavMenu
                 title={title}
+                {...MenuProps}
             />
             { smallMenu && SmallScreenMenu }
         </header>

@@ -1,18 +1,30 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom"
 // DATA
-import DisplayedData from "Data/Main/Displayed/PagesData";
-import { FooterPages } from "Data/Footer/FooterData";
-import HiddenData from "Data/Main/Hidden/HiddenPages";
-// TOOLS
-import { RoutesRender } from "Tools/RoutersRender";
+import DisplayedData from "Data/Main/Displayed/PagesData"
+import { FooterPages } from "Data/Footer/FooterData"
+import HiddenData from "Data/Main/Hidden/HiddenPages"
 // PAGES
-import Home from "../Pages/Home";
+import Home from "../Pages/Home"
+// TOOLS
+import { RoutesRender } from "Tools/RoutersRender"
+import { LinkRenderer } from "Tools/RoutersRender"
 
-const PageRoutes = RoutesRender(DisplayedData)
-const FooterRoutes = RoutesRender(FooterPages)
-const HiddenRoutes = RoutesRender(HiddenData)
+const Routes = [
+    DisplayedData,
+    FooterPages,
+    HiddenData,
+]
 
-HiddenRoutes.push(
+const RenderRoutes = Routes.map(route => {
+
+    // Creates a Route for each link
+    LinkRenderer(route)
+
+    return RoutesRender(route)
+})
+
+// Pushes home to last route
+RenderRoutes[RenderRoutes.length - 1].push(
     <Route key="home">
         {Home}
     </Route>
@@ -20,9 +32,7 @@ HiddenRoutes.push(
 
 const PagesRouter = ( 
     <Switch>
-        {PageRoutes}
-        {FooterRoutes}
-        {HiddenRoutes}
+        {RenderRoutes}
     </Switch>
 )
 

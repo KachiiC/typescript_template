@@ -1,26 +1,27 @@
-// PROPS
-import { DisplayMenuListProps, DisplayMenuTypeProps } from "Props/Sections/HeaderProps"
 // COMPONENTS
 import { SiteNavLink, SiteNavDropdown } from "../components/SiteNavLink"
+// PROPS
+import { DisplayMenuListProps, DisplayMenuTypeProps } from "Props/Sections/HeaderProps"
 
 export const DisplayMenuType = (props: DisplayMenuTypeProps) => {
 
     const { data, type, click } = props
+    
+    const dataProps = {
+        click: click,
+        key: data.title,
+        link_type: type,
+        title: data.title,
+    }
 
     return data.external_link ?
         <SiteNavLink
-            click={click}
             link={data.external_link}
-            link_type={type}
-            title={data.title}
-            key={data.title}
+            {...dataProps}
         />
         :
         <SiteNavLink
-            click={click}
-            link_type={type}
-            title={data.title}
-            key={data.title}
+            {...dataProps}
         />
 }
 
@@ -31,14 +32,14 @@ export const DisplayMenuList = (props: DisplayMenuListProps) => {
     const menu_list = data.map(sub => {
 
         const subLogic = sub.sub_menu?
-            <SiteNavDropdown 
+            <SiteNavDropdown
                 data={sub.sub_menu}
                 title={sub.title}
             />
             :
             <DisplayMenuType 
-                data={sub} 
-                type={type} 
+                data={sub}
+                type={type}
                 click={click}
             />
 

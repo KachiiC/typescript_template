@@ -1,7 +1,3 @@
-// TOOLS
-import { LinkRenderer } from "Tools/RoutersRender"
-// PAGES
-
 const PagesData = [
     {
         title: "Basic",
@@ -13,6 +9,10 @@ const PagesData = [
             {
                 title: "menu 2",
                 content: <h1>Menu 2</h1>
+            },
+            {
+                title: "basically mma",
+                content: <h1>Basically next ting data</h1>
             },
             {
                 title: "Code",
@@ -29,8 +29,5 @@ const PagesData = [
         external_link: "https://github.com/KachiiC/"
     },
 ]
-
-// Returns the data as links before export
-LinkRenderer(PagesData)
 
 export default PagesData

@@ -2,6 +2,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .site-navbar {
@@ -40,12 +41,9 @@ header {
 }
  
 /* SITE DROPDOWN */
-.site-dropdown-link {
-    margin-right: 25px;
-}
-
 .site-dropdown-link a {
-    padding: 5px 15px;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
 }
 
 .site-dropdown-content {
@@ -53,6 +51,7 @@ header {
     margin-top: 15px;
     position: absolute;
     z-index: 1;
+    padding: 0px 15px 10px;
 }
 
 /* SITE NAV LOGO */

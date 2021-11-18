@@ -1,6 +1,10 @@
 import { useReducer } from "react"
 // PROPS
-import { SiteNavbarProps, SiteNavLinkProps, SmallMenuIconProps } from "Props/Sections/HeaderProps"
+import { 
+    SiteNavbarProps, 
+    SiteNavLinkProps, 
+    SmallMenuIconProps
+} from "Props/Sections/HeaderProps"
 import { subMenuProps } from "Props/Sections/MainProps"
 // TOOLS
 import { DisplayMenuType } from "../tools/SiteNavbarTools"
@@ -28,7 +32,7 @@ export const SiteNavLink = (props: SiteNavLinkProps) => {
         />
         :
         <SiteLink
-            link={`/${StringJoin(title)}`}
+            link={`/${StringJoin(title, " ", "-")}`}
             placeholder={title}
             type="local"
         />

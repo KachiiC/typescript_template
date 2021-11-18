@@ -4,7 +4,7 @@ import { pageDataProps } from "Props/Sections/MainProps";
 
 // EXAMPLE TOOLS
 export interface ObjectDataProps { 
-    [x: string]: string | JSX.Element | undefined
+    [x: string]: string | JSX.Element
 }
 
 export interface TargetProps {

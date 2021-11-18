@@ -1,7 +1,7 @@
-// PROPS
-import { SiteNavbarProps } from "Props/Sections/HeaderProps"
 // COMPONENTS
 import { SiteLogo, SmallMenuDropdown, SmallMenuIcon } from "./SiteNavLink"
+// PROPS
+import { SiteNavbarProps } from "Props/Sections/HeaderProps"
 // TOOLS
 import { DisplayMenuList, DisplayMenuType } from "../tools/SiteNavbarTools"
 
