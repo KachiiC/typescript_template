@@ -11,10 +11,6 @@ const PagesData = [
                 content: <h1>Menu 2</h1>
             },
             {
-                title: "basically mma",
-                content: <h1>Basically next ting data</h1>
-            },
-            {
                 title: "Code",
                 external_link: "https://github.com/KachiiC/typescript_template"
             },

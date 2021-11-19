@@ -3,6 +3,7 @@ export interface footerSectionDataProps {
     link?: string; 
     icon?: string; 
     external_link?: string;
+    span?: number
 }
 
 export interface footerCopyrightProps {

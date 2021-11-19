@@ -22,7 +22,6 @@ const DataOverview = {
     footer_pages: {
         // Replace this with your own pages or remove key and value if not required 
         about: <h1>About</h1>,
-        contact: <h1>Contact</h1>,
         faq: <h1>FAQ</h1>,
         external_link: "https://www.google.com/"
     }

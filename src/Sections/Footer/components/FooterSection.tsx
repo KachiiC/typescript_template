@@ -18,6 +18,7 @@ const FooterSection = (props: footerSectionProps) => {
             link: link,
             key: title,
             title: title,
+            span: data.length
         }
         
         return props.type === "logos" ?
@@ -37,7 +38,7 @@ const FooterSection = (props: footerSectionProps) => {
     }
 
     return (
-        <div className="footer-section w-80 m-auto">
+        <div className="footer-section">
             <div className="site-grid" 
                 style={gridTemplateLogic}
             >
