@@ -5,17 +5,23 @@ import SiteTable from 'Components/SiteComponents/SiteTable'
 // CSS
 import './FilterTable.css'
 // PROPS
-import { FilterProps } from "Props/Components/FilterComponentProps/FilterTableProps"
+import { FilterTableProps } from "Props/Components/FilterComponentProps/FilterTableProps"
 import { TargetProps } from 'Props/Tools/ToolProps'
 // TOOLS
 import { ArrrayObjectKeys } from 'Tools/ObjectDataTools'
-import { parseIntChecker } from 'Tools/IntergerTools'
+import { ParseIntChecker } from 'Tools/IntergerTools'
 import { RenderLogic } from 'Tools/FunctionTools'
 import { StringJoin } from 'Tools/StringTools'
 
-const FilterTable = (props: FilterProps) => {
+const FilterTable = (props: FilterTableProps) => {
 
-    const { data, default_column, placeholder, width, overflow } = props
+    const { 
+        data, 
+        default_column, 
+        overflow, 
+        placeholder, 
+        width 
+    } = props
 
     // COLUMNS
     // Returns each key from the first object in the array as a string.
@@ -44,7 +50,7 @@ const FilterTable = (props: FilterProps) => {
 
         const resultsLogic = data.filter(result => 
             // Checks if input is interger or string
-            parseIntChecker(result[column]) ?
+            ParseIntChecker(result[column]) ?
                 // Returns all results which matches the input interger 
                 parseInt(result[column]) === parseInt(keyword)
                 : 

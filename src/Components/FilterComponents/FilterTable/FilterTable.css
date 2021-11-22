@@ -4,11 +4,14 @@
 }
 
 .filter-search select {
-    padding: 10px
+    padding: 10px 5px;
 }
 
 .filter-search input {
-    padding: 8px 15px;
+    padding: 10px 5px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: inherit;
 }
 
 .filter-table-container {

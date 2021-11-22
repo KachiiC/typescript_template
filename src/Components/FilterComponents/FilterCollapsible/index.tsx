@@ -14,8 +14,6 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
     // PROPS
     const { data, placeholder, width } = props
 
-    // The input string used to filter
-    const [input, setInput] = useState('')
     // The results which match the input, intial value is the entire data set
     const [foundResults, setFoundResults] = useState(data)
 
@@ -29,26 +27,28 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
         )
 
         // logic only kicks in when keyword is not empty string
-        keyword !== '' ? setFoundResults(resultsLogic) : setFoundResults(data)
+        keyword !== '' ? 
+            setFoundResults(resultsLogic) 
+            : 
+            setFoundResults(data)
         
-        setInput(keyword)
     } 
 
     // Filters the collpasible component titles and returns "No results found!" foundResults is empty.
     const filterLogic = foundResults && foundResults.length > 0 ? 
         <SiteCollapsible 
             data={foundResults}
+            width={100}
             // Width is 100% by default
-            width={RenderLogic(width, 100)}
         />
         : 
         <h2>No results found!</h2>
 
     return (
-        <div className="filter-collapsible">
+        <div className={`filter-collapsible w-${RenderLogic(width, 90)} m-auto`}>
             {/* Filter begins on change */}
             <input onChange={filterFunction}
-                className={`w-${RenderLogic(width, 100)}`}
+                className="w-100"
                 // If no placeholder is specified, "search" is used as the placeholder
                 placeholder={RenderLogic(placeholder, "search")}
             />

@@ -26,7 +26,7 @@ const FilterGallery = (props: SiteCardProps) => {
             // filters array for objects whose "type" key matches fitlerType 
             setResultsData(data.filter(obj => obj.type === filterType))
         }
-    },[filterType, data])
+    },[data, filterType])
 
     // Returns a filter button for each unique value in from all the "types" in objects   
     const filterButtons = (
@@ -39,10 +39,10 @@ const FilterGallery = (props: SiteCardProps) => {
     
     return (
         <FilterGalleryComponent 
-            data={resultsData}
             buttons={filterButtons}
             // If card size is not defined, it is set to medium as a default.
             card_size={RenderLogic(card_size, "medium")}
+            data={resultsData}
         />
     )
 }

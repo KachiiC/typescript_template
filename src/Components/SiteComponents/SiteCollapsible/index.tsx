@@ -7,17 +7,22 @@ import { RenderLogic } from 'Tools/FunctionTools'
 // COMPONENTS
 import SingleTabComponent from "./component/SingleCollapsible"
 
-const SiteCollapsibleComponent = (props: CollapsibleProps) => {
+const SiteCollapsible = (props: CollapsibleProps) => {
 
     const { data, width } = props
     
-    const displayedTabs = data.map(tab => 
-        <SingleTabComponent
-            key={tab.title}
-            title={tab.title}
-            content={tab.content}
-        />
-    )
+    const displayedTabs = data.map(tab => {
+        
+        const { title, content } = tab
+
+        return (
+            <SingleTabComponent
+                content={content}
+                title={title}
+                key={title}
+            />
+        )
+    })
 
     return (
         <div className={`site-collapsible-container w-${RenderLogic(width, 100)}`}>
@@ -26,4 +31,4 @@ const SiteCollapsibleComponent = (props: CollapsibleProps) => {
     )
 }
 
-export default SiteCollapsibleComponent
+export default SiteCollapsible

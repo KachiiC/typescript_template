@@ -1,6 +1,6 @@
 import { ChangeEventHandler } from "react";
 
-export interface FilterProps { 
+export interface FilterTableProps { 
     data: any[]; 
     placeholder?: string;
     default_column?: string;
