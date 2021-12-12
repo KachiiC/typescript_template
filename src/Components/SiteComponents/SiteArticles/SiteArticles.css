@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+* {
+    box-sizing: border-box;
+}
+
+.gridywrap div[class*=gridy] {
+    background: #eee;
+    box-shadow: inset 0 0 0 1px #ddd;
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+
+.gridywrap .gridytest {
+    overflow: hidden;
+    height: 320px;
+    width: 320px;
+    width: 100%;
+}
+
+/*styling*/
+.gridywrap .gridimg {
+    background-position: center center;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.gridywrap .gridimg img {
+    width: 100%;
+}
+
+.gridywrap .gridinfo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: all 0.8s;
+}
+
+.gridywrap .gridinfo h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 130px 0 20px;
+    position: relative;
+    opacity: 1;
+}
+
+.gridywrap .gridinfo h3:after {
+    content: '';
+    width: 25px;
+    border-top: 4px solid #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.gridywrap .gridinfo .gridmeta {
+    transition-delay: 0.25s;
+}
+
+.gridywrap .gridinfo .gridmeta p {
+    display: inline-block;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.gridywrap .gridinfo p {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 22px;
+    margin-bottom: 25px;
+    transition-delay: 0.5s;
+}
+
+.gridywrap .gridinfo * {
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.gridywrap .gridinfo:hover * {
+    opacity: 0.7;
+}
+
+.gridywrap .gridinfo:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.gridywrap .gridinfo:hover h3 {
+    margin: 50px auto 0px ;
+    opacity: 1;
+    width: 90%;
+}
+
+.gridywrap .gridinfo h3,
+.gridywrap .gridinfo p,
+.gridywrap .gridinfo .gridmeta p {
+    color: white;
+}
+
+.gridywrap .gridytest:nth-child(1n) {
+    width: 66.6%;
+}
+
+.gridywrap .gridytest:nth-child(3n) {
+    height: 640px;
+}
+
+.gridywrap .gridytest:nth-child(2n),
+.gridywrap .gridytest:nth-child(3n),
+.gridywrap .gridytest:nth-child(5n),
+.gridywrap .gridytest:nth-child(6n) {
+    width: 33.3%;
+}
+
+.gridywrap .gridytest:nth-child(4n) {
+    width: 66.6%;
+}
+
+.gridywrap .gridytest:nth-child(6n) {
+    height: 320px;
+}
+
+@media screen and (max-width: 1080px) {
+    .gridywrap .gridytest {
+        width: 50% !important;
+        height: 320px !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .gridywrap .gridytest {
+        width: 100% !important;
+    }
+}

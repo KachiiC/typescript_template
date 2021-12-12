@@ -1,17 +1,16 @@
 // COMPONENTS
 // import { TestComponent } from './TestComponent'
 // CSS
+import SiteArticles from 'Components/SiteComponents/SiteArticles'
 import './Test.css'
 // DATA
-// import { TestData } from './TestData'
+import { TestData } from './TestData'
 // TOOLS
 
 const Test = () => {
 
     return (
-        <>
-            <h1>Test</h1>
-        </>
+        <SiteArticles data={TestData} link_type="external"/>
     )
 }
 
