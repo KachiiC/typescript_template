@@ -1,10 +1,10 @@
 export interface SingleArticleProps {
     date?: string;
-    image: string;
-    title: string;
     description?: string;
+    image: string;
     link: string;
     link_type?: "local" | "external" | string | undefined;
+    title: string;
 }
 
 export interface SiteArticleProps {

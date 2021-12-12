@@ -11,9 +11,11 @@ import { StringJoin } from "Tools/StringTools"
 
 export const antdColumns = (data: defaultColumnProps[]) => {
 
-    return ObjKeys(data[0]).map(key => {
+    const singleObj = data[0]
 
-        const sortLogic = typeof data[0][key] === "string" ? 
+    return ObjKeys(singleObj).map(key => {
+
+        const sortLogic = typeof singleObj[key] === "string" ? 
             (a: sortStringProps, b: sortStringProps) => a[key].localeCompare(b[key])
             : 
             (a: sortIntProps, b: sortIntProps) => a[key] - b[key]

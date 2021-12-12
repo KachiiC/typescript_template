@@ -2,10 +2,16 @@ import { MouseEventHandler } from "react";
 // PROPS
 import { pageDataProps } from "Props/MainProps";
 
-export interface SiteNavbarProps { 
-    title: string; 
+export interface DisplayMenuListProps {
+    data: pageDataProps[]; 
+    type: "small" | "nav" | "dropdown"  
     click?: MouseEventHandler<HTMLDivElement>
-    data: pageDataProps[]
+}
+
+export interface DisplayMenuTypeProps  { 
+    data: pageDataProps; 
+    type: "small" | "nav" | "dropdown" ; 
+    click?: MouseEventHandler<HTMLDivElement>
 }
 
 export interface SiteNavLinkProps { 
@@ -15,16 +21,10 @@ export interface SiteNavLinkProps {
     title: string;
 }
 
-export interface DisplayMenuTypeProps  { 
-    data: pageDataProps; 
-    type: "small" | "nav" | "dropdown" ; 
+export interface SiteNavbarProps { 
+    title: string; 
     click?: MouseEventHandler<HTMLDivElement>
-}
-
-export interface DisplayMenuListProps {
-    data: pageDataProps[]; 
-    type: "small" | "nav" | "dropdown"  
-    click?: MouseEventHandler<HTMLDivElement>
+    data: pageDataProps[]
 }
 
 export interface SmallMenuIconProps {

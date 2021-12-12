@@ -34,7 +34,7 @@ export const FooterLogos = (props: footerSectionDataProps) => {
 
 export const FooterLinks = (props: footerSectionDataProps) => {
 
-    const { external_link, link, title, span } = props
+    const { external_link, link, span, title } = props
 
     const FooterLink = (props: { input: any }) => (
         <div className={`site-col-${props.input} footer-link`}

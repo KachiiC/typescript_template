@@ -1,28 +1,27 @@
 import { MouseEventHandler } from "react";
 import { widthProps } from "Props/PropsTemplates";
 
-// SIZES
-export interface singleCollapsibleProps {
-    title: string; 
-    content: JSX.Element
-}
-
-export interface CollapsibleProps {
-    width: typeof widthProps
-    data: singleCollapsibleProps[]
+export interface CollapsibleContentProps { 
+    content: JSX.Element 
 }
 
 export interface CollapsibleHeadingProps { 
     click: MouseEventHandler<HTMLDivElement>
-    direction: string; 
-    title: string; 
+    direction: string
+    title: string
 }
 
 export interface CollapsibleTransitionProps { 
-    DisplayContent: boolean; 
     children: JSX.Element
+    DisplayContent: boolean; 
 }
 
-export interface CollapsibleContentProps { 
-    content: JSX.Element 
+export interface CollapsibleProps {
+    data: singleCollapsibleProps[]
+    width: typeof widthProps
+}
+
+export interface singleCollapsibleProps {
+    content: JSX.Element
+    title: string
 }

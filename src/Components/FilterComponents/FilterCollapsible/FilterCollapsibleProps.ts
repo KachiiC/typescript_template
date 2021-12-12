@@ -1,6 +1,6 @@
 // PROPS
-import { widthProps } from "Props/PropsTemplates";
-import { singleCollapsibleProps } from "Components/SiteComponents/SiteCollapsible/SiteCollapsibleProps";
+import { singleCollapsibleProps } from "Components/SiteComponents/SiteCollapsible/SiteCollapsibleProps"
+import { widthProps } from "Props/PropsTemplates"
 
 export interface FilterCollapsibleProps {
     data: singleCollapsibleProps[]

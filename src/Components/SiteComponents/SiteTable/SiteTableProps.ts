@@ -1,4 +1,4 @@
-import { objectData } from "../../../Props/PropsTemplates";
+import { objectData } from "Props/PropsTemplates";
 
 export interface SiteTableProps {
     data: objectData[]; 

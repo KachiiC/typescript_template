@@ -1,10 +1,11 @@
 // COMPONENTS
-import { RenderLogic } from 'Tools/FunctionTools'
 import SinglePhoto from './components/SinglePhoto'
 // CSS
 import './SitePhotos.css'
 // PROPS
 import { SitePhotoProps } from './SitePhotosProps'
+// TOOLS
+import { RenderLogic } from 'Tools/FunctionTools'
 
 const SitePhotos = (props: SitePhotoProps) => {
 
