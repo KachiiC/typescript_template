@@ -1,4 +1,4 @@
-import Test from "Sections/Main/Pages/Hidden/Test"
+import Test from "Pages/Hidden/Test"
 // TOOLS
 // import { ExampleContentRender } from "Tools/ExampleTools"
 

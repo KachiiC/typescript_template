@@ -4,7 +4,7 @@ import DisplayedData from "Data/Main/Displayed/PagesData"
 import { FooterPages } from "Data/Footer/FooterData"
 import HiddenData from "Data/Main/Hidden/HiddenPages"
 // PAGES
-import Home from "Sections/Main/Pages/Hidden/Home"
+import Home from "Pages/Hidden/Home"
 // TOOLS
 import { RoutesRender } from "Tools/RoutersRender"
 import { LinkRenderer } from "Tools/RoutersRender"
