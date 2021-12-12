@@ -1,7 +1,7 @@
 // CSS
 import MediaQuery from 'react-responsive'
 // PROPS
-import { footerCopyrightProps, footerSectionDataProps } from "Props/Sections/FooterProps"
+import { footerCopyrightProps, footerSectionDataProps } from "../SiteFooterProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import SiteIcon from "Tools/SiteIcon"

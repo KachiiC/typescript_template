@@ -1,6 +1,6 @@
 import { Route } from "react-router-dom";
 // PROPS
-import { pageDataProps } from "Props/Sections/MainProps"
+import { pageDataProps } from "Props/MainProps"
 // TOOLS
 import { StringJoin } from "./StringTools"
 

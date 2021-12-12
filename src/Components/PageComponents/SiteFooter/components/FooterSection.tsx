@@ -1,7 +1,7 @@
-// PROPS
-import { footerSectionProps } from 'Props/Sections/FooterProps'
 // COMPONENTS
 import { FooterLogos, FooterLinks } from './FooterItems'
+// PROPS
+import { footerSectionProps } from '../SiteFooterProps'
 
 const FooterSection = (props: footerSectionProps) => {
 

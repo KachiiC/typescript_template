@@ -4,7 +4,7 @@ import { FooterHeading, FooterCopyRight } from './components/FooterItems'
 // CSS 
 import './SiteFooter.css'
 // PROPS
-import { SiteFooterProps } from 'Props/Sections/FooterProps'
+import { SiteFooterProps } from './SiteFooterProps'
 
 const SiteFooter = (props: SiteFooterProps) => {
 

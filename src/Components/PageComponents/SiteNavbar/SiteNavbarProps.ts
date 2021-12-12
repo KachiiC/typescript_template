@@ -1,6 +1,6 @@
 import { MouseEventHandler } from "react";
 // PROPS
-import { pageDataProps } from "./MainProps";
+import { pageDataProps } from "Props/MainProps";
 
 export interface SiteNavbarProps { 
     title: string; 

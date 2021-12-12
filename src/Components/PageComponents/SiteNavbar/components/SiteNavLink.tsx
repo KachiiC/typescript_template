@@ -4,8 +4,8 @@ import {
     SiteNavbarProps, 
     SiteNavLinkProps, 
     SmallMenuIconProps
-} from "Props/Sections/HeaderProps"
-import { subMenuProps } from "Props/Sections/MainProps"
+} from "Components/PageComponents/SiteNavbar/SiteNavbarProps"
+import { subMenuProps } from "Props/MainProps"
 // TOOLS
 import { DisplayMenuType } from "../tools/SiteNavbarTools"
 import { RenderLogic } from "Tools/FunctionTools"

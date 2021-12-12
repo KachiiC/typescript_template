@@ -4,7 +4,7 @@ import { SiteNavMenu, SmallNavMenu } from "./components/SiteNavMenu"
 // CSS
 import "./SiteNavbar.css"
 // PROPS
-import { SiteNavbarProps } from "Props/Sections/HeaderProps"
+import { SiteNavbarProps } from "./SiteNavbarProps"
 
 const SiteNavbar = (props: SiteNavbarProps) => {
 
