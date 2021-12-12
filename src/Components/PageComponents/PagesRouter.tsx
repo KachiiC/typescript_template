@@ -4,7 +4,7 @@ import DisplayedData from "Data/Main/Displayed/PagesData"
 import { FooterPages } from "Data/Footer/FooterData"
 import HiddenData from "Data/Main/Hidden/HiddenPages"
 // PAGES
-import Home from "../Pages/Home"
+import Home from "Sections/Main/Pages/Hidden/Home"
 // TOOLS
 import { RoutesRender } from "Tools/RoutersRender"
 import { LinkRenderer } from "Tools/RoutersRender"
@@ -25,7 +25,9 @@ const RenderRoutes = Routes.map(route => {
 
 // Pushes home to last route
 RenderRoutes[RenderRoutes.length - 1].push(
-    <Route key="home">
+    <Route key="home" 
+        path="/"
+    >
         {Home}
     </Route>
 )

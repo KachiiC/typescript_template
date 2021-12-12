@@ -21,6 +21,7 @@ export interface SiteIconProps {
     color?: string;
 }
 
+// SITE LINK PROPS
 export interface LinkRendererProps {
     title: string;
     link?: string | undefined;
@@ -30,7 +31,6 @@ export interface LinkRendererProps {
     sub_menu?: pageDataProps[]
 }
 
-// Site Link Props
 export interface SiteLinkProps {
     link: string;
     type: "local" | "external" | undefined | string

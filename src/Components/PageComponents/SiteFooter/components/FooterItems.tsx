@@ -14,16 +14,18 @@ export const FooterLogos = (props: footerSectionDataProps) => {
 
     const { icon, link } = props
 
+    const iconImage = (
+        <SiteIcon 
+            type={icon} 
+            size="2x"
+        />
+    )
+
     return (
         <div className="site-col-1">
             <SiteLink
                 link={RenderLogic(link, "")}
-                placeholder={
-                    <SiteIcon 
-                        type={icon} 
-                        size="2x"
-                    />
-                }
+                placeholder={iconImage}
                 type="external"  
             />
         </div>
@@ -34,19 +36,17 @@ export const FooterLinks = (props: footerSectionDataProps) => {
 
     const { external_link, link, title, span } = props
 
-    const FooterLink = (props: any) => {
-        return (
-            <div className={`site-col-${props.input} footer-link`}
-                key={title}
-            >
-                <SiteLink
-                    link={`${RenderLogic(external_link, `/${link}`)}`}
-                    type={external_link ? "external" : "local"}
-                    placeholder={StringJoin(title, "_", "")} 
-                />
-            </div>
-        )
-    }
+    const FooterLink = (props: { input: any }) => (
+        <div className={`site-col-${props.input} footer-link`}
+            key={title}
+        >
+            <SiteLink
+                link={`${RenderLogic(external_link, `/${link}`)}`}
+                type={external_link ? "external" : "local"}
+                placeholder={StringJoin(title, "_", "")} 
+            />
+        </div>
+    )
 
     return (
         <>

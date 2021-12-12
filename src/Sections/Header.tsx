@@ -1,5 +1,5 @@
 // COMPONENTS
-import SiteNavbar from "./SiteNavbar"
+import SiteNavbar from "Components/PageComponents/SiteNavbar"
 // DATA
 import DataOverview from "Data/DataOverview"
 import PagesData from "Data/Main/Displayed/PagesData"
