@@ -5,7 +5,7 @@ import IconsList from "./components/IconList"
 // CSS 
 import './FilterIcons.css'
 // PROPS
-import { FilterIconProps } from "Props/Components/FilterComponentProps/FilterIconProps"
+import { FilterIconProps } from "Components/FilterComponents/FilterIcons/FilterIconProps"
 // TOOLS
 import { TitleLogic } from "Tools/StringTools"
 import { UnqiueValues } from "Tools/ObjectDataTools"

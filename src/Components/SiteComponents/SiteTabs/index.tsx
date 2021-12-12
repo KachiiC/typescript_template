@@ -4,7 +4,7 @@ import { TabContent, TabLinksRow } from './components/TabComponents'
 // CSS
 import './SiteTabs.css'
 // PROPS
-import { SiteTabsProps } from "Props/Components/TabProps"
+import { SiteTabsProps } from "./SiteTabsProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 

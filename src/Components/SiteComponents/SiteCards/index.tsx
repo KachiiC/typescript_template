@@ -3,7 +3,7 @@ import SingleCard from "./components/SingleCard"
 // CSS
 import './SiteCard.css'
 // PROPS
-import { SiteCardProps } from 'Props/Components/CardProps'
+import { SiteCardProps } from './SiteCardProps'
 // TOOLS
 import { GridSpanSwitcher } from 'Tools/GridTools'
 

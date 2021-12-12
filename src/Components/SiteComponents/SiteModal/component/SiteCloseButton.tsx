@@ -1,5 +1,5 @@
 // PROPS
-import { closeButtonProps } from "Props/Components/ModalProps"
+import { closeButtonProps } from "Components/SiteComponents/SiteModal/SiteModalProps"
 // TOOLS
 import SiteIcon from "Tools/SiteIcon"
 

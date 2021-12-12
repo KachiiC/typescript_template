@@ -5,7 +5,7 @@ import FilterGalleryComponent from "./components/FilterGalleryComponent"
 // CSS 
 import './FilterGallery.css'
 // PROPS
-import { SiteCardProps } from "Props/Components/CardProps"
+import { SiteCardProps } from "Components/SiteComponents/SiteCards/SiteCardProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import { UnqiueValues } from "Tools/ObjectDataTools"

@@ -3,7 +3,7 @@ import { Table } from 'antd';
 // CSS
 import 'antd/dist/antd.css'
 // PROPS
-import { AntdTableProps } from 'Props/Components/AntdProps/AntdTableProps';
+import { AntdTableProps } from './AntdTableProps';
 // TOOLS
 import { defaultColumn } from './tools/columnFunctions';
 import { IfStatement, RenderLogic } from "Tools/FunctionTools";

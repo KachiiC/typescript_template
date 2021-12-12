@@ -1,7 +1,7 @@
 // CSS
 import './SiteCollapsible.css'
 // PROPS
-import { CollapsibleProps } from 'Props/Components/CollapsibleProps'
+import { CollapsibleProps } from './SiteCollapsibleProps'
 // TOOLS
 import { RenderLogic } from 'Tools/FunctionTools'
 // COMPONENTS

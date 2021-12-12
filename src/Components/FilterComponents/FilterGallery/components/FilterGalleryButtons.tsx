@@ -2,7 +2,7 @@
 import { 
     FilterButtonProps, 
     SingleFilterButtonProps 
-} from "Props/Components/FilterComponentProps/FilterGalleryProps"
+} from "Components/FilterComponents/FilterGallery/FilterGalleryProps"
 
 const SingleFilterButton = (props: SingleFilterButtonProps) => {
     

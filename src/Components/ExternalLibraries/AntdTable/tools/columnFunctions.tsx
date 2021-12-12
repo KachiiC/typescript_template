@@ -1,9 +1,10 @@
 // PROPS
-import { defaultColumnProps, 
+import { 
     AntdTableColumnProps, 
+    defaultColumnProps, 
     sortStringProps, 
     sortIntProps 
-} from "Props/Components/AntdProps/AntdTableProps"
+} from "../AntdTableProps"
 // TOOLS
 import { ObjKeys } from "Tools/ObjectDataTools"
 import { StringJoin } from "Tools/StringTools"

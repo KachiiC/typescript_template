@@ -1,7 +1,7 @@
 // CSS
 import './SiteTimeline.css'
 // PROPS
-import { SiteTimelineProps } from "Props/Components/TimlineProps"
+import { SiteTimelineProps } from "./SiteTimlineProps"
 // TOOLS
 import { RenderLogic } from 'Tools/FunctionTools'
 // COMPONENTS

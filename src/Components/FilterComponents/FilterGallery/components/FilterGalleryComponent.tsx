@@ -1,7 +1,7 @@
 // COMPONENTS
 import SiteCards from "Components/SiteComponents/SiteCards"
 // PROPS
-import { FilterGalleryProps } from "Props/Components/FilterComponentProps/FilterGalleryProps"
+import { FilterGalleryProps } from "Components/FilterComponents/FilterGallery/FilterGalleryProps"
 
 const GalleryComponent = (props: FilterGalleryProps) => {
     

@@ -1,5 +1,5 @@
 // PROPS
-import { IconsListProps } from "Props/Components/FilterComponentProps/FilterIconProps"
+import { IconsListProps } from "Components/FilterComponents/FilterIcons/FilterIconProps"
 // TOOLS
 import SiteIcon from "Tools/SiteIcon"
 

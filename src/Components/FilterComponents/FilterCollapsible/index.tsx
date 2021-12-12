@@ -4,7 +4,7 @@ import SiteCollapsible from "Components/SiteComponents/SiteCollapsible"
 // CSS
 import './FilterCollapsible.css'
 // PROPS
-import { FilterCollapsibleProps } from "Props/Components/FilterComponentProps/FilterCollapsibleProps"
+import { FilterCollapsibleProps } from "Components/FilterComponents/FilterCollapsible/FilterCollapsibleProps"
 import { TargetProps } from "Props/Tools/ToolProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"

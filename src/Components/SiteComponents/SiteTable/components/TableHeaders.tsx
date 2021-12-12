@@ -1,5 +1,5 @@
 // PROPS
-import { SiteTableHeaderProps } from "Props/Components/TableProps"
+import { SiteTableHeaderProps } from "Components/SiteComponents/SiteTable/SiteTableProps"
 // TOOLS
 import { StringJoin } from "Tools/StringTools"
 

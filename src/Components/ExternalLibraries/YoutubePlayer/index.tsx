@@ -1,7 +1,7 @@
 // COMPONENTS
 import { RenderLogic } from "Tools/FunctionTools"
 // PROPS
-import { YoutubeProps } from "Props/Components/ExternalComponentProps/YoutubeProps"
+import { YoutubeProps } from "./YoutubeProps"
 
 const YoutubePlayer = (props: YoutubeProps) => {
 

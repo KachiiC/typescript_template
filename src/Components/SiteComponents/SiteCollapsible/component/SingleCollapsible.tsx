@@ -3,7 +3,7 @@ import { useReducer, useState } from "react"
 import { CollapsibleContent, CollapsibleHeading } from "./CollapsibleParts"
 import CollapsibleTransition from "./CollapsibleTransition"
 // PROPS
-import { singleCollapsibleProps } from "Props/Components/CollapsibleProps"
+import { singleCollapsibleProps } from "Components/SiteComponents/SiteCollapsible/SiteCollapsibleProps"
 
 const SingleCollapsible = (props: singleCollapsibleProps) => {
 

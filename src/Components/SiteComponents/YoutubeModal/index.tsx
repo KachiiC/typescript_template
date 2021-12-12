@@ -4,7 +4,7 @@ import YoutubeModalContent from "./components/YoutubeModalContent"
 // CSS
 import './YoutubeModal.css'
 // PROPS
-import { YoutubeModalProps } from "Props/Components/YoutubeModalProps"
+import { YoutubeModalProps } from "./YoutubeModalProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 

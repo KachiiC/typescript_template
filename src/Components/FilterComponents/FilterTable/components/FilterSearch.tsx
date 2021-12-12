@@ -1,8 +1,5 @@
 // PROPS
-import { 
-    FilterInputProps, 
-    FilterSelectProps 
-} from "Props/Components/FilterComponentProps/FilterTableProps"
+import { FilterInputProps, FilterSelectProps } from "../FilterTableProps"
 // TOOLS
 import { StringJoin } from "Tools/StringTools"
 

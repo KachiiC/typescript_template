@@ -6,7 +6,7 @@ import SiteModalComponent from "../SiteModal"
 // CSS
 import './SiteGallery.css'
 // PROPS
-import { GalleryProps } from "Props/Components/GalleryProps"
+import { GalleryProps } from ".//SiteGalleryProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import { TitleLogic } from "Tools/StringTools"

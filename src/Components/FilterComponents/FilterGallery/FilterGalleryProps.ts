@@ -1,6 +1,6 @@
 import { Dispatch, MouseEventHandler, SetStateAction } from "react";
 // PROPS
-import { SiteSingleCardProps } from "../CardProps";
+import { SiteSingleCardProps } from "../../SiteComponents/SiteCards/SiteCardProps";
 
 export interface SingleFilterButtonProps {
     title: string
