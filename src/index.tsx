@@ -1,10 +1,10 @@
 // COMPONENTS
-import App from './App'
-import { render } from 'react-dom'
+import App from "./App"
+import { render } from "react-dom"
 // CSS
-import 'CSS/index.css'
+import "CSS/index.css"
 
 render(
   App,
-  document.getElementById('root')
+  document.getElementById("root")
 )

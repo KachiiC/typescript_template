@@ -31,7 +31,7 @@ export const defaultColumn = (data: objectData[], default_sort?: string) => {
     if (default_sort) {
         const correct_column = columns.find(column => column.dataIndex === default_sort)
         if (correct_column) {
-            correct_column.defaultSortOrder = 'descend'
+            correct_column.defaultSortOrder = "descend"
         }
     }
 

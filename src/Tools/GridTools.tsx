@@ -1,22 +1,22 @@
 // Sizes for grid system out of 12
-export const GridSpanSwitcher = (input_size: 'xs'|'small'|'medium'|'large'|'xl' | undefined) => {
+export const GridSpanSwitcher = (input_size: "xs"| "small" | "medium"| "large"| "xl" | undefined) => {
     
     var spanLogic
 
     switch(input_size) {
-        case 'xs':
+        case "xs":
             spanLogic = 2
             break
-        case 'small':
+        case "small":
             spanLogic = 3
             break
-        case 'medium':
+        case "medium":
             spanLogic = 4
             break
-        case 'large':
+        case "large":
             spanLogic = 6
             break
-        case 'xl':
+        case "xl":
             spanLogic = 12
             break
         default:

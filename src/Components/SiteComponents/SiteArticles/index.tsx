@@ -1,7 +1,7 @@
 // COMPONENTS
 import SiteSingleArticle from "./components/SiteSingleArticle"
 // CSS
-import './SiteArticles.css'
+import "./SiteArticles.css"
 // PROPS
 import {  SiteArticleProps } from "./SiteArticlesProps"
 // TOOLS

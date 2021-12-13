@@ -1,17 +1,17 @@
-import { useState } from 'react'
+import { useState } from "react"
 // COMPONENTS
-import { FilterInput, FilterSelect } from './components/FilterSearch'
-import SiteTable from '@components/SiteTable'
+import { FilterInput, FilterSelect } from "./components/FilterSearch"
+import SiteTable from "@components/SiteTable"
 // CSS
-import './FilterTable.css'
+import "./FilterTable.css"
 // PROPS
 import { FilterTableProps } from "./FilterTableProps"
-import { TargetProps } from 'Props/Tools/ToolProps'
+import { TargetProps } from "Props/Tools/ToolProps"
 // TOOLS
-import { ArrrayObjectKeys } from 'Tools/ObjectDataTools'
-import { ParseIntChecker } from 'Tools/IntergerTools'
-import { RenderLogic } from 'Tools/FunctionTools'
-import { StringJoin } from 'Tools/StringTools'
+import { ArrrayObjectKeys } from "Tools/ObjectDataTools"
+import { ParseIntChecker } from "Tools/IntergerTools"
+import { RenderLogic } from "Tools/FunctionTools"
+import { StringJoin } from "Tools/StringTools"
 
 const FilterTable = (props: FilterTableProps) => {
 
@@ -35,7 +35,7 @@ const FilterTable = (props: FilterTableProps) => {
     const columnFunction = (e : TargetProps) => setColumn(e.target.value)
 
     // The input string used to filter
-    const [input, setInput] = useState('')
+    const [input, setInput] = useState("")
     // The results which match the input, intial value is the entire data set
     const [foundResults, setFoundResults] = useState(data)
 
@@ -59,7 +59,7 @@ const FilterTable = (props: FilterTableProps) => {
         )
 
         // Only returns results when input isn't empty
-        keyword !== '' ? setFoundResults(resultsLogic) : setFoundResults(data)
+        keyword !== "" ? setFoundResults(resultsLogic) : setFoundResults(data)
         
         setInput(keyword)
     }

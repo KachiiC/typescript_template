@@ -1,8 +1,8 @@
 import { useState } from "react"
 // COMPONENTS
-import { TabContent, TabLinksRow } from './components/TabComponents'
+import { TabContent, TabLinksRow } from "./components/TabComponents"
 // CSS
-import './SiteTabs.css'
+import "./SiteTabs.css"
 // PROPS
 import { SiteTabsProps } from "./SiteTabsProps"
 // TOOLS
@@ -18,7 +18,7 @@ const SiteTabs = (props: SiteTabsProps) => {
 
     return (
         // By default width of component is 90%
-        <div className={`site-tabs-component m-auto w-${RenderLogic(width, 90)}`}>
+        <div className={`site-tabs-component  w-${RenderLogic(width, 90)}`}>
             <TabLinksRow
                 data={data}
                 setFunction={setDisplayTab}

@@ -4,8 +4,10 @@
       "baseUrl": "./src",
       "paths": {
         "@components/*": [
-          "Components/SiteComponents/*",
-          "Components/Filter/*"
+          "Components/SiteComponents/*"
+        ],
+        "@libraries/*": [
+          "Components/ExternalLibraries/*"
         ]
       }
     }

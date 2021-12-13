@@ -2,7 +2,7 @@
 import SiteTableHeaders from "./components/TableHeaders"
 import SiteTableRows from "./components/TableRows"
 // CSS
-import './SiteTable.css'
+import "./SiteTable.css"
 // PROPS
 import { SiteTableProps } from "./SiteTableProps"
 // TOOLS

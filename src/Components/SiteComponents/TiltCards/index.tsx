@@ -1,9 +1,9 @@
 // COMPONENT
-import SingleTiltCard from './components/SingleTiltCard'
+import SingleTiltCard from "./components/SingleTiltCard"
 // CSS
-import './TiltCards.css'
+import "./TiltCards.css"
 // PROPS
-import { TiltCardsProps } from './TiltCardProps'
+import { TiltCardsProps } from "./TiltCardProps"
 
 const TiltCards = (props: TiltCardsProps) => {
 

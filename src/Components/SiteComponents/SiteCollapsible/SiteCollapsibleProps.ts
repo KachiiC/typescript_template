@@ -1,4 +1,5 @@
 import { MouseEventHandler } from "react";
+// PROPS
 import { widthProps } from "Props/PropsTemplates";
 
 export interface CollapsibleContentProps { 

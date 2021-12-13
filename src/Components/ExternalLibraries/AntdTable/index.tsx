@@ -1,11 +1,11 @@
 //COMPONENTS
-import { Table } from 'antd'
+import { Table } from "antd"
 // CSS
-import 'antd/dist/antd.css'
+import "antd/dist/antd.css"
 // PROPS
-import { AntdTableProps } from './AntdTableProps'
+import { AntdTableProps } from "./AntdTableProps"
 // TOOLS
-import { defaultColumn } from './tools/columnFunctions'
+import { defaultColumn } from "./tools/columnFunctions"
 import { IfStatement, RenderLogic } from "Tools/FunctionTools"
 
 const AntdTable = (props: AntdTableProps) => {
@@ -21,7 +21,7 @@ const AntdTable = (props: AntdTableProps) => {
     )
 
     return (
-        <div className="w-90 m-auto">
+        <div className="w-90">
             <h1>{IfStatement(title)}</h1>
             <Table 
                 columns={columnsLogic} 

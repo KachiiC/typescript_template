@@ -1,10 +1,10 @@
 // COMPONENTS
-import FooterSection from './components/FooterSection'
-import { FooterHeading, FooterCopyRight } from './components/FooterItems'
+import FooterSection from "./components/FooterSection"
+import { FooterHeading, FooterCopyRight } from "./components/FooterItems"
 // CSS 
-import './SiteFooter.css'
+import "./SiteFooter.css"
 // PROPS
-import { SiteFooterProps } from './SiteFooterProps'
+import { SiteFooterProps } from "./SiteFooterProps"
 
 const SiteFooter = (props: SiteFooterProps) => {
 

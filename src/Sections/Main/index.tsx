@@ -1,7 +1,7 @@
 // COMPONENTS
-import PagesRouter from 'Components/PageComponents/PagesRouter'
+import PagesRouter from "Components/PageComponents/PagesRouter"
 // CSS
-import './Main.css'
+import "./Main.css"
 
 const SiteMain = (
     <main>

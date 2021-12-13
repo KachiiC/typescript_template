@@ -1,5 +1,5 @@
 // CSS
-import MediaQuery from 'react-responsive'
+import MediaQuery from "react-responsive"
 // PROPS
 import { footerCopyrightProps, footerSectionDataProps } from "../SiteFooterProps"
 // TOOLS

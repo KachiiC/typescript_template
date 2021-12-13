@@ -2,7 +2,7 @@
 import SiteModalComponent from "../SiteModal"
 import YoutubeModalContent from "./components/YoutubeModalContent"
 // CSS
-import './YoutubeModal.css'
+import "./YoutubeModal.css"
 // PROPS
 import { YoutubeModalProps } from "./YoutubeModalProps"
 // TOOLS

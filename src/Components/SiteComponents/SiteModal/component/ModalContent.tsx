@@ -1,9 +1,9 @@
 // COMPONENT
-import SiteCloseButton from './SiteCloseButton'
+import SiteCloseButton from "./SiteCloseButton"
 // CSS
-import '../SiteModal.css'
+import "../SiteModal.css"
 // PROPS
-import { modalContentProps } from '../SiteModalProps'
+import { modalContentProps } from "../SiteModalProps"
 
 const SiteModalContent = (props: modalContentProps) => {
 

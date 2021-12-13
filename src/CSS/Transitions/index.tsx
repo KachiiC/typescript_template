@@ -1,7 +1,7 @@
 // IMAGES
-import LoadingError from 'Images/LoadingError.gif'
+import LoadingError from "Images/LoadingError.gif"
 // CSS
-import './SiteTransitions.css'
+import "./SiteTransitions.css"
 
 export const SiteLoading = () => {
 

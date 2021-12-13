@@ -1,4 +1,6 @@
 import { MouseEventHandler } from "react"
+// PROPS
+import { IconDataProps } from "@components/IconsList/IconsListProps";
 
 export interface FilterIconButtonsProps { 
     data: string[]
@@ -6,17 +8,12 @@ export interface FilterIconButtonsProps {
     setAll: MouseEventHandler<HTMLButtonElement>
 }
 
-export interface FilterIconDataProps {
-    type: string
-    skill: string
-}
-
 export interface FilterIconsProps {
-    data: FilterIconDataProps[]
+    data: IconDataProps[]
     title?: string
 }
 
 export interface IconsListProps {
-    data: FilterIconDataProps[]
+    data: IconDataProps[]
 }
 

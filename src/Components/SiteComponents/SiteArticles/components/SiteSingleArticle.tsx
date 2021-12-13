@@ -16,7 +16,7 @@ const SiteSingleArticle = (props: SingleArticleProps) => {
     } = props
 
     const imageUrl = {
-        "backgroundImage": `url('${image}')`
+        "backgroundImage": `url("${image}")`
     }
 
     const component = (

@@ -2,7 +2,7 @@ import { useState } from "react"
 // COMPONENTS
 import SiteCollapsible from "@components/SiteCollapsible"
 // CSS
-import './FilterCollapsible.css'
+import "./FilterCollapsible.css"
 // PROPS
 import { FilterCollapsibleProps } from "./FilterCollapsibleProps"
 import { TargetProps } from "Props/Tools/ToolProps"
@@ -27,7 +27,7 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
         )
 
         // logic only kicks in when keyword is not empty string
-        keyword !== '' ? 
+        keyword !== "" ? 
             setFoundResults(resultsLogic) 
             : 
             setFoundResults(data)

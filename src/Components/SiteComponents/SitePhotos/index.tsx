@@ -1,11 +1,11 @@
 // COMPONENTS
-import SinglePhoto from './components/SinglePhoto'
+import SinglePhoto from "./components/SinglePhoto"
 // CSS
-import './SitePhotos.css'
+import "./SitePhotos.css"
 // PROPS
-import { SitePhotoProps } from './SitePhotosProps'
+import { SitePhotoProps } from "./SitePhotosProps"
 // TOOLS
-import { RenderLogic } from 'Tools/FunctionTools'
+import { RenderLogic } from "Tools/FunctionTools"
 
 const SitePhotos = (props: SitePhotoProps) => {
 

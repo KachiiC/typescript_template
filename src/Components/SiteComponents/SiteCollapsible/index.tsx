@@ -1,9 +1,9 @@
 // CSS
-import './SiteCollapsible.css'
+import "./SiteCollapsible.css"
 // PROPS
-import { CollapsibleProps } from './SiteCollapsibleProps'
+import { CollapsibleProps } from "./SiteCollapsibleProps"
 // TOOLS
-import { RenderLogic } from 'Tools/FunctionTools'
+import { RenderLogic } from "Tools/FunctionTools"
 // COMPONENTS
 import SingleTabComponent from "./component/SingleCollapsible"
 

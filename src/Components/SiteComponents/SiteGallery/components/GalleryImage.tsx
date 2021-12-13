@@ -27,7 +27,7 @@ export const GallerySelectedImage = (props: GallerySelectedImageProps) => {
     const { image, width } = props
 
     return (
-        <div className={`w-${width} m-auto`}>
+        <div className={`w-${width} `}>
             <GalleryImage 
                 image={image}
                 title="selected_image"

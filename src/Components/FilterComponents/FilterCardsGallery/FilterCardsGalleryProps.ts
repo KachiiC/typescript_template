@@ -1,10 +1,10 @@
-import { Dispatch, MouseEventHandler, SetStateAction } from "react";
+import { Dispatch, MouseEventHandler, SetStateAction } from "react"
 // PROPS
-import { SiteSingleCardProps } from "@components/SiteCards/SiteCardProps";
+import { SiteSingleCardProps } from "@components/SiteCards/SiteCardProps"
 
 export interface FilterGalleryProps { 
     buttons?: JSX.Element
-    card_size?: 'xs'|'small'|'medium'|'large'|'xl'
+    card_size?: "xs"| "small" | "medium" | "large" |"xl"
     data: SiteSingleCardProps[]
 }
 

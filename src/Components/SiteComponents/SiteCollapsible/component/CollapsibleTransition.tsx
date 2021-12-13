@@ -1,7 +1,7 @@
 // CSS
-import { CSSTransition} from 'react-transition-group'
+import { CSSTransition} from "react-transition-group"
 // PROPS
-import { CollapsibleTransitionProps } from '../SiteCollapsibleProps'
+import { CollapsibleTransitionProps } from "../SiteCollapsibleProps"
 
 const CollapsibleTransition = (props: CollapsibleTransitionProps) => {
 

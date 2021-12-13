@@ -56,7 +56,7 @@
 }
 
 .gridywrap .gridinfo h3:after {
-    content: '';
+    content: "";
     width: 25px;
     border-top: 4px solid #fff;
     display: block;

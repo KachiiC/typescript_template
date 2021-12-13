@@ -1,11 +1,11 @@
 // COMPONENTS
 import SingleCard from "./components/SingleCard"
 // CSS
-import './SiteCard.css'
+import "./SiteCard.css"
 // PROPS
-import { SiteCardProps } from './SiteCardProps'
+import { SiteCardProps } from "./SiteCardProps"
 // TOOLS
-import { GridSpanSwitcher } from 'Tools/GridTools'
+import { GridSpanSwitcher } from "Tools/GridTools"
 
 const SiteCards = (props: SiteCardProps) => {
 

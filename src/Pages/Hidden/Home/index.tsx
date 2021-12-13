@@ -1,5 +1,5 @@
 // CSS
-import './Home.css'
+import "./Home.css"
 // COMPONENTS
 
 

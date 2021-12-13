@@ -14,6 +14,7 @@
     background: black;
     color: white;
     user-select: none;
+    border-radius: 10px;
     animation: fadeIn 2s;
 }
 

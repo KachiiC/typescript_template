@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import FilterGalleryButtons from "./components/FilterCardsGalleryButtons"
 import FilterGalleryComponent from "./components/FilterCardsGalleryComponent"
 // CSS 
-import './FilterCardsGallery.css'
+import "./FilterCardsGallery.css"
 // PROPS
 import { SiteCardProps } from "@components/SiteCards/SiteCardProps"
 // TOOLS
@@ -16,13 +16,13 @@ const FilterCardsGallery = (props: SiteCardProps) => {
     const { card_size, data } = props
 
     // The filter type's initial state is empty
-    const [filterType, setFilterType] = useState('')
+    const [filterType, setFilterType] = useState("")
     // The results is set when filtered, inital state is the input data.
     const [resultsData, setResultsData] = useState(data)
 
     useEffect(() => {
         // Logic is only set when filter type is set.
-        if (filterType !== '') {
+        if (filterType !== "") {
             // filters array for objects whose "type" key matches fitlerType 
             setResultsData(data.filter(obj => obj.type === filterType))
         }

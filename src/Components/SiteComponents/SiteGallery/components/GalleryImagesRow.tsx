@@ -36,7 +36,7 @@ const GalleryImagesRow = (props: GalleryImageRowProps) => {
     ).slice(0, row_number)
 
     return (
-        <div className={`w-${width} m-auto`}>
+        <div className={`w-${width} `}>
             <div className="site-grid" 
                 style={GridStyle(row_number)}
             >

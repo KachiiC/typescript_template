@@ -9,11 +9,13 @@ const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
     const { click, video_title, video_thumbnail } = props
 
     return (
-        <div className="site-flex suggestion-row w-90 m-auto">
-            <div className="youtube-suggestion-title cursor-pointer w-50 m-auto">
+        <div className="site-flex suggestion-row w-90">
+            <div className="youtube-suggestion-title cursor-pointer w-50 ">
                 {TitleTrimmer(video_title, 45)}
             </div>
-            <div className="youtube-thumbnail w-50 cursor-pointer" onClick={click}>
+            <div className="youtube-thumbnail w-50 cursor-pointer" 
+                onClick={click}
+            >
                 <img src={video_thumbnail} 
                     alt={video_title} 
                     className="site-responsive-image"
@@ -46,7 +48,7 @@ const YoutubeSuggestions = (props: YoutubeSuggestionProps) => {
 
     return (
         <div className="site-col-6 youtube-suggestions">
-            <div className="suggestion-list-title w-90 m-auto">
+            <div className="suggestion-list-title w-90">
                 Recommended Video
             </div>
             {displaySuggestions}

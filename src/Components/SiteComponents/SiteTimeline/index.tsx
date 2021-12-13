@@ -1,11 +1,11 @@
 // CSS
-import './SiteTimeline.css'
+import "./SiteTimeline.css"
 // PROPS
 import { SiteTimelineProps } from "./SiteTimlineProps"
 // TOOLS
-import { RenderLogic } from 'Tools/FunctionTools'
+import { RenderLogic } from "Tools/FunctionTools"
 // COMPONENTS
-import TimelineEvent from './components/TimelineEvent'
+import TimelineEvent from "./components/TimelineEvent"
 
 const SiteTimeline = (props: SiteTimelineProps) => {
 

@@ -1,5 +1,8 @@
 // PROPS
-import { CollapsibleContentProps, CollapsibleHeadingProps } from "../SiteCollapsibleProps"
+import { 
+    CollapsibleContentProps,
+    CollapsibleHeadingProps 
+} from "../SiteCollapsibleProps"
 // TOOLS
 import SiteIcon from "Tools/SiteIcon"
 
@@ -10,7 +13,7 @@ export const CollapsibleHeading = (props: CollapsibleHeadingProps) => {
     
     // Direction is detirmined by whether tab is open or not
     return (
-        <div className={`site-collapsible m-auto cursor-pointer w-100`} 
+        <div className={`site-collapsible cursor-pointer w-100`} 
             onClick={click}
         >
             {title}
@@ -30,7 +33,7 @@ export const CollapsibleContent = (props: CollapsibleContentProps) => {
     const { content } = props
 
     return (
-        <div className={`site-collapsible-content m-auto site-border w-100`}>
+        <div className={`site-collapsible-content site-border`}>
             {content}
         </div>
     )
