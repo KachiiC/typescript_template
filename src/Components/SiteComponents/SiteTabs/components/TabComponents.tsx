@@ -3,7 +3,7 @@ import {
     TabContentProps, 
     TabLinkProps, 
     TabLinkRowProps 
-} from "Components/SiteComponents/SiteTabs/SiteTabsProps"
+} from "../SiteTabsProps"
 
 
 export const TabLink = (props: TabLinkProps) => {

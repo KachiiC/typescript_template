@@ -13,6 +13,7 @@
     ]
   },
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -46,12 +47,12 @@
   },
   "private": true,
   "scripts": {
-    "build": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "start": "react-scripts start",
-    "test": "react-scripts test"
+    "predeploy": "npm run build"
   },
   "version": "0.1.0"
 }

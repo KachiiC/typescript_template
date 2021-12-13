@@ -1,5 +1,5 @@
 // PROPS
-import { TimelineEventProps } from "Components/SiteComponents/SiteTimeline/SiteTimlineProps"
+import { TimelineEventProps } from "../SiteTimlineProps"
 
 const TimelineEvent = (props: TimelineEventProps) => {
 

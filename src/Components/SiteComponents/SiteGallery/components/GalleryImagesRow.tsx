@@ -1,7 +1,7 @@
 // COMPONENTS
 import { GalleryImage } from "./GalleryImage"
 // PROPS
-import { GalleryImageProps, GalleryImageRowProps } from "Components/SiteComponents/SiteGallery/SiteGalleryProps"
+import { GalleryImageProps, GalleryImageRowProps } from "../SiteGalleryProps"
 // TOOLS
 import { GridStyle } from "Tools/GridTools"
 

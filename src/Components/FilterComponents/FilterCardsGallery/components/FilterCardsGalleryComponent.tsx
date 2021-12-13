@@ -1,5 +1,5 @@
 // COMPONENTS
-import SiteCards from "Components/SiteComponents/SiteCards"
+import SiteCards from "@components/SiteCards"
 // PROPS
 import { FilterGalleryProps } from "../FilterCardsGalleryProps"
 

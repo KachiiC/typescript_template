@@ -11,7 +11,6 @@ export interface FilterIconDataProps {
     skill: string
 }
 
-
 export interface FilterIconsProps {
     data: FilterIconDataProps[]
     title?: string

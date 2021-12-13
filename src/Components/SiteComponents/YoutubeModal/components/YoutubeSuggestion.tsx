@@ -1,5 +1,5 @@
 // PROPS
-import { SingleYoutubeSuggestionProps, YoutubeSuggestionProps } from "Components/SiteComponents/YoutubeModal/YoutubeModalProps"
+import { SingleYoutubeSuggestionProps, YoutubeSuggestionProps } from "../YoutubeModalProps"
 // TOOLS
 import { TitleTrimmer } from "Tools/StringTools"
 

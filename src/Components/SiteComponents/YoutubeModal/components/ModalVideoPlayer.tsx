@@ -1,7 +1,7 @@
 // COMPONENTS
 import YoutubePlayer from "Components/ExternalLibraries/YoutubePlayer"
 // PROPS
-import { YoutubeItemProps } from "Components/SiteComponents/YoutubeModal/YoutubeModalProps"
+import { YoutubeItemProps } from "../YoutubeModalProps"
 // TOOLS
 import { TitleTrimmer } from "Tools/StringTools"
 

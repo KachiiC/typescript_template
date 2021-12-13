@@ -60,6 +60,21 @@
     grid-column: span 12;
 }
 
+.site-col-1,
+.site-col-2,
+.site-col-3,
+.site-col-4,
+.site-col-5,
+.site-col-6,
+.site-col-7,
+.site-col-8,
+.site-col-9,
+.site-col-10,
+.site-col-11,
+.site-col-12 {
+    margin: auto
+}
+
 .site-border {
     border: 1px solid black;
 }

@@ -1,5 +1,5 @@
 // PROPS
-import { SiteTableRowProps, SiteTableSingleRowProps } from "Components/SiteComponents/SiteTable/SiteTableProps"
+import { SiteTableRowProps, SiteTableSingleRowProps } from "../SiteTableProps"
 
 const SiteSingleRow = (props: SiteTableSingleRowProps) => {
 

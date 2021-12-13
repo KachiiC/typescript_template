@@ -1,6 +1,6 @@
 import { useState } from "react"
 // COMPONENTS
-import SiteCollapsible from "Components/SiteComponents/SiteCollapsible"
+import SiteCollapsible from "@components/SiteCollapsible"
 // CSS
 import './FilterCollapsible.css'
 // PROPS

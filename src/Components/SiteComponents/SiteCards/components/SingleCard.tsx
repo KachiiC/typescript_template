@@ -1,7 +1,7 @@
 //COMPONENTS
 import { SiteLink } from "Tools/LinkTools"
 // PROPS
-import { SiteSingleCardProps } from "Components/SiteComponents/SiteCards/SiteCardProps"
+import { SiteSingleCardProps } from "../SiteCardProps"
 
 const SingleCard = (props: SiteSingleCardProps) => {
 

@@ -3,7 +3,7 @@ import {
     GalleryImageProps, 
     GalleryModalImageProps, 
     GallerySelectedImageProps 
-} from "Components/SiteComponents/SiteGallery/SiteGalleryProps"
+} from "../SiteGalleryProps"
 // TOOLS
 import { IfStatement } from "Tools/FunctionTools"
 
