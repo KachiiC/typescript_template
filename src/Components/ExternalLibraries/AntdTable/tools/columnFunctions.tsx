@@ -1,24 +1,20 @@
 // PROPS
-import { 
-    AntdTableColumnProps, 
-    defaultColumnProps, 
-    sortStringProps, 
-    sortIntProps 
-} from "../AntdTableProps"
+import { AntdTableColumnProps } from "../AntdTableProps"
+import { intDataProps, objectData, stringDataProps } from "Props/PropsTemplates"
 // TOOLS
 import { ObjKeys } from "Tools/ObjectDataTools"
 import { StringJoin } from "Tools/StringTools"
 
-export const antdColumns = (data: defaultColumnProps[]) => {
+export const antdColumns = (data: objectData[]) => {
 
     const singleObj = data[0]
 
     return ObjKeys(singleObj).map(key => {
 
         const sortLogic = typeof singleObj[key] === "string" ? 
-            (a: sortStringProps, b: sortStringProps) => a[key].localeCompare(b[key])
+            (a: stringDataProps, b: stringDataProps) => a[key].localeCompare(b[key])
             : 
-            (a: sortIntProps, b: sortIntProps) => a[key] - b[key]
+            (a: intDataProps, b: intDataProps) => a[key] - b[key]
 
         return {
             title: StringJoin(key, "_", " "),
@@ -28,7 +24,7 @@ export const antdColumns = (data: defaultColumnProps[]) => {
     })
 }
 
-export const defaultColumn = (data: defaultColumnProps[], default_sort?: string) => {
+export const defaultColumn = (data: objectData[], default_sort?: string) => {
 
     const columns: AntdTableColumnProps[] = antdColumns(data)
 

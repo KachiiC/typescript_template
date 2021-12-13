@@ -4,7 +4,7 @@ import SiteCollapsible from "Components/SiteComponents/SiteCollapsible"
 // CSS
 import './FilterCollapsible.css'
 // PROPS
-import { FilterCollapsibleProps } from "Components/FilterComponents/FilterCollapsible/FilterCollapsibleProps"
+import { FilterCollapsibleProps } from "./FilterCollapsibleProps"
 import { TargetProps } from "Props/Tools/ToolProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
@@ -45,7 +45,7 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
         <h2>No results found!</h2>
 
     return (
-        <div className={`filter-collapsible w-${RenderLogic(width, 90)} m-auto`}>
+        <div className={`filter-collapsible w-${RenderLogic(width, 90)}`}>
             {/* Filter begins on change */}
             <input onChange={filterFunction}
                 className="w-100"

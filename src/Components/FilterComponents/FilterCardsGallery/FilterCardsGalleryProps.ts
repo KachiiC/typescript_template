@@ -4,14 +4,14 @@ import { SiteSingleCardProps } from "Components/SiteComponents/SiteCards/SiteCar
 
 export interface FilterGalleryProps { 
     buttons?: JSX.Element
-    card_size?: 'xs'|'small'|'medium'|'large'|'xl'; 
+    card_size?: 'xs'|'small'|'medium'|'large'|'xl'
     data: SiteSingleCardProps[]
 }
 
 export interface FilterButtonProps {
-    data: string[];
-    setAll: MouseEventHandler<HTMLImageElement> | undefined;
-    setFunction: Dispatch<SetStateAction<string>>;
+    data: string[]
+    setAll: MouseEventHandler<HTMLImageElement> | undefined
+    setFunction: Dispatch<SetStateAction<string>>
 }
 
 export interface SingleFilterButtonProps {

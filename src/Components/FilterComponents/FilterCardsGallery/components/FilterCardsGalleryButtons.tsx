@@ -1,8 +1,5 @@
 // PROPS
-import { 
-    FilterButtonProps, 
-    SingleFilterButtonProps 
-} from "Components/FilterComponents/FilterGallery/FilterGalleryProps"
+import { FilterButtonProps, SingleFilterButtonProps } from "../FilterCardsGalleryProps"
 
 const SingleFilterButton = (props: SingleFilterButtonProps) => {
     

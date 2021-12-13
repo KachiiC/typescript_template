@@ -5,12 +5,12 @@ import IconsList from "./components/IconList"
 // CSS 
 import './FilterIcons.css'
 // PROPS
-import { FilterIconProps } from "Components/FilterComponents/FilterIcons/FilterIconProps"
+import { FilterIconsProps } from "./FilterIconsProps"
 // TOOLS
 import { TitleLogic } from "Tools/StringTools"
 import { UnqiueValues } from "Tools/ObjectDataTools"
 
-const FilterIcons = (props: FilterIconProps) => {
+const FilterIcons = (props: FilterIconsProps) => {
 
     // PROPS
     const { data, title } = props

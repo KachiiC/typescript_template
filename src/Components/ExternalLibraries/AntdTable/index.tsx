@@ -1,12 +1,12 @@
 //COMPONENTS
-import { Table } from 'antd';
+import { Table } from 'antd'
 // CSS
 import 'antd/dist/antd.css'
 // PROPS
-import { AntdTableProps } from './AntdTableProps';
+import { AntdTableProps } from './AntdTableProps'
 // TOOLS
-import { defaultColumn } from './tools/columnFunctions';
-import { IfStatement, RenderLogic } from "Tools/FunctionTools";
+import { defaultColumn } from './tools/columnFunctions'
+import { IfStatement, RenderLogic } from "Tools/FunctionTools"
 
 const AntdTable = (props: AntdTableProps) => {
 
@@ -15,7 +15,8 @@ const AntdTable = (props: AntdTableProps) => {
     const columnsLogic = RenderLogic(
         columns, 
         defaultColumn(
-            data, IfStatement(default_sort)
+            data,
+            IfStatement(default_sort)
         )
     )
 

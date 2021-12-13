@@ -1,9 +1,9 @@
 // COMPONENTS
 import SiteCards from "Components/SiteComponents/SiteCards"
 // PROPS
-import { FilterGalleryProps } from "Components/FilterComponents/FilterGallery/FilterGalleryProps"
+import { FilterGalleryProps } from "../FilterCardsGalleryProps"
 
-const GalleryComponent = (props: FilterGalleryProps) => {
+const FilterGalleryComponent = (props: FilterGalleryProps) => {
     
     // PROPS
     const { buttons, card_size, data } = props
@@ -23,4 +23,4 @@ const GalleryComponent = (props: FilterGalleryProps) => {
     )
 }
 
-export default GalleryComponent
+export default FilterGalleryComponent

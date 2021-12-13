@@ -3,8 +3,8 @@ import { RenderLogic } from 'Tools/FunctionTools'
 import SingleTab from './components/SingleTab'
 import { Tabs } from 'antd'
 // CSS
-import 'antd/dist/antd.css'
 import './AntdTabs.css'
+import 'antd/dist/antd.css'
 // PROPS
 import { AntdTabsProps } from './AntdTabsProps'
 
@@ -19,10 +19,10 @@ const AntdTabs = (props: AntdTabsProps) => {
         const { content, description, link, title } = tab
         
         const tabProperties = {
-            link: link,
-            title: title,
             content: content,
             description: description,
+            link: link,
+            title: title,
         }
 
         return (

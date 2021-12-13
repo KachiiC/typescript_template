@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react"
 // COMPONENTS
-import FilterGalleryButtons from "./components/FilterGalleryButtons"
-import FilterGalleryComponent from "./components/FilterGalleryComponent"
+import FilterGalleryButtons from "./components/FilterCardsGalleryButtons"
+import FilterGalleryComponent from "./components/FilterCardsGalleryComponent"
 // CSS 
-import './FilterGallery.css'
+import './FilterCardsGallery.css'
 // PROPS
 import { SiteCardProps } from "Components/SiteComponents/SiteCards/SiteCardProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 import { UnqiueValues } from "Tools/ObjectDataTools"
 
-const FilterGallery = (props: SiteCardProps) => {
+const FilterCardsGallery = (props: SiteCardProps) => {
 
     // PROPS
     const { card_size, data } = props
@@ -47,4 +47,4 @@ const FilterGallery = (props: SiteCardProps) => {
     )
 }
 
-export default FilterGallery
+export default FilterCardsGallery

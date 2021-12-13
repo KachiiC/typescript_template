@@ -1,28 +1,17 @@
+import { intDataProps, objectData, stringDataProps } from "Props/PropsTemplates"
+
 export interface AntdTableColumnProps {
     dataIndex: string
     defaultSortOrder?: "ascend" | "descend"
-    sorter?: any;
+    sorter?: ((a: stringDataProps, b: stringDataProps) => number) | 
+    ((a: intDataProps, b: intDataProps) => number)
     title: string
 }
 
 export interface AntdTableProps {
-    columns?: any;
-    data: {
-        [x: string]: any
-    }[]
+    columns?: objectData[]
+    data: objectData[]
     default_sort?: string
     pagination?: boolean
-    title?: string;
-}
-
-export interface defaultColumnProps { 
-    [x: string]: string | number 
-}
-
-export interface sortStringProps {
-    [x: string]: string
-}
-
-export interface sortIntProps {
-    [x: string]: number 
+    title?: string
 }
