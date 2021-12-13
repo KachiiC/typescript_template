@@ -1,5 +1,5 @@
 // COMPONENTS
-import PagesRouter from "Components/PageComponents/PagesRouter"
+import PagesRouter from "Components/SectionComponents/PagesRouter"
 // CSS
 import "./Main.css"
 
