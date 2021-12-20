@@ -1,3 +1,4 @@
+// TOOLS
 import { RenderLogic } from "./FunctionTools"
 
 // If string is over length trim it and add ... to the end

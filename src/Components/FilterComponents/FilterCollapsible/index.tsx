@@ -3,6 +3,7 @@ import { useState } from "react"
 import SiteCollapsible from "@components/SiteCollapsible"
 // CSS
 import "./FilterCollapsible.css"
+import { Empty } from "antd"
 // PROPS
 import { FilterCollapsibleProps } from "./FilterCollapsibleProps"
 import { TargetProps } from "Props/Tools/ToolProps"
@@ -42,7 +43,7 @@ const FilterCollapsible = (props: FilterCollapsibleProps) => {
             // Width is 100% by default
         />
         : 
-        <h2>No results found!</h2>
+        <Empty />
 
     return (
         <div className={`filter-collapsible w-${RenderLogic(width, 90)}`}>

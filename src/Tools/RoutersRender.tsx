@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Route } from "react-router-dom"
 // PROPS
 import { pageDataProps } from "Props/MainProps"
 // TOOLS

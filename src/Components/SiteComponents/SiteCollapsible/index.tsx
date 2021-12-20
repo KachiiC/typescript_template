@@ -1,11 +1,11 @@
+// COMPONENTS
+import SingleTabComponent from "./component/SingleCollapsible"
 // CSS
 import "./SiteCollapsible.css"
 // PROPS
 import { CollapsibleProps } from "./SiteCollapsibleProps"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
-// COMPONENTS
-import SingleTabComponent from "./component/SingleCollapsible"
 
 const SiteCollapsible = (props: CollapsibleProps) => {
 

@@ -1,7 +1,9 @@
 import { useEffect, useReducer, useState } from "react"
+// CSS
+import { SiteLoading } from "CSS/Transitions"
+import { Empty } from "antd"
 // PROPS
 import { SiteRenderProps } from "Props/Tools/ToolProps"
-import { SiteError, SiteLoading } from "CSS/Transitions"
 
 // Fetchs data from api
 export const SiteFetcher = (url: string, argument?: string ) => {
@@ -47,7 +49,7 @@ export const SiteRender = (props: SiteRenderProps) => {
         <SiteLoading />
         : 
         error ?
-            SiteError
+            <Empty />
             :
             component
 

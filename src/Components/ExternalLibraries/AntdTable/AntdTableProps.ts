@@ -1,4 +1,8 @@
-import { intDataProps, objectData, stringDataProps } from "Props/PropsTemplates"
+import { 
+    intDataProps, 
+    objectData, 
+    stringDataProps 
+} from "Props/PropsTemplates"
 
 export interface AntdTableColumnProps {
     dataIndex: string

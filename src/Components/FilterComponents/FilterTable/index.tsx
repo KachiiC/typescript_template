@@ -4,6 +4,7 @@ import { FilterInput, FilterSelect } from "./components/FilterSearch"
 import SiteTable from "@components/SiteTable"
 // CSS
 import "./FilterTable.css"
+import { Empty } from "antd"
 // PROPS
 import { FilterTableProps } from "./FilterTableProps"
 import { TargetProps } from "Props/Tools/ToolProps"
@@ -72,9 +73,7 @@ const FilterTable = (props: FilterTableProps) => {
             overflow={RenderLogic(overflow, true)}
         />
         : 
-        <div>
-            <h2>No results found!</h2>
-        </div>
+        <Empty />
 
     return (
         <div className={`filter-list w-${widthLogic}`}>

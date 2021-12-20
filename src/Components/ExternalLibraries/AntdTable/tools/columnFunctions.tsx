@@ -1,6 +1,10 @@
 // PROPS
 import { AntdTableColumnProps } from "../AntdTableProps"
-import { intDataProps, objectData, stringDataProps } from "Props/PropsTemplates"
+import {
+    intDataProps,
+    objectData,
+    stringDataProps
+} from "Props/PropsTemplates"
 // TOOLS
 import { ObjKeys } from "Tools/ObjectDataTools"
 import { StringJoin } from "Tools/StringTools"

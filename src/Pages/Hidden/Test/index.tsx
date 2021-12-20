@@ -1,6 +1,7 @@
 // COMPONENTS
 // import { TestComponent } from "./TestComponent"
 // CSS
+import AntdToolTip from "@libraries/AntdToolTip"
 import "./Test.css"
 // DATA
 // import { TestData } from "./TestData"
@@ -9,9 +10,13 @@ import "./Test.css"
 const Test = () => {
 
     return (
-        <>
-            <h1>Test</h1>
-        </>
+        <div className="test-page">
+            <h1>Title</h1>
+            <AntdToolTip 
+                placeholder={"placeholder"}
+                title="title"
+            />
+        </div>
     )
 }
 
