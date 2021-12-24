@@ -10,7 +10,13 @@ import { IfStatement, RenderLogic } from "Tools/FunctionTools"
 
 const AntdTable = (props: AntdTableProps) => {
 
-    const { columns, data, pagination, title, default_sort } = props
+    const { 
+        columns,
+        data,
+        default_sort,
+        pagination,
+        title
+    } = props
 
     const columnsLogic = RenderLogic(
         columns, 

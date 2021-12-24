@@ -4,8 +4,8 @@
 }
 
 .site-single-card {
-    margin: 25px auto;
     animation: fadeIn 2s;
+    margin: 25px auto;
 }
 
 .site-text-container {

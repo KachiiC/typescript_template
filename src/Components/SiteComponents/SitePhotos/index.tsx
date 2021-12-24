@@ -11,7 +11,12 @@ const SitePhotos = (props: SitePhotoProps) => {
 
     const displayCards = props.data.map(card => {
 
-        const { image ,title, description, text_color } = card
+        const { 
+            description, 
+            image,
+            title, 
+            text_color 
+        } = card
 
         return (
             <SinglePhoto 

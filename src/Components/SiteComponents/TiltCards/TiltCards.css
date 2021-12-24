@@ -5,13 +5,13 @@
 }
 
 .tilt-cards-container {
-    display: inline-block;
-    padding: 1em;
+    background: #dddddd;
     border-radius: 15px;
+    display: inline-block;
     margin: 10px;
-    background: #ddd;
-    text-align: left;
+    padding: 1em;
     position: relative;
+    text-align: left;
     transition: 0.4s;
 }
 
@@ -20,49 +20,49 @@
 .tilt-cards-container h3,
 .tilt-cards-container h4,
 .tilt-cards-container h5 {
-    margin: 0;
     font-weight: 400;
+    margin: 0;
 }
 
 .tilt-cards-container img {
-    max-height: 150px;
-    margin: auto;
     display: inline-block;
+    margin: auto;
+    max-height: 150px;
 }
 
 .card__caption {
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: #ffffffa6;
+    border-radius: 0 0 3px 3px;
     padding: 1em;
     position: relative;
-    border-radius: 0 0 3px 3px;
 }
 
 .card__image-container {
     background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px 3px 0 0;
     text-align: center;
     padding: 1em 1em 0;
-    border-radius: 3px 3px 0 0;
 }
 
 .card__name {
-    text-align: center;
     font-size: 1.5em;
     font-weight: 700;
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .card__type {
-    position: absolute;
-    top: 0;
-    right: 1em;
-    transform: translateY(-50%);
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    padding: 0.25em;
-    line-height: 1;
     border-radius: 2px;
     background: #bbb;
+    color: #fff;
+    letter-spacing: 0.2em;
+    line-height: 1;
+    padding: 0.25em;
+    position: absolute;
+    right: 1em;
+    text-transform: uppercase;
+    top: 0;
+    transform: translateY(-50%);
 }
 
 .card__type,
@@ -81,17 +81,17 @@
 }
 
 .tilt-cards-container:nth-child(1n)  .card__type {
-    background-color: #c08a53;
+    background: #c08a53;
 }
 
 .tilt-cards-container:nth-child(3n),
 .tilt-cards-container:nth-child(3n+4) {
-    background: linear-gradient(90deg, rgba(255, 222, 0, 1) 34%, rgba(232, 255, 153, 1) 83%);
+    background: linear-gradient(90deg, #ffde00 34%, #e8ff99 83%);
 }
 
 .tilt-cards-container:nth-child(3n) .card__type,
 .tilt-cards-container:nth-child(3n + 4) .card__type {
-    background-color: #000;
+    background: #000;
 }
 
 .tilt-cards-container:nth-child(2n) {
@@ -100,15 +100,15 @@
 }
 
 .tilt-cards-container:nth-child(2n) .card__type {
-    background-color: #1cb5e0;
+    background: #1cb5e0;
 }
 
 .tilt-cards-container:nth-child(4n) {
-    background: linear-gradient(0deg, rgba(199, 24, 0, 1) 10%, rgba(252, 194, 69, 1) 100%);
+    background: linear-gradient(0deg, #c71800 10%, #fcc245 100%);
 }
 
 .tilt-cards-container:nth-child(4n+0) .card__type {
-    background-color: rgba(199, 24, 0, 1);
+    background: #c71800;
 }
 
 .tilt-cards-container:nth-child(1),
@@ -122,15 +122,15 @@
 }
 
 .tilt-cards-container:hover {
-    z-index: 5;
     box-shadow: 0px 13px 30px -15px #000;
     transform: translateY(-10px);
+    z-index: 5;
 }
 
 @media screen and (max-width: 640px) {
     .tilt-cards-container {
+        margin: 50px auto 10px;
         transform: translateY(0px) rotate(0deg) !important;
         width: 90%;
-        margin: 50px auto 10px;
     }
 }

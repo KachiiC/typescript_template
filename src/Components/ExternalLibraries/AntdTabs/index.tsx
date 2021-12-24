@@ -16,13 +16,18 @@ const AntdTabs = (props: AntdTabsProps) => {
     
     const renderTabs = data.map(tab => {
         // PROPS
-        const { content, description, link, title } = tab
+        const { 
+            content,
+            description,
+            link,
+            title
+        } = tab
         
         const tabProperties = {
             content: content,
             description: description,
             link: link,
-            title: title,
+            title: title
         }
 
         return (
@@ -30,9 +35,7 @@ const AntdTabs = (props: AntdTabsProps) => {
                 key={title}
                 tab={title} 
             >
-                <SingleTab 
-                    {...tabProperties} 
-                />
+                <SingleTab {...tabProperties} />
             </TabPane>
         )
     })

@@ -1,6 +1,6 @@
+// COMPONENTS
 // CSS
 import "./Home.css"
-// COMPONENTS
 
 const Home = (
     <div className="home-container">

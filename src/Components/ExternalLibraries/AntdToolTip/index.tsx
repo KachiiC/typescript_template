@@ -9,13 +9,14 @@ import { RenderLogic } from "Tools/FunctionTools"
 
 const AntdToolTip = (props: AntdToolTipProps) => {
 
-    const {color, title, placeholder} = props
+    const { color, title, placeholder, placement } = props
 
     return (
         <Tooltip
+            className="cursor-pointer"
             color={RenderLogic(color, "black")}
             title={title}
-            className="cursor-pointer"
+            placement={RenderLogic(placement, "left")}
         >
             {placeholder}
         </Tooltip>

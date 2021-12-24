@@ -3,15 +3,15 @@ import { MouseEventHandler } from "react";
 import { pageDataProps } from "Props/MainProps";
 
 export interface DisplayMenuListProps {
+    click?: MouseEventHandler<HTMLDivElement>
     data: pageDataProps[]; 
     type: "small" | "nav" | "dropdown"  
-    click?: MouseEventHandler<HTMLDivElement>
 }
 
 export interface DisplayMenuTypeProps  { 
+    click?: MouseEventHandler<HTMLDivElement>
     data: pageDataProps; 
     type: "small" | "nav" | "dropdown" ; 
-    click?: MouseEventHandler<HTMLDivElement>
 }
 
 export interface SiteNavLinkProps { 
@@ -22,11 +22,11 @@ export interface SiteNavLinkProps {
 }
 
 export interface SiteNavbarProps { 
-    title: string; 
     click?: MouseEventHandler<HTMLDivElement>
     data: pageDataProps[]
+    title: string; 
 }
 
 export interface SmallMenuIconProps {
-    click: any
+    click: MouseEventHandler<HTMLDivElement> | undefined
 }

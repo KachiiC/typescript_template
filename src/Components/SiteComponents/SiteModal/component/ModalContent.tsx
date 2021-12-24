@@ -20,9 +20,9 @@ const SiteModalContent = (props: modalContentProps) => {
     // Contents for a modal with a white background
     const modalContent = (
 
-        <div className="modal-container">
+        <div className="modal-container w-90">
             {closeButton}
-            <div className="modal-container-content">
+            <div className="modal-container-content w-100">
                 {content}
             </div>
         </div>
@@ -43,7 +43,7 @@ const SiteModalContent = (props: modalContentProps) => {
         modalContent
 
     return (
-        <div className="modal-component">
+        <div className="modal-component w-100">
             {modalLogic}
         </div>
     )

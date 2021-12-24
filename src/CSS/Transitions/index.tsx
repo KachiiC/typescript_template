@@ -8,7 +8,7 @@ export const SiteLoading = () => {
     const displayCircles = []
 
     for (var i=0; i < 12; i++) {
-        displayCircles.push(<div/>)
+        displayCircles.push(<div key={i} />)
     }
 
     return (

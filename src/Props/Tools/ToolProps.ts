@@ -17,32 +17,32 @@ export interface TargetProps {
 
 // SITE ICON
 export interface SiteIconProps {
+    color?: string
+    size: SizeProp | undefined
     type: string | undefined; 
-    size: SizeProp | undefined; 
-    color?: string;
 }
 
 // SITE LINK PROPS
 export interface LinkRendererProps {
-    title: string;
-    link?: string | undefined;
-    icon?: string;
-    content?: string | JSX.Element;
+    content?: string | JSX.Element
     external_link?: string
+    icon?: string
+    link?: string | undefined
     sub_menu?: pageDataProps[]
+    title: string
 }
 
 export interface SiteLinkProps {
     link: string;
-    type: "local" | "external" | undefined | string
     placeholder: string | number | undefined | JSX.Element
+    type: "local" | "external" | undefined | string
 }
 
 export interface SiteRenderProps { 
+    component: JSX.IntrinsicAttributes
     fetch: { 
-        loading: boolean; 
-        error: boolean; 
+        loading: boolean
+        error: boolean
         response: Object | never[]
     }
-    component: JSX.IntrinsicAttributes; 
 }

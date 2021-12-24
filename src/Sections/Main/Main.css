@@ -1,6 +1,6 @@
 main {
-    text-align: center;
-    min-height: 80vh;
     background: white;
+    min-height: 80vh;
     padding-top: 66px;
+    text-align: center;
 }

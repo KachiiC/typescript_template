@@ -8,7 +8,7 @@ export interface closeButtonProps {
 export interface ModalComponent { 
     component: JSX.Element
     content: JSX.Element
-    type: "blank" | "modal" 
+    type: "blank" | "modal"
 }
 
 export interface modalContentProps { 

@@ -12,12 +12,11 @@
 
 .filter-icon-buttons button {
     background: black;
-    color: white;
     border: none;
+    color: white;
     margin: 0px 15px;
-    padding: 5px;
     min-width: 100px;
-    cursor: pointer;
+    padding: 5px;
 }
 
 @media screen and (max-width: 1080px) {

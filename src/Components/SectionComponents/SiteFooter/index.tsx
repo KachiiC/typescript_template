@@ -10,15 +10,17 @@ const SiteFooter = (props: SiteFooterProps) => {
 
     const {
         heading,
-        logo_data,
         links_data,
+        logo_data,
         name,
         year
     } = props
 
     return (
         <footer>
-            <FooterHeading heading={heading} />
+            <FooterHeading 
+                heading={heading} 
+            />
             <FooterSection 
                 data={logo_data} 
                 type="logos"

@@ -3,8 +3,8 @@ export interface TiltCardsProps {
 }
 
 export interface TiltCardProps {
+    content: JSX.Element | string;
+    image: string
     name: string 
     type: string
-    image: string
-    content: JSX.Element | string;
 }

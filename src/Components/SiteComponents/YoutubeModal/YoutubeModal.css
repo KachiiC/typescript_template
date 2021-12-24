@@ -18,13 +18,13 @@
 
 /* VIDEO SUGGESTIONS */
 .suggestion-list-title {
-    color: white;
     background: black;
     border-radius: 5px;
-    padding: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
+    color: white;
     font-size: 16px;
+    font-weight: 800;
+    padding: 10px;
+    text-transform: uppercase;
 }
 
 .youtube-suggestions {
@@ -41,8 +41,8 @@
 }
 
 .modal-description-container p {
-    width: 90%;
     margin: 15px auto;
+    width: 90%;
 }
 
 @media screen and (max-width: 1080px) {
@@ -62,6 +62,7 @@
     .suggestion-row {
         margin: auto;
     }
+    
     .suggestion-list-title,
     .suggestion-row {
         width: 90%;

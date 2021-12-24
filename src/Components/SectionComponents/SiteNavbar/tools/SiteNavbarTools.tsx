@@ -27,7 +27,7 @@ export const DisplayMenuType = (props: DisplayMenuTypeProps) => {
 
 export const DisplayMenuList = (props: DisplayMenuListProps) => {
 
-    const { data, type, click } = props
+    const { click, data, type } = props
 
     const menu_list = data.map(sub => {
 

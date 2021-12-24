@@ -32,8 +32,8 @@ header {
 .site-navbar a,
 .site-small-link,
 .site-small-link a {
-    font-weight: 700;
     font-size: 17px;
+    font-weight: 700;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -49,9 +49,9 @@ header {
 .site-dropdown-content {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-top: 15px;
+    padding: 0px 15px 10px;
     position: absolute;
     z-index: 1;
-    padding: 0px 15px 10px;
 }
 
 /* SITE NAV LOGO */

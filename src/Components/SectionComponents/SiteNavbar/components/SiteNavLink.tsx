@@ -4,7 +4,7 @@ import {
     SiteNavbarProps, 
     SiteNavLinkProps, 
     SmallMenuIconProps
-} from "Components/SectionComponents/SiteNavbar/SiteNavbarProps"
+} from "../SiteNavbarProps"
 import { subMenuProps } from "Props/MainProps"
 // TOOLS
 import { DisplayMenuType } from "../tools/SiteNavbarTools"
@@ -24,24 +24,17 @@ export const SiteNavLink = (props: SiteNavLinkProps) => {
         title,
     } = props
 
-    const NavLinkLogic = link ?
-        <SiteLink 
-            link={link}
-            placeholder={title}
-            type="external"
-        />
-        :
-        <SiteLink
-            link={`/${StringJoin(title, " ", "-")}`}
-            placeholder={title}
-            type="local"
-        />
+    const LinkProps = {
+        link: RenderLogic(link, `/${StringJoin(title, " ", "-")}`),
+        placeholder: title,
+        type: link ? "external" : "local"
+    }
 
     return (
         <div className={`site-${link_type}-link`} 
             onClick={click}
         >
-            {NavLinkLogic}
+            <SiteLink {...LinkProps} />
         </div>
     )
 }
@@ -53,10 +46,10 @@ export const SiteNavDropdown = (props: SiteNavbarProps) => {
     const { data, title } = props
     
     const sub_menu_list = data.map(sub => (
-            <DisplayMenuType 
-                type="dropdown" 
+            <DisplayMenuType
                 data={sub}
                 key={sub.title}
+                type="dropdown"
             />
         )
     )

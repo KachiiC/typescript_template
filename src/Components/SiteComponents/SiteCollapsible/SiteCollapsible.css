@@ -8,14 +8,14 @@
 }
 
 .site-collapsible {
+    animation: fadeIn 2s;
+    background: black;
+    border-radius: 10px;
+    color: white;
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    background: black;
-    color: white;
     user-select: none;
-    border-radius: 10px;
-    animation: fadeIn 2s;
 }
 
 .site-collapsible-content {

@@ -15,10 +15,10 @@ const FooterSection = (props: footerSectionProps) => {
         const logoProps = {
             external_link: external_link,
             icon: title,
-            link: link,
             key: title,
-            title: title,
-            span: data.length
+            link: link,
+            span: data.length,
+            title: title
         }
         
         return props.type === "logos" ?
@@ -28,8 +28,7 @@ const FooterSection = (props: footerSectionProps) => {
             :
             <FooterLinks
                 {...logoProps}
-            /> 
-        
+            />
     })
 
 

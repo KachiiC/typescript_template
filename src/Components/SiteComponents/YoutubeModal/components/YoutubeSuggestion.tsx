@@ -10,7 +10,7 @@ const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
 
     return (
         <div className="site-flex suggestion-row w-90">
-            <div className="youtube-suggestion-title cursor-pointer w-50 ">
+            <div className="youtube-suggestion-title cursor-pointer w-50">
                 {TitleTrimmer(video_title, 45)}
             </div>
             <div className="youtube-thumbnail w-50 cursor-pointer" 

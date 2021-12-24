@@ -1,7 +1,7 @@
 // COMPONENTS
 import PagesRouter from "Components/SectionComponents/PagesRouter"
-import { AntdBackToTop } from "CSS/Transitions/BackToTop"
 // CSS
+import { AntdBackToTop } from "CSS/Transitions/BackToTop"
 import "./Main.css"
 
 const SiteMain = (

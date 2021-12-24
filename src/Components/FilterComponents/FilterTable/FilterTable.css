@@ -1,6 +1,6 @@
 .filter-list {
-    margin: 25px auto;
     animation: fadeIn 2s;
+    margin: 25px auto;
 }
 
 .filter-search select {
@@ -8,10 +8,10 @@
 }
 
 .filter-search input {
-    padding: 10px 5px;
-    margin: 20px auto;
-    text-align: center;
     font-size: inherit;
+    margin: 20px auto;
+    padding: 10px 5px;
+    text-align: center;
 }
 
 .filter-table-container {

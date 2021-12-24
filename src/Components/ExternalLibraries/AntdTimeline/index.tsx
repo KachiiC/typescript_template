@@ -6,6 +6,7 @@ import "antd/dist/antd.css"
 import "./AntdTimeline.css"
 // PROPS
 import { AntdTimelineProps } from "./AntdTimelineProps"
+import AntdToolTip from "@libraries/AntdToolTip"
 
 const AntdTimeline = (props: AntdTimelineProps) => {
 
@@ -17,13 +18,34 @@ const AntdTimeline = (props: AntdTimelineProps) => {
         
         const { color, content, event, year } = item 
 
+        const AntdEventProps = {
+            title: content,
+            placeholder: <h3>{event} ({year})</h3>
+        }
+
+        const AntdEvent = (
+            <>
+                <MediaQuery minWidth={1080}>
+                    <AntdToolTip
+                        {...AntdEventProps}
+                        placement="left"
+                    />
+                </MediaQuery>
+                <MediaQuery maxWidth={1079}>
+                    <AntdToolTip
+                        {...AntdEventProps}
+                        placement="top"
+                    />
+                </MediaQuery>
+            </>
+        )
+
         return (
             <Item className="timeline-item"
                 color={color} 
                 key={event}
             >
-                <h3>{event} ({year})</h3>
-                {content}
+                {AntdEvent}
             </Item>
         )
     })

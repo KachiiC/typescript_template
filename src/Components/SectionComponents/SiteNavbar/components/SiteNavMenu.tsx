@@ -38,15 +38,15 @@ export const SmallNavMenu = (props: SiteNavbarProps) => {
             <SmallMenuDropdown
                 click={click}
                 data={obj.sub_menu}
-                title={obj.title}
                 key={obj.title}
+                title={obj.title}
             />
             : 
             <DisplayMenuType
                 click={click} 
                 data={obj} 
-                type="small" 
                 key={obj.title}
+                type="small" 
             />
     )
 

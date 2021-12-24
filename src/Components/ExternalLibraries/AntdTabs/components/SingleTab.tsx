@@ -5,7 +5,12 @@ import { SingleTabProps } from "../AntdTabsProps"
 
 const SingleTab = (props: SingleTabProps) => {
 
-    const { content, description, link, title } = props
+    const { 
+        content,
+        description,
+        link,
+        title 
+    } = props
 
     const titleLogic = () => {
         if (title) {
@@ -18,7 +23,6 @@ const SingleTab = (props: SingleTabProps) => {
                             placeholder={title}
                         />
                     </h1>
-
                 )
             }
             return (

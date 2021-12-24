@@ -1,14 +1,18 @@
+export interface footerHeadingProps {
+    heading?: string
+}
+
 export interface footerCopyrightProps {
     name: string
     year: string | number 
 }
 
 export interface footerSectionDataProps { 
-    title: string
-    link?: string
-    icon?: string
     external_link?: string
+    icon?: string
+    link?: string
     span?: number
+    title: string
 }
 
 export interface footerSectionProps { 
@@ -17,9 +21,9 @@ export interface footerSectionProps {
 }
 
 export interface SiteFooterProps {
+    heading: string | undefined
     links_data: footerSectionDataProps[]
     logo_data: footerSectionDataProps[]
-    heading: string | undefined
     name: string ;
     year: string | number
 }

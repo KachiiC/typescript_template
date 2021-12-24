@@ -1,8 +1,8 @@
 export interface SinglePhotoProps {
-    image: string
-    title: string
     description?: string
+    image: string
     text_color?: string
+    title: string
 }
 
 export interface SitePhotoProps {

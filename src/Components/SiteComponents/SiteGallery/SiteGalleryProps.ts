@@ -29,6 +29,6 @@ export interface GalleryProps {
 }
 
 export interface GallerySelectedImageProps {
-    width: typeof widthProps
     image: string;
+    width: typeof widthProps
 }

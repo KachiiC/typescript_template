@@ -8,9 +8,9 @@
 
 .tabs-description,
 .tabs-content {
-    width: 85%;
-    margin: 25px auto;
     animation: fadeInUp 1s;
+    margin: 25px auto;
+    width: 85%;
 }
 
 @media screen and (max-width: 1080px) {
