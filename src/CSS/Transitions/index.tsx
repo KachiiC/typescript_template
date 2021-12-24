@@ -1,7 +1,5 @@
-// IMAGES
-import LoadingError from "Images/LoadingError.gif"
 // CSS
-import "./SiteTransitions.css"
+import "./Transitions.css"
 
 export const SiteLoading = () => {
 
@@ -20,14 +18,3 @@ export const SiteLoading = () => {
         </>
     )
 }
-
-export const SiteError = (
-    <div className="error-container">
-        <h1>Uh oh, there was a loading error...</h1>
-        <img src={LoadingError}
-            className="site-responsive-image"
-            alt="error-display"
-        />
-    </div>
-
-)

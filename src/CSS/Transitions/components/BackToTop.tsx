@@ -1,7 +1,11 @@
 import { useEffect } from "react"
+// COMPONENTS
+import { BackTop } from "antd"
 import { useLocation } from "react-router"
+// CSS
+import "antd/dist/antd.css"
 
-const ScrollToTop = (props: { children: undefined; }) => {
+export const ScrollToTop = (props: { children: undefined; }) => {
   const location = useLocation();
   
   useEffect(() => {
@@ -12,4 +16,4 @@ const ScrollToTop = (props: { children: undefined; }) => {
   return <>{props.children}</>
 }
 
-export default ScrollToTop;
+export const AntdBackToTop = <BackTop />

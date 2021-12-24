@@ -4,9 +4,14 @@ Example Data:
         {
             title: "Example Title"
             content: "Example Content"
-            description: "Example Description"
         }
     ]
+
+PROPS 
+    data: An array of objects each must have title and content keys.
+    position: must be either "top" (default), "bottom, "left" or "right"
+    size: size must be either "large" or "small"
+    width: must be multiples of 10, default is 90%
 
 Example Usage:
 

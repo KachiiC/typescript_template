@@ -7,6 +7,8 @@ import "./AntdTimeline.css"
 // PROPS
 import { AntdTimelineProps } from "./AntdTimelineProps"
 import AntdToolTip from "@libraries/AntdToolTip"
+// TOOLS
+import { RenderLogic } from "Tools/FunctionTools"
 
 const AntdTimeline = (props: AntdTimelineProps) => {
 
@@ -42,7 +44,7 @@ const AntdTimeline = (props: AntdTimelineProps) => {
 
         return (
             <Item className="timeline-item"
-                color={color} 
+                color={RenderLogic(color, "black")} 
                 key={event}
             >
                 {AntdEvent}

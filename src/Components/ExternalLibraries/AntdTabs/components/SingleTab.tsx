@@ -1,51 +1,19 @@
-// COMPONENTS
-import { SiteLink } from "Tools/LinkTools"
 // PROPS
 import { SingleTabProps } from "../AntdTabsProps"
+// TOOLS
+import { TitleLogic } from "Tools/StringTools"
 
 const SingleTab = (props: SingleTabProps) => {
 
-    const { 
+    const {
         content,
-        description,
-        link,
-        title 
+        title
     } = props
-
-    const titleLogic = () => {
-        if (title) {
-            if (link) {
-                return (
-                    <h1 className="tabs-title">
-                        <SiteLink
-                            link={link}
-                            type="external"
-                            placeholder={title}
-                        />
-                    </h1>
-                )
-            }
-            return (
-                <h1 className="tabs-title">
-                    {title}
-                </h1>
-            )
-        }
-    }
-
-    const descriptionLogic = () => {
-        if (description) return (
-            <p className="tabs-description">
-                {description}
-            </p>
-        )
-    }
 
     return (
         <>
-            {titleLogic()}
-            {descriptionLogic()}
-            <div className="tabs-content">
+            {TitleLogic(title, "h1")}
+            <div className={`tabs-content w-90`}>
                 {content}
             </div>
         </>

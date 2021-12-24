@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 // COMPONENTS
-import FilterGalleryButtons from "./components/FilterCardsGalleryButtons"
-import FilterGalleryComponent from "./components/FilterCardsGalleryComponent"
+import FilterGalleryButtons from "./components/FilterCardsButtons"
+import FilterGalleryComponent from "./components/FilterCardsComponent"
 // CSS 
-import "./FilterCardsGallery.css"
+import "./FilterCards.css"
 // PROPS
 import { SiteCardProps } from "@components/SiteCards/SiteCardProps"
 // TOOLS

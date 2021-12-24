@@ -2,22 +2,24 @@ import { Route } from "react-router-dom"
 // PROPS
 import { pageDataProps } from "Props/MainProps"
 // TOOLS
-import { StringJoin } from "./StringTools"
+import { StringJoin } from "Tools/StringTools"
+
+
+// Turns title of input into link joined by "-" if more than one word.
+const LinkCreate = (input: string) => {
+    if (input.length > 1) {
+        return StringJoin(input, " ", "-")
+    }
+    return input
+}
 
 // Creates links for each object in pages data
 export const LinkRenderer = (data: pageDataProps[]) => {
 
-    const link_create = (input: string) => {
-        if (input.length > 1) {
-            return StringJoin(input, " ", "-")
-        }
-        return input
-    }
-
     return data.map(menu => {
 
         menu.sub_menu ?
-            menu.sub_menu.map(sub => sub.link = link_create(sub.title))
+            menu.sub_menu.map(sub => sub.link = LinkCreate(sub.title))
             : 
             menu.link = StringJoin(menu.title, " ", "-")
             
@@ -26,7 +28,7 @@ export const LinkRenderer = (data: pageDataProps[]) => {
 }
 
 // create route for single object in pages data
-export const Menu_Routes = (input: pageDataProps) => {
+const Menu_Routes = (input: pageDataProps) => {
 
     const { content, link, title} = input
 
@@ -52,4 +54,3 @@ export const RoutesRender = (dataSet: pageDataProps[]) => {
 
     return Routes_list
 }
-

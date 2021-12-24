@@ -1,11 +1,11 @@
 export interface AntdTimelineDataProps { 
     content: string
-    year: number
+    color?: string
     event: string
-    color?: string | undefined
+    year: number
 }
 
 export interface AntdTimelineProps {
     data: AntdTimelineDataProps[]
-    title: string;
+    title: string
 }

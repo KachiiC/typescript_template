@@ -9,7 +9,12 @@ import { RenderLogic } from "Tools/FunctionTools"
 
 const AntdToolTip = (props: AntdToolTipProps) => {
 
-    const { color, title, placeholder, placement } = props
+    const { 
+        color,
+        title,
+        placeholder,
+        placement
+    } = props
 
     return (
         <Tooltip

@@ -1,12 +1,11 @@
 export interface AntdTabsProps {
     data: SingleTabProps[]
-    position?: "left" | "top"
+    position?: "bottom" | "left" | "right" | "top"
     size?: "large" | "small"
+    width?: number | string
 }
 
 export interface SingleTabProps {
-    content?: string | JSX.Element | undefined
-    description?: string
-    link?: string
-    title?: React.Key | null | undefined
+    content: string | JSX.Element
+    title: string
 }

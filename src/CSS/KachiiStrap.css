@@ -60,21 +60,6 @@
     grid-column: span 12;
 }
 
-.site-col-1,
-.site-col-2,
-.site-col-3,
-.site-col-4,
-.site-col-5,
-.site-col-6,
-.site-col-7,
-.site-col-8,
-.site-col-9,
-.site-col-10,
-.site-col-11,
-.site-col-12 {
-    margin: auto
-}
-
 .site-border {
     border: 1px solid black;
 }
@@ -132,6 +117,18 @@
 
 .w-10 {
     width: 10%;
+}
+
+.w-10,
+.w-20,
+.w-30,
+.w-40,
+.w-50,
+.w-60,
+.w-70,
+.w-80,
+.w-90 {
+    margin: auto
 }
 
 .h-100 {
@@ -209,7 +206,7 @@
 }
 
 .site-shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #00000033;
 }
 
 /** Cursor **/

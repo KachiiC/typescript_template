@@ -7,6 +7,7 @@ import { AntdTableProps } from "./AntdTableProps"
 // TOOLS
 import { defaultColumn } from "./tools/columnFunctions"
 import { IfStatement, RenderLogic } from "Tools/FunctionTools"
+import { TitleLogic } from "Tools/StringTools"
 
 const AntdTable = (props: AntdTableProps) => {
 
@@ -15,20 +16,18 @@ const AntdTable = (props: AntdTableProps) => {
         data,
         default_sort,
         pagination,
-        title
+        title,
+        width
     } = props
 
     const columnsLogic = RenderLogic(
         columns, 
-        defaultColumn(
-            data,
-            IfStatement(default_sort)
-        )
+        defaultColumn(data, IfStatement(default_sort))
     )
 
     return (
-        <div className="w-90">
-            <h1>{IfStatement(title)}</h1>
+        <div className={`w-${RenderLogic(width, 90)}`}>
+            {TitleLogic(title, "h1")}
             <Table 
                 columns={columnsLogic} 
                 dataSource={data} 

@@ -1,33 +1,25 @@
-.tabs-title {
+.antd-tabs-container {
+    margin: 25px auto;
+}
+
+.antd-tabs-container h1 {
     text-transform: uppercase;
 }
 
-.tabs-description {
+.tabs-content {
     min-height: 50px;
 }
 
-.tabs-description,
+.antd-tabs-container h1,
 .tabs-content {
-    animation: fadeInUp 1s;
-    margin: 25px auto;
-    width: 85%;
-}
-
-@media screen and (max-width: 1080px) {
-    .tabs-description,
-    .tabs-content {
-        width: 90%;
-    }
+    animation: fadeIn 2s;
 }
 
 @media screen and (max-width: 640px) {
-    .tabs-description,
-    .tabs-content {
-        width: 100%;
-    }
 
     .tabs-content {
         height: 60vh;
+        width: 100%;
         overflow-y: scroll;
     }
 }

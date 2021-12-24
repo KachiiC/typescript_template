@@ -1,8 +1,6 @@
 // PROPS
-import { ObjectDataProps } from "Props/Tools/ToolProps"
 import { pageDataProps } from "Props/MainProps"
 // TOOLS
-import { ObjKeys } from "./ObjectDataTools"
 
 // If page has a title but no content use this to render an example
 export const ExampleContentRender = (data: pageDataProps[]) => {
@@ -12,15 +10,4 @@ export const ExampleContentRender = (data: pageDataProps[]) => {
         
         return page
     })
-}
-
-// Takes the Footer Pages from DataOverview and creates example pages.
-export const FooterPagesExampleRender = (data: ObjectDataProps) => {
-    
-    const keys = ObjKeys(data).filter(value => value)
-    
-    keys.map(key => data[key] = <h1>Displayed page: {key}</h1>)
-    
-    return data
-
 }

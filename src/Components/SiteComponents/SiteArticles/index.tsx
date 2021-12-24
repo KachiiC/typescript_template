@@ -24,8 +24,8 @@ const SiteArticle = (props: SiteArticleProps) => {
         const linkLogic = link_type === "external" ? link : `/${link}`
 
         const SingleArticle = {
-            date: date ,
-            description: description ,
+            date: date,
+            description: description,
             image: image,
             key: title,
             link: linkLogic,

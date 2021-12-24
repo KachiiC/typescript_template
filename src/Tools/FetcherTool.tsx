@@ -42,7 +42,8 @@ export const SiteFetcher = (url: string, argument?: string ) => {
 // Site Render while fetching
 export const SiteRender = (props: SiteRenderProps) => {
 
-    const {component, fetch } = props
+    const { component, fetch } = props
+
     const { error, loading } = fetch
 
     const displayLogic = loading ? 

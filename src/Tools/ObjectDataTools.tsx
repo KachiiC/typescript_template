@@ -1,6 +1,3 @@
-// PROPS
-import { ObjectDataProps } from "Props/Tools/ToolProps"
-
 // Returns keys of an object
 export const ObjKeys = (input: Object) => Object.keys(input)
 
@@ -23,33 +20,4 @@ export const UnqiueValues = (data: any[], value: string) =>  {
     })
 
     return uniqueArray
-}
-
-export const ObjectDataRender = (data: ObjectDataProps , type: string) => {
-
-    const data_keys = ObjKeys(data)
-  
-    const data_links = data_keys.map(key => {
-
-        const social_data = {
-            title: key,
-            icon: key,
-            link: `https://www.${key}.com/${data[key]}`
-        }
-
-        const routerLogic = typeof data[key] === "string" ? 
-            {
-                title: key,
-                external_link: ObjValue(data)[data_keys.indexOf(key)],
-            }
-            :
-            {
-                title: key,
-                content: data[key]
-            }
-
-        return type === "social" ? social_data : routerLogic
-    })
-
-    return data_links
 }

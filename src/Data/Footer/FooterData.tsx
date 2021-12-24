@@ -1,8 +1,13 @@
 // DATA
 import DataOverview from "Data/DataOverview"
 // TOOLS
-import { ObjectDataRender } from "Tools/ObjectDataTools"
+import { FooterDataRender } from "./tools/FooterDataTools"
 
-export const FooterLogoData = ObjectDataRender(DataOverview.social_media, "social")
+const {
+    footer_pages,
+    social_media
+} = DataOverview
 
-export const FooterPages = ObjectDataRender(DataOverview.footer_pages, "footer")
+export const FooterLogoData = FooterDataRender(social_media, "social")
+
+export const FooterPages = FooterDataRender(footer_pages, "footer")

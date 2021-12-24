@@ -1,13 +1,9 @@
 // TOOLS
 import { RenderLogic } from "./FunctionTools"
 
-// If string is over length trim it and add ... to the end
-export const TitleTrimmer = (word: string, length: number) => {
-
-    return word.length < length ? 
-        word 
-        : 
-        word.slice(0,length) + "..."
+// Returns String in uppercase depending on split and join
+export const StringJoin = (string: string, split?: string, join?: string) => {
+    return string.split(RenderLogic(split, "")).join(join).toUpperCase()
 }
 
 // Returns title and size
@@ -40,7 +36,11 @@ export const TitleLogic = (title: string | undefined, size: string | undefined) 
     if (title) return displaytitle
 }
 
-// Returns String in uppercase depending on split and join
-export const StringJoin = (string: string, split?: string, join?: string) => {
-    return string.split(RenderLogic(split, "")).join(join).toUpperCase()
+// If string is over length trim it and add ... to the end
+export const TitleTrimmer = (word: string, length: number) => {
+
+    return word.length < length ? 
+        word 
+        : 
+        word.slice(0,length) + "..."
 }

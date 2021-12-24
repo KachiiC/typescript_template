@@ -4,6 +4,7 @@ import {
     stringDataProps 
 } from "Props/PropsTemplates"
 
+
 export interface AntdTableColumnProps {
     dataIndex: string
     defaultSortOrder?: "ascend" | "descend"
@@ -18,4 +19,5 @@ export interface AntdTableProps {
     default_sort?: string
     pagination?: boolean
     title?: string
+    width?: string | number
 }

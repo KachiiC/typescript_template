@@ -1,5 +1,5 @@
 // COMPONENTS
-// import { TestComponent } from "./TestComponent"
+import { TestComponent } from "./TestComponent"
 // CSS
 import "./Test.css"
 // DATA
@@ -10,6 +10,7 @@ const Test = () => {
 
     return (
         <div className="test-page">
+            <TestComponent />
         </div>
     )
 }

@@ -1,45 +1,21 @@
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+/* HOME */
+.home-header {
+    animation: fadeIn 2s;
 }
 
-@keyframes fadeOut {
-    0% {
-      opacity: 1;
-    }
-  
-    100% {
-      opacity: 0;
-    }
+.home-portfolio {
+    animation: fadeInUp 1.5s;
 }
-  
-  
-@keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translate3d(0, 100%, 0);
-    }
-  
-    100% {
-      opacity: 1;
-      transform: none;
-    }
-}
-  
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
 
-    100% {
-        opacity: 1;
-        transform: none;
-    }
+/* ABOUT */
+.about-contact,
+.about-description,
+.about-introduction,
+.about-skills-container, 
+.about-title,
+/* COMPONENTS */
+.components-page,
+/* PROJECTS */
+.projects-page {
+    animation: fadeInUp 2s;
 }
-  

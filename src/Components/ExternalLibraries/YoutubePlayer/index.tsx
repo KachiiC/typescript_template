@@ -9,12 +9,14 @@ const YoutubePlayer = (props: YoutubeProps) => {
 
     return (
         <iframe 
-            allow="accelerometer;
+            allow="
+                accelerometer;
                 autoplay; 
                 clipboard-write; 
                 encrypted-media; 
                 gyroscope; 
-                picture-in-picture" 
+                picture-in-picture
+            " 
             allowFullScreen 
             frameBorder="0"
             height={RenderLogic(height, "315")}

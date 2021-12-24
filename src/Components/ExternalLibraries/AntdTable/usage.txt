@@ -1,0 +1,39 @@
+Example Data:
+
+    const ExampleData = [
+        {
+            name: "john smith",
+            address: "1 example street, london",
+        },
+        {
+            name: "jane doe",
+            address: "2 example street, manchester",
+        },
+        {
+            name: "max power",
+            address: "3 example street, brighton",
+        }
+    ]
+
+PROPS:
+    data: Array of strings or number
+
+OPTIONAL PROPS:
+    columns: Antd columns 
+    default_sort: must be a key from array
+    pagination: boolean
+    title: string only
+    width: multiples of 10, default is 90% width
+
+Example Usage:
+
+    <AntdTable
+        // PROPS
+        data={ExampleData}
+        // OPTIONAL
+        columns
+        default_sort="name"
+        pagination
+        title
+        width
+    />
