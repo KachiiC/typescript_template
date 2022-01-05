@@ -1,6 +1,6 @@
 // YOUTUBE PROPS
 export interface YoutubeProps {
-    height?: string
+    height?: string | number
     id: string
-    width?: string
+    width?: string | number
 }

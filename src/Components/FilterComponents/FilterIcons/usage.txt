@@ -1,0 +1,29 @@
+Example Data:
+
+    const ExampleData = [
+        {
+            name: "twitter",
+            type: "owned"
+        },
+        {
+            name: "facebook",
+            type: "owned"
+        },
+        {
+            name: "instagram",
+            type: "unowned"
+        }
+    ]
+
+** Note: if name and icon is included in switch model in "Tools/SiteIcon" the icon will be faHtml5.
+
+// Usage:
+
+    <FilterIcons
+        // PROPS
+        data={ExampleData}
+    />
+
+// PROPS
+    data: an array of objects which all must contain the value name. 
+        type is optional but if not included will be included as a filter option.

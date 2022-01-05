@@ -4,7 +4,6 @@ import { pageDataProps } from "Props/MainProps"
 // TOOLS
 import { StringJoin } from "Tools/StringTools"
 
-
 // Turns title of input into link joined by "-" if more than one word.
 const LinkCreate = (input: string) => {
     if (input.length > 1) {

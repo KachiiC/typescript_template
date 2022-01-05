@@ -9,7 +9,10 @@ const IconsList = (props: IconsListProps) => {
     const { data } = props
 
     const displayedIcons = data.map(obj => 
-        <IconItem type={obj.type} skill={obj.skill} />
+        <IconItem 
+            type={obj.type} 
+            name={obj.name} 
+        />
     )
 
     return (

@@ -1,0 +1,26 @@
+Example Data:
+
+    const ExampleData = [
+        {
+            content: "content 1"
+            event: string
+            year: 2022
+        },
+        {
+            content: "content 2"
+            color: "red"
+            event: "event 1"
+            year: 1993
+        }
+    ]
+
+Example Usage:
+
+    <AntdTimeline
+        data={ExampleData}
+        title="Example title"
+    />
+
+PROPS 
+    data: An array of objects each must have content, event, year. color is optional, default is black.
+    title: must be a string

@@ -21,9 +21,9 @@ export const antdColumns = (data: objectData[]) => {
             (a: intDataProps, b: intDataProps) => a[key] - b[key]
 
         return {
-            title: StringJoin(key, "_", " "),
             dataIndex: key,
-            sorter: sortLogic
+            sorter: sortLogic,
+            title: StringJoin(key, "_", " ")
         } 
     })
 }

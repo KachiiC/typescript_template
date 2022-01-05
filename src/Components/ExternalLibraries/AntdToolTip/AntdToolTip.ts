@@ -4,5 +4,5 @@ export interface AntdToolTipProps {
     placeholder: string | JSX.Element
     placement?: "bottom" | "bottomLeft" | "bottomRight" | "left" | "leftBottom" | "leftTop" | 
     "top" | "topLeft" | "topRight" | "rightBottom" | "right" | "rightTop" 
-    title: string | JSX.Element
+    content: string | JSX.Element
 }

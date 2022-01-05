@@ -31,9 +31,9 @@ Example Usage:
         // PROPS
         data={ExampleData}
         // OPTIONAL
-        columns
+        columns={ExampleColumns}
         default_sort="name"
         pagination
-        title
-        width
+        title="Example title"
+        width={80}
     />

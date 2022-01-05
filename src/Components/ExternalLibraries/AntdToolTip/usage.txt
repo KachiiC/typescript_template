@@ -1,0 +1,16 @@
+Example Usage:
+
+        <AntdTooltip
+            placeholder="placeholder"
+            content="content"
+            // OPTIONAL
+            color="black"
+            placement="center"
+        </AntdTooltip>
+
+PROPS 
+    content: must be string or JSX Element
+    placeholder: either a string or JSX Element
+    // OPTIONAL
+    color: must be one of the css color
+    placement: must be top, bottom, left, right or combonation in cammel case (i.e: bottomRight)

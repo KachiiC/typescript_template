@@ -1,6 +1,8 @@
 main {
     background: white;
     min-height: 80vh;
-    padding-top: 66px;
+    padding-top: 80px;
     text-align: center;
+    width: 100%;
+    overflow-x: scroll;
 }

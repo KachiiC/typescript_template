@@ -12,14 +12,16 @@ import SiteHeader from "Sections/Header"
 import SiteMain from "Sections/Main"
 
 const App = (
-  <StrictMode>
-    <BrowserRouter>
-    <ScrollToTop children={undefined} />
-      {SiteHeader}
-      {SiteMain}
-      {SiteFooter}
-    </BrowserRouter>
-  </StrictMode>
+  <BrowserRouter>
+    <StrictMode>
+      <ScrollToTop 
+        children={undefined} 
+      />
+        {SiteHeader}
+        {SiteMain}
+        {SiteFooter}
+    </StrictMode>
+  </BrowserRouter>
 )
 
 export default App

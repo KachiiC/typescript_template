@@ -5,10 +5,10 @@ import SiteIcon from "Tools/SiteIcon"
 
 const IconItem = (props: IconDataProps) => (
     <div className="site-col-2 filter-icons-icon" 
-        key={props.skill}
+        key={props.name}
     >
-        <SiteIcon type={props.skill} size="2x" />
-        <h3>{props.skill.toUpperCase()}</h3>
+        <SiteIcon type={props.name} size="2x" />
+        <h3>{props.name.toUpperCase()}</h3>
     </div>
 )
 

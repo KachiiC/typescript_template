@@ -1,0 +1,12 @@
+// USAGE
+
+    <YoutubePlayer
+        height={300}
+        id="9Auq9mYxFEE"
+        width="100%"
+    />
+
+// PROPS
+    height: must be a string or number, can also be percentage (i.e: 100%)
+    width: must be a string or number, can also be percentage (i.e: 100%)
+    id: Youtube Id

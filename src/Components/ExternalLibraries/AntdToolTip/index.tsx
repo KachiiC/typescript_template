@@ -11,7 +11,7 @@ const AntdToolTip = (props: AntdToolTipProps) => {
 
     const { 
         color,
-        title,
+        content,
         placeholder,
         placement
     } = props
@@ -20,7 +20,7 @@ const AntdToolTip = (props: AntdToolTipProps) => {
         <Tooltip
             className="cursor-pointer"
             color={RenderLogic(color, "black")}
-            title={title}
+            title={content}
             placement={RenderLogic(placement, "left")}
         >
             {placeholder}

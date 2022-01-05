@@ -21,7 +21,7 @@ const AntdTimeline = (props: AntdTimelineProps) => {
         const { color, content, event, year } = item 
 
         const AntdEventProps = {
-            title: content,
+            content: content,
             placeholder: <h3>{event} ({year})</h3>
         }
 

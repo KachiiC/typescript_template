@@ -8,6 +8,7 @@ import { AntdTableProps } from "./AntdTableProps"
 import { defaultColumn } from "./tools/columnFunctions"
 import { IfStatement, RenderLogic } from "Tools/FunctionTools"
 import { TitleLogic } from "Tools/StringTools"
+import { ObjKeys } from "Tools/ObjectDataTools"
 
 const AntdTable = (props: AntdTableProps) => {
 
@@ -32,6 +33,7 @@ const AntdTable = (props: AntdTableProps) => {
                 columns={columnsLogic} 
                 dataSource={data} 
                 pagination={RenderLogic(pagination, false)}
+                rowKey={ObjKeys(data[0])[0]}
             />
         </div>
     )

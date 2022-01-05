@@ -1,3 +1,6 @@
+import About from "Pages/Displayed/About"
+import FAQ from "Pages/Displayed/FAQ"
+
 const DataOverview = {
     // Replace the strings with your social media handles
     navbar_data: {
@@ -10,11 +13,12 @@ const DataOverview = {
     },
     footer_pages: {
         // Replace this with your own pages or remove key and value if not required 
-        about: <h1>About</h1>,
-        faq: <h1>FAQ</h1>,
+        about: About,
+        faq: FAQ,
         external_link: "https://www.google.com/"
     },
     social_media: {
+        // Replace or comment out unrelated social media handles
         facebook: "facebook",
         instagram: "instagram",
         github: "github",
@@ -23,7 +27,7 @@ const DataOverview = {
         snapchat: "snapchat",
         tiktok: "tiktok",
         youtube: "youtube",
-    },
+    }
 }
 
 export default DataOverview

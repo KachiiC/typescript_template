@@ -1,5 +1,5 @@
 export interface IconDataProps {
-    skill: string
+    name: string
     type?: string
 }
 

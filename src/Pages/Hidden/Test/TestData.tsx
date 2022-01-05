@@ -1,14 +1,14 @@
 export const TestData = [
     {
-        title: "first title",
-        content: <h2>First content</h2>
+        name: "twitter",
+        type: "hero"
     },
     {
-        title: "second title",
-        content: <h2>Second content</h2>
+        name: "facebook",
+        type: "hero"
     },
     {
-        title: "third title",
-        content: <h2>Third content</h2>
-    },
+        name: "instagram",
+        type: "villan"
+    }
 ]
