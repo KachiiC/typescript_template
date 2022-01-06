@@ -1,0 +1,61 @@
+Example Data:
+
+    const ExampleData = [
+    {
+        description: "Jan description",
+        image: "https://via.placeholder.com/150/0000FF/FFFFFF/?text=Jan",
+        link: "https://via.placeholder.com/150/0000FF/FFFFFF/?text=Jan",
+        title: "Jan"
+    },
+    {
+        date: "May",
+        image: "https://via.placeholder.com/150/FF0000/FFFFFF/?text=May",
+        link: "https://via.placeholder.com/150/FF0000/FFFFFF/?text=May",
+        title: "May"
+    },
+    {
+        date: "April",
+        description: "Aprildescription",
+        image: "https://via.placeholder.com/150/000000/FFFFFF/?text=April",
+        link: "https://via.placeholder.com/150/000000/FFFFFF/?text=April",
+        title: "April"
+    },
+    {
+        date: "March",
+        description: "March description",
+        image: "https://via.placeholder.com/150/000000/FFFFFF/?text=March",
+        link: "https://via.placeholder.com/150/000000/FFFFFF/?text=March",
+        title: "March"
+    },
+    {
+        date: "Feb",
+        description: "Feb description",
+        image: "https://via.placeholder.com/150/000000/FFFFFF/?text=Feb",
+        link: "https://via.placeholder.com/150/000000/FFFFFF/?text=Feb",
+        title: "Feb"
+    },
+    {
+        date: "June",
+        description: "Jan description",
+        image: "https://via.placeholder.com/150/000000/FFFFFF/?text=Jan",
+        link: "https://via.placeholder.com/150/000000/FFFFFF/?text=Jan",
+        title: "June"
+    },
+]
+
+** Note, the data only take Objects examples
+
+// Usage:
+
+    <SiteArticles
+        // PROPS
+        data={ExampleData}
+        link_type="local"
+    />
+
+// PROPS
+    data: an array of objects which contains image, link, title (all strings).
+        description and date and link_type are optional.
+    link_type: this sets the type of link for all images"external" or "local", 
+        you can also overide this by declaring link_type as a key in the data objects
+

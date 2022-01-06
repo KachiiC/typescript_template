@@ -13,6 +13,7 @@ const SingleRowImage = (props: GalleryImageProps) => {
     return (
         <div className="site-col-1">
             <GalleryImage 
+                type="row"
                 title={title}
                 image={image}
                 click={click}
@@ -36,7 +37,7 @@ const GalleryImagesRow = (props: GalleryImageRowProps) => {
     ).slice(0, row_number)
 
     return (
-        <div className={`w-${width} `}>
+        <div className={`w-${width}`}>
             <div className="site-grid" 
                 style={GridStyle(row_number)}
             >

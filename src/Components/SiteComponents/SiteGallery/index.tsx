@@ -11,13 +11,9 @@ import { GalleryProps } from ".//SiteGalleryProps"
 import { RenderLogic } from "Tools/FunctionTools"
 import { TitleLogic } from "Tools/StringTools"
 
-
 const SiteGallery = (props: GalleryProps) => {
 
     const { data, title, width, number } = props
-
-    // WIDTH LOGIC
-    const widthLogic = RenderLogic(width, 80)
 
     // IMAGE LOGIC
     const [displayedImage, setDisplayedImage] = useState(0)
@@ -26,7 +22,7 @@ const SiteGallery = (props: GalleryProps) => {
     const gallerySelectedImage = (
         <GallerySelectedImage 
             image={data[displayedImage].image}
-            width={widthLogic}
+            width={RenderLogic(width, 80)}
         />
     )
     
@@ -49,9 +45,9 @@ const SiteGallery = (props: GalleryProps) => {
             />
             <GalleryImagesRow 
                 data={data}
-                row_number={RenderLogic(number, 4)}
+                row_number={RenderLogic(number, data.length)}
                 setFunction={setDisplayedImage}
-                width={widthLogic}
+                width={RenderLogic(width, 80)}
             />
         </div>
     )

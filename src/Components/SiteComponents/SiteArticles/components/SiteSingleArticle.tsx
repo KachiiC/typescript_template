@@ -6,7 +6,7 @@ import { SiteLink } from "Tools/LinkTools"
 
 const SiteSingleArticle = (props: SingleArticleProps) => {
 
-    const { 
+    const {
         date, 
         description, 
         image, 
@@ -40,7 +40,7 @@ const SiteSingleArticle = (props: SingleArticleProps) => {
     
     return (
         <div className="gridytest">
-            <SiteLink 
+            <SiteLink
                 link={link} 
                 type={link_type} 
                 placeholder={component}

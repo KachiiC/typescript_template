@@ -6,6 +6,7 @@ export interface GalleryImageProps {
     click?: MouseEventHandler<HTMLDivElement>
     image: string
     title: string
+    type?: "row" | "selected"
 }
 
 export interface GalleryImageRowProps { 
@@ -24,7 +25,7 @@ export interface GalleryModalImageProps {
 export interface GalleryProps {
     data: GalleryImageProps[]
     number?: number
-    title?: string| undefined
+    title?: string
     width: typeof widthProps
 }
 

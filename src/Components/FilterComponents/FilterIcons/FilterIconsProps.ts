@@ -10,7 +10,6 @@ export interface FilterIconButtonsProps {
 
 export interface FilterIconsProps {
     data: IconDataProps[]
-    title?: string
 }
 
 export interface IconsListProps {

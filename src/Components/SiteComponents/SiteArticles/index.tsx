@@ -6,6 +6,7 @@ import "./SiteArticles.css"
 import {  SiteArticleProps } from "./SiteArticlesProps"
 // TOOLS
 import { TitleTrimmer } from "Tools/StringTools"
+import { RenderLogic } from "Tools/FunctionTools"
 
 const SiteArticle = (props: SiteArticleProps) => {
 
@@ -29,7 +30,7 @@ const SiteArticle = (props: SiteArticleProps) => {
             image: image,
             key: title,
             link: linkLogic,
-            link_type: link_type,
+            link_type: RenderLogic(card.link_type, link_type),
             title: TitleTrimmer(title, 60),
         }
 

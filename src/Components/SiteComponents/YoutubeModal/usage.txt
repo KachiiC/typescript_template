@@ -1,0 +1,47 @@
+// Data:
+
+const ExampleCurrent = {
+    "video_title": "Free Fight: Jose Aldo vs Chad Mendes 2 | UFC 179, 2014",
+    "video_id": "pEDW8_mHfpo",
+    "video_description": "Jose Aldo successfully defended his UFC featherweight title when he faced Chad Mendes for the second time at UFC 179 in an entertaining Fight of the Night contest.",
+    "video_thumbnail": "https://i.ytimg.com/vi/pEDW8_mHfpo/maxresdefault.jpg",
+    "upload_date": "27/06/2020"
+}
+
+const ExampleData = [
+    {
+        "video_title": "Eddie Alvarez vs Conor McGregor | Official Fight Highlights | #UFC246",
+        "video_id": "Htf8Jt-elxo",
+        "video_description": "Conor McGregor becomes the double champ with a huge win at UFC 205 in New York.",
+        "video_thumbnail": "https://i.ytimg.com/vi/Htf8Jt-elxo/maxresdefault.jpg",
+        "upload_date": "27/06/2020"
+    },
+    {
+        "video_title": "Free Fight: Jon Jones vs Alexander Gustafsson 1 | UFC 165,  2013",
+        "video_id": "en4hR34Bl8w",
+        "video_description": "Relive one of the most entertaining bouts in Jon Jones career so far as he took on Alexander Gustafsson for the first time in a razor-close matchup back in 2013 at UFC 165. ",
+        "video_thumbnail": "https://i.ytimg.com/vi/en4hR34Bl8w/maxresdefault.jpg",
+        "upload_date": "27/06/2020"
+    },
+    {
+        "video_title": "Dustin Poirier vs Justin Gaethje (full fight) | 2018, UFC Glendale",
+        "video_id": "9nS9s5VrHoo",
+        "video_description": "The Diamond finished Gaethje in the fourth, but his opponent wasn't impressed with the decision of Herb Deen. ",
+        "video_thumbnail": "https://i.ytimg.com/vi/9nS9s5VrHoo/maxresdefault.jpg",
+        "upload_date": "27/06/2020"
+    }
+]
+
+// Usage:
+    <YoutubeModal
+        component={<button>Click Here</button>}
+        current={ExampleCurrent}
+        data={ExampleData}
+    />
+
+// Props:
+    component: the component that opens the youtube modal, if not declared uses current
+    current: an object with upload_date, video_description, video_id, video_thumbnail and video_title 
+        must be declared all must be strings. This will be the displayed video when modal opens.
+    data: an array of objects with upload_date, video_description, video_id, video_thumbnail, 
+        video_title and must be declared all must be strings. This will be the suggestions list.

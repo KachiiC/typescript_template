@@ -1,0 +1,29 @@
+// Data:
+
+const ExampleData = [
+    {
+        image: "https://via.placeholder.com/150/000000/FFFFFF/?text=first",
+        title: "first"
+    },
+    {
+        image: "https://via.placeholder.com/150/000000/FFFFFF/?text=second",
+        title: "second"
+    }
+]
+
+// Usage:
+    <SiteGallery
+        data={ExampleData}
+        // OPTIONAL
+        number={2}
+        title="Gallery Title"
+        width={80}
+    />
+
+
+// Props:
+    data: an array of objects, each object must have a image and title (both strings).
+    title: must be a string
+    width: must be a multiple of 10, number or string (90 is default)
+    number: crops the number of photos displayed
+

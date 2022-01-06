@@ -1,0 +1,20 @@
+// USAGE:
+    <SiteModal 
+        component={<button>Click Here</button>}
+        content={<div>Content</div>}
+        type="modal"
+    />
+
+    or
+
+    <SiteModal 
+        component={<button>Click Here for blank</button>}
+        content={<div>Blank Content</div>}
+        type="blank"
+    />
+
+
+// PROPS:
+    component: This is what you click to open the modal, must be a jsx element. 
+    content: What the modal displays, must be a jsx element
+    type: detirmines the background, modal returns a modal window, blank returns a full screen

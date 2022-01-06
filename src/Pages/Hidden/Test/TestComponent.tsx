@@ -1,7 +1,7 @@
 // DATA
+import SiteTable from "@components/SiteTable"
 import { TestData } from "./TestData"
 // COMPONENTS
-import FilterIcons from "Components/FilterComponents/FilterIcons"
 
 export const TestSingleComponent = () => {
     return (
@@ -11,10 +11,13 @@ export const TestSingleComponent = () => {
 }
 
 export const TestComponent = () => {
+
     return (
         <>
-            <FilterIcons 
-                data={TestData} 
+            <SiteTable
+                data={TestData}
+                width={90}
+                overflow={true}
             />
         </>
     )

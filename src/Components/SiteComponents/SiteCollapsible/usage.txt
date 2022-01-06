@@ -1,0 +1,34 @@
+Example Data:
+
+    const ExampleData = [
+        {
+            content: <div>Content 1</div>
+            title: Title 1
+        },
+        {
+            content: <div>Content 2</div>
+            text_color: "black"
+            title: Title 2
+            background_color: "grey"
+        },
+    ]
+
+** Note, the data only take Objects examples
+
+// Usage:
+
+    <SiteCollapsible
+        data={ExampleData}
+        // OPTIONAL
+        background_color="yellow"
+        text_color="black"
+        width={80}
+    />
+
+// PROPS
+    data: An array of objects which must each contain a title (string) and content (JSX.Element)
+        background_color and text_color are optional to overide declared or default settings. 
+    background_color: must be a color prop (black is default)
+    text_color: must be a color prop (white is default)
+    width: must be a multiple of 10, number or string (90 is default)
+

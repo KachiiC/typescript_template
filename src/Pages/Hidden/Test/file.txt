@@ -1,0 +1,177 @@
+[
+    {
+        "video_title": "Eddie Alvarez vs Conor McGregor | Official Fight Highlights | #UFC246",
+        "video_id": "Htf8Jt-elxo",
+        "video_description": "Conor McGregor becomes the double champ with a huge win at UFC 205 in New York.",
+        "video_thumbnail": "https://i.ytimg.com/vi/Htf8Jt-elxo/maxresdefault.jpg",
+        "upload_date": "27/06/2020"
+    },
+    {
+        "video_title": "Free Fight: Jon Jones vs Alexander Gustafsson 1 | UFC 165,  2013",
+        "video_id": "en4hR34Bl8w",
+        "video_description": "Relive one of the most entertaining bouts in Jon Jones career so far as he took on Alexander Gustafsson for the first time in a razor-close matchup back in 2013 at UFC 165. ",
+        "video_thumbnail": "https://i.ytimg.com/vi/en4hR34Bl8w/maxresdefault.jpg",
+        "upload_date": "27/06/2020"
+    },
+    {
+        "video_title": "Dustin Poirier vs Justin Gaethje (full fight) | 2018, UFC Glendale",
+        "video_id": "9nS9s5VrHoo",
+        "video_description": "The Diamond finished Gaethje in the fourth, but his opponent wasn't impressed with the decision of Herb Deen. ",
+        "video_thumbnail": "https://i.ytimg.com/vi/9nS9s5VrHoo/maxresdefault.jpg",
+        "upload_date": "27/06/2020"
+    },
+    {
+        "video_title": "Free Fight: Jose Aldo vs Chad Mendes 2 | UFC 179, 2014",
+        "video_id": "pEDW8_mHfpo",
+        "video_description": "Jose Aldo successfully defended his UFC featherweight title when he faced Chad Mendes for the second time at UFC 179 in an entertaining Fight of the Night contest.",
+        "video_thumbnail": "https://i.ytimg.com/vi/pEDW8_mHfpo/maxresdefault.jpg",
+        "upload_date": "27/06/2020"
+    },
+    {
+        "video_title": "Jorge Masvidal v Nate Diaz full fight replay",
+        "video_id": "ozgJZ7wmQc8",
+        "video_description": "Jorge Masvidal's last fight was against Nate Diaz for the BMF belt at Madison Square Garden, New York.",
+        "video_thumbnail": "https://i.ytimg.com/vi/ozgJZ7wmQc8/maxresdefault.jpg",
+        "upload_date": "17/07/2020"
+    },
+    {
+        "video_title": "Tyron Woodley v Kamaru Usman full fight replay |",
+        "video_id": "lX5YcnFcX-I",
+        "video_description": "The changing of the guard. Kamaru Usman may well become one of the most dominant champions in UFC history and it all started with a brilliant performance against Tyron Woodley.",
+        "video_thumbnail": "https://i.ytimg.com/vi/lX5YcnFcX-I/maxresdefault.jpg",
+        "upload_date": "17/07/2020"
+    },
+    {
+        "video_title": "Jose Aldo v Marlos Moraes full fight replay | Watch UFC Fight Island on BT Sport 1 HD",
+        "video_id": "EJ5h4ywYZMQ",
+        "video_description": "How did you score this fight between Jose Aldo and Marlon Moraes? The judges scorecards proved to be quite controversial and despite losing, the former featherweight champion got himself a shot at the vacant bantamweight title.",
+        "video_thumbnail": "https://i.ytimg.com/vi/EJ5h4ywYZMQ/maxresdefault.jpg",
+        "upload_date": "17/07/2020"
+    },
+    {
+        "video_title": "Free Fight: Michael Bisping vs Anderson Silva | 2016",
+        "video_id": "swcgEARqmmU",
+        "video_description": "Michael Bisping, winner of TUF season three, won a razor-close contest with Anderson Silva at the O2 arena in London back in 2016.",
+        "video_thumbnail": "https://i.ytimg.com/vi/swcgEARqmmU/maxresdefault.jpg",
+        "upload_date": "19/08/2020"
+    },
+    {
+        "video_title": "Free Fight: Ronda Rousey vs Miesha Tate 2 | UFC 168, 2013",
+        "video_id": "yoUbQxvDVss",
+        "video_description": "Season 17 of The Ultimate Fighter culminated at UFC 168 when Ronda Rousey faced Miesha Tate for the second time for the UFC bantamweight championship.",
+        "video_thumbnail": "https://i.ytimg.com/vi/yoUbQxvDVss/maxresdefault.jpg",
+        "upload_date": "19/08/2020"
+    },
+    {
+        "video_title": "Dominick Cruz v Cody Garbrandt full fight | One of the greatest title fight performances ever!",
+        "video_id": "GyM9gK52MaQ",
+        "video_description": "Ahead of his return at #UFC250, take a look back at Cody Garbrandt's masterclass against Dominick Cruz at UFC 207.",
+        "video_thumbnail": "https://i.ytimg.com/vi/GyM9gK52MaQ/maxresdefault.jpg",
+        "upload_date": "19/08/2020"
+    },
+    {
+        "video_title": "Free Fight: Chris Weidman vs Lyoto Machida | UFC 175, 2014",
+        "video_id": "tQgA4UJt9jA",
+        "video_description": "After stunning a lot of people with back-to-back wins over Anderson Silva, Chris Weidman defeated another Brazilian in Lyoto Machida for his second title defense at UFC 175 in 2014.",
+        "video_thumbnail": "https://i.ytimg.com/vi/tQgA4UJt9jA/maxresdefault.jpg",
+        "upload_date": "19/08/2020"
+    },
+    {
+        "video_title": "Free Fight: Anderson Silva vs Chael Sonnen 1 | UFC 117, 2010",
+        "video_id": "DpLaqnwFQEY",
+        "video_description": "Anderson Silva met Chael Sonnen almost 10 years ago at UFC 117 for Silva's seventh middleweight title defense. Silva and Sonnen would meet again two years later at UFC 148.",
+        "video_thumbnail": "https://i.ytimg.com/vi/DpLaqnwFQEY/maxresdefault.jpg",
+        "upload_date": "19/08/2020"
+    },
+    {
+        "video_title": "UFC 247 Free Fight: Jon Jones vs Alexander Gustafsson 2",
+        "video_id": "b7MeXwGku5E",
+        "video_description": "UFC - Ultimate Fghiting",
+        "video_thumbnail": "https://i.ytimg.com/vi/b7MeXwGku5E/maxresdefault.jpg",
+        "upload_date": "19/08/2020"
+    },
+    {
+        "video_title": "Max Holloway v Alexander Volkonovski full fight replay | Watch UFC Fight Island on BT Sport 1 HD",
+        "video_id": "oaeTtOQVfWw",
+        "video_description": "Alexander Volkonovski promised he was the man to beat Max Holloway in the featherweight division. He wasn't lying... On July 11th they run it back!",
+        "video_thumbnail": "https://i.ytimg.com/vi/oaeTtOQVfWw/maxresdefault.jpg",
+        "upload_date": "01/10/2020"
+    },
+    {
+        "video_title": "Tyron Woodley v Gilbert Burns full fight replay | Watch UFC Fight Island on BT Sport 1 HD",
+        "video_id": "WCPBr1_MaWg",
+        "video_description": "Gilbert Burns came in to the fight with Tyron Woodley on a five-fight win streak. It was an utter domination from the number one contender...",
+        "video_thumbnail": "https://i.ytimg.com/vi/WCPBr1_MaWg/maxresdefault.jpg",
+        "upload_date": "01/10/2020"
+    },
+    {
+        "video_title": "Woodley v Wonderboy full fight replay | Controversial result, but what a fight!",
+        "video_id": "8Xb55612vTE",
+        "video_description": "Tyron Woodley and Stephen \"Wonderboy\" Thompson put on a five-round classic as the co-main event at UFC 205...",
+        "video_thumbnail": "https://i.ytimg.com/vi/8Xb55612vTE/maxresdefault.jpg",
+        "upload_date": "01/10/2020"
+    },
+    {
+        "video_title": "Full fight: Khabib Nurmagomedov v Dustin Poirier | UFC 242",
+        "video_id": "uVVdRwXFpG4",
+        "video_description": "Watch #UFC254: Khabib v Gaethje at 7pm on October 24th, live on BT Sport Box Office ➡️ https://www.bt.com/sport/box-office/",
+        "video_thumbnail": "https://i.ytimg.com/vi/uVVdRwXFpG4/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "One of the best UFC debuts ever! Dan Hooker v Michael Chandler | UFC 257 Full Fight Replay!",
+        "video_id": "9xr-FtUKPCo",
+        "video_description": "Michael Chandler's highly-anticipated UFC debut delivered! He put on an incredible performance to swat aside Dan Hooker in just one round at #UFC257.",
+        "video_thumbnail": "https://i.ytimg.com/vi/9xr-FtUKPCo/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "Full fight: Justin Gaethje v Tony Ferguson | UFC 249",
+        "video_id": "bx82GzO1Isk",
+        "video_description": "Watch #UFC254: Khabib v Gaethje at 7pm on October 24th, live on BT Sport Box Office ➡️ https://www.bt.com/sport/box-office/",
+        "video_thumbnail": "https://i.ytimg.com/vi/bx82GzO1Isk/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "Conor McGregor and Dustin Poirier's first fight at UFC 178! | UFC Full Fight Replay",
+        "video_id": "9iRvFn8wjJk",
+        "video_description": "Conor McGregor and Dustin Poirier have both stated they have agreed terms for a rematch, but a date has yet to be confirmed. In the meantime, take a look back at their first fight at UFC 178...",
+        "video_thumbnail": "https://i.ytimg.com/vi/9iRvFn8wjJk/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "Full fight: Jared Cannonier v Jack Hermansson",
+        "video_id": "xIsrSGmHdWM",
+        "video_description": "Watch #UFC254: Khabib v Gaethje at 7pm on October 24th, live on BT Sport Box Office ➡️ https://www.bt.com/sport/box-office/",
+        "video_thumbnail": "https://i.ytimg.com/vi/xIsrSGmHdWM/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "Marlon Moraes v Cory Sandhagen | UFC Full Fight replay",
+        "video_id": "5aXscYK3fgY",
+        "video_description": "Watch #UFC254: Khabib v Gaethje at 7pm on October 24th, live on BT Sport Box Office ➡️ https://www.bt.com/sport/box-office/",
+        "video_thumbnail": "https://i.ytimg.com/vi/5aXscYK3fgY/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "Full Fight: Valentina Shevchenko v Joanna Jedrzejczyk",
+        "video_id": "xH8BTpRDk8s",
+        "video_description": "Watch Valentina Shevchenko become UFC Women's Flyweight Champion for the first time with her comprehensive win over Joanna Jedrzejczyk.",
+        "video_thumbnail": "https://i.ytimg.com/vi/xH8BTpRDk8s/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "Deiveson Figueiredo v Joseph Benavidez full fight replay",
+        "video_id": "lmr1gRq5d58",
+        "video_description": "Deiveson Figueiredo and Joseph Benavidez went toe-to-toe for the flyweight title.",
+        "video_thumbnail": "https://i.ytimg.com/vi/lmr1gRq5d58/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    },
+    {
+        "video_title": "Rose Namajunas v Jessica Andrade full fight replay | Watch UFC Fight Island on BT Sport 1 HD",
+        "video_id": "zY9TdjH7xN4",
+        "video_description": "Rose Namajunas and Jessica Andrade run it back at #UFC251, so get yourself in the mood for their rematch by watching their first fight...",
+        "video_thumbnail": "https://i.ytimg.com/vi/zY9TdjH7xN4/maxresdefault.jpg",
+        "upload_date": "28/01/2021"
+    }
+]

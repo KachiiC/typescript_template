@@ -9,17 +9,11 @@
 
 .site-collapsible {
     animation: fadeIn 2s;
-    background: black;
     border-radius: 10px;
-    color: white;
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
     user-select: none;
-}
-
-.site-collapsible-content {
-    border: 1px solid black;
 }
 
 .site-collapsible,

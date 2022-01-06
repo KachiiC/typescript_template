@@ -7,15 +7,20 @@ import {
 // TOOLS
 import { IfStatement } from "Tools/FunctionTools"
 
-export const GalleryImage = (props:GalleryImageProps) => {
+export const GalleryImage = (props: GalleryImageProps) => {
 
     // PROPS
-    const { click, image, title } = props
+    const { click, image, title, type } = props
+
+    const typeLogic = type === "row" ? 
+        "site-gallery-image-row" 
+        : 
+        "site-gallery-image"
 
     return (
         <img src={image} 
             alt={title}
-            className="site-responsive-image cursor-pointer site-border-white"
+            className={`${typeLogic} cursor-pointer site-border-white`}
             onClick={IfStatement(click)} 
         />
     )
@@ -27,8 +32,9 @@ export const GallerySelectedImage = (props: GallerySelectedImageProps) => {
     const { image, width } = props
 
     return (
-        <div className={`w-${width} `}>
-            <GalleryImage 
+        <div className={`w-${width}`}>
+            <GalleryImage
+                type="selected"
                 image={image}
                 title="selected_image"
             />

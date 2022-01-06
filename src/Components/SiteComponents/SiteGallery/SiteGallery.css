@@ -1,3 +1,15 @@
+.site-gallery-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px
+}
+
+.site-gallery-image-row {
+    width: 100%;
+    height: auto;
+    max-height: 250px
+}
+
 .site-gallery-component {
     animation: fadeIn 2s;
 }

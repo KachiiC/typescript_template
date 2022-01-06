@@ -8,7 +8,7 @@ import { singleCollapsibleProps } from "../SiteCollapsibleProps"
 const SingleCollapsible = (props: singleCollapsibleProps) => {
 
     // PROPS
-    const { content, title } = props
+    const { background_color, content, title, text_color } = props
 
     // Each tabs content is open or closed depending on this reducder
     const [displayContent, toggleContent] = useReducer(
@@ -32,9 +32,11 @@ const SingleCollapsible = (props: singleCollapsibleProps) => {
         <>
             <CollapsibleHeading
                 // on click will change direction and show or closes content
+                background_color={background_color}
                 title={title}
                 click={() => clickLogic()}
                 direction={direction}
+                text_color={text_color}
             />
             <CollapsibleTransition 
                 DisplayContent={displayContent}

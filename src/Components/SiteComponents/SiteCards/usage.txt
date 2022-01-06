@@ -1,0 +1,36 @@
+Example Data:
+
+    const ExampleData = [
+        {
+            description: "descripton 1",
+            image: "https://via.placeholder.com/150/0000FF/FFFFFF/?text=Card_1",
+            title: "Card 1"
+        },
+        {
+            description: "About Card Description",
+            image: "https://via.placeholder.com/150/0000FF/FFFFFF/?text=About%20Card",
+            link_type: "local",
+            link: "about",
+            title: "About Card"
+        }
+    ]
+
+** Note, the data only take Objects examples
+
+// Usage:
+
+    <SiteCards
+        // PROPS
+        data={ExampleData}
+    />
+
+// PROPS
+    data: an array of objects which contains image, description, title (all strings).
+        link and link_type are optional, but if one is included so must the other.
+    card_size: must be one of the following, 
+        "xs": 6 cards per row
+        "small": 4 cards per row (default)
+        "medium": 3 cards per row
+        "large": 2 cards per row
+        "xl": 1 cards per row
+

@@ -11,20 +11,20 @@ import { RenderLogic } from "Tools/FunctionTools"
 
 const SiteTable = (props: SiteTableProps) => {
 
-    const { data, keys, overflow } = props
+    const { data, overflow, width } = props
 
     const overflowStyle = () => {
         if (overflow) return "site-table-overflow"
     }
     
     return (
-        <div className={`site-table-container ${overflowStyle()}`}>
-            <table className="site-table w-100">
+        <div className={`site-table-container ${overflowStyle()} w-${RenderLogic(width, 90)}`}>
+            <table className="site-table">
                 <SiteTableHeaders 
-                    keys={RenderLogic(keys,ArrrayObjectKeys(data))} 
+                    keys={ArrrayObjectKeys(data)} 
                 />
                 <SiteTableRows 
-                    data={data} 
+                    data={data}
                 />
             </table>
         </div>

@@ -1,8 +1,9 @@
-import { objectData } from "Props/PropsTemplates";
+import { objectData, widthProps } from "Props/PropsTemplates";
 
 export interface SiteTableProps {
     data: objectData[]; 
     keys?: string[]
+    width?: typeof widthProps
     overflow?: boolean
 }
 

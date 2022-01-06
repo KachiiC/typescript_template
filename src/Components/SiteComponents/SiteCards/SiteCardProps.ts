@@ -2,6 +2,7 @@ export interface SiteCardProps  {
     data: SiteSingleCardProps[] 
     card_size?: "xs" | "small" | "medium" | "large" | "xl"
 }
+
 export interface SiteSingleCardProps {
     description: string 
     image: string 

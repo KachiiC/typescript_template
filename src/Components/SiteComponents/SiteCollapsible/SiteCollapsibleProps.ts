@@ -6,23 +6,29 @@ export interface CollapsibleContentProps {
     content: JSX.Element 
 }
 
-export interface CollapsibleHeadingProps { 
+export interface CollapsibleHeadingProps {
+    background_color?: string
     click: MouseEventHandler<HTMLDivElement>
     direction: string
     title: string
+    text_color?: string
 }
 
 export interface CollapsibleTransitionProps { 
     children: JSX.Element
-    DisplayContent: boolean; 
+    DisplayContent: boolean
 }
 
 export interface CollapsibleProps {
+    background_color?: string
     data: singleCollapsibleProps[]
-    width: typeof widthProps
+    width?: typeof widthProps
+    text_color?: string
 }
 
 export interface singleCollapsibleProps {
+    background_color?: string
     content: JSX.Element
     title: string
+    text_color?: string
 }

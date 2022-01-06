@@ -1,10 +1,13 @@
 .site-table-overflow {
-    height: 60vh;
-    overflow-x: scroll;
+    max-height: 60vh;
+    overflow: scroll;
 }
 
 .site-table {
     margin: 20px auto;
+    width: 100%;
+    overflow-y: scroll;
+    min-width: 800px;
 }
 
 .site-table tr,

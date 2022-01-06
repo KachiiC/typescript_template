@@ -25,12 +25,11 @@ const SiteCards = (props: SiteCardProps) => {
 
         // CARD PROPS
         const CardProps = {
-            title:  title,
             description: description,
             image: image,
             link: link,
             link_type: link_type,
-            // Size of card can be passed through, default is "small" (4 cards a row)
+            title:  title,
         }
 
         return (

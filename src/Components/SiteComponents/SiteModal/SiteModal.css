@@ -16,7 +16,6 @@
 }
 
 .modal-container-content {
-
     overflow-y: scroll;
 }
 
@@ -32,7 +31,7 @@
 /* The Close Button */
 .blank-close {
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 20px;
     color: #ffffff;
 }

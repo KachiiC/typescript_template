@@ -7,13 +7,12 @@ import "./FilterIcons.css"
 // PROPS
 import { FilterIconsProps } from "./FilterIconsProps"
 // TOOLS
-import { TitleLogic } from "Tools/StringTools"
 import { UnqiueValues } from "Tools/ObjectDataTools"
 
 const FilterIcons = (props: FilterIconsProps) => {
 
     // PROPS
-    const { data, title } = props
+    const { data } = props
 
     // The filter type's initial state is empty
     const [filterType, setFilterType] = useState("")
@@ -31,7 +30,6 @@ const FilterIcons = (props: FilterIconsProps) => {
     return (
         <div className="filter-icons">
             {/* Only returns a title is passed as an argument */}
-            {TitleLogic(title, "h1")}
             <FilterButtons 
                 data={UnqiueValues(data, "type")} 
                 setFunction={setFilterType}

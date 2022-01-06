@@ -1,0 +1,38 @@
+// Data:
+
+const ExampleData = [
+    {
+       first_name: "John",
+       surname_name: "smith",
+       address: "123 hogwarts road",
+
+    },
+    {
+       first_name: "Jane",
+       surname_name: "Doe",
+       address: "123 winterfell road",
+
+    },
+    {
+       first_name: "Harry",
+       surname_name: "Kane",
+       address: "123 spurs road",
+
+    },
+]
+
+const ExampleKeys = [
+    "name",
+    "value"
+]
+
+// Usage:
+    <SiteTable
+        data={ExampleData}
+        keys={ExampleKeys}
+        overflow
+    />
+
+
+// Props:
+    data: 
