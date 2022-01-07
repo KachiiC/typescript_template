@@ -8,6 +8,8 @@ export interface SingleTab {
 export interface SiteTabsProps {
     data: SingleTab[]
     width?: number
+    background_color?: string
+    text_color?: string
 }
 
 export interface TabContentProps { 
@@ -16,10 +18,14 @@ export interface TabContentProps {
 
 export interface TabLinkProps { 
     click: MouseEventHandler<HTMLDivElement>;
-    title: string;
+    title: string
+    background_color?: string
+    text_color?: string
 } 
 
 export interface TabLinkRowProps {
     data: SingleTab[]
     setFunction: Dispatch<SetStateAction<number>>
+    background_color?: string
+    text_color?: string
 }

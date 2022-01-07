@@ -2,15 +2,29 @@
 
 const ExampleData = [
     {
-
-    }
+        title: "First Tab",
+        content: <div>First Content</div>
+    },
+    {
+        title: "Second Tab",
+        content: <div>Second Content</div>
+    },
+    {
+        title: "Third Tab",
+        content: <div>Third Content</div>
+    },
 ]
 
 // Usage:
-    <Example 
-        data={}
+    <SiteTabs 
+        data={ExampleData}
+        width={80}
+        background_color="green" 
+        text_color="white"
     />
 
-
 // Props:
-    data: 
+    data: An array of objects which must each contain a title (string) and content (jsx element)
+    width: must be a multiple of 10, number or string (90 is default)
+    background_color: color of the tab, default is black
+    text_color: text color of the tab, default is white

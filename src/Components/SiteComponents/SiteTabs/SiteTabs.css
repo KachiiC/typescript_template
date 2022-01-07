@@ -10,6 +10,7 @@
 .site-tab-link {
     background-color: black;
     border-right: 1px solid white;
+    border-radius: 10px 10px 0px 0px;
     color: white;
     font-size: 15px;
     font-weight: 800;

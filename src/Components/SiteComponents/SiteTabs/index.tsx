@@ -11,7 +11,7 @@ import { RenderLogic } from "Tools/FunctionTools"
 const SiteTabs = (props: SiteTabsProps) => {
 
     // PROPS
-    const { data, width } = props
+    const { data, width, background_color, text_color } = props
 
     // displayTab detirmines which tabs is current displayed, default is first tab
     const [displayTab, setDisplayTab] = useState(0)
@@ -22,6 +22,8 @@ const SiteTabs = (props: SiteTabsProps) => {
             <TabLinksRow
                 data={data}
                 setFunction={setDisplayTab}
+                background_color={background_color}
+                text_color={text_color}
             />
             <TabContent 
                 content={data[displayTab].content} 

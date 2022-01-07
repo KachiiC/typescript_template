@@ -5,7 +5,6 @@ const ExampleData = [
        first_name: "John",
        surname_name: "smith",
        address: "123 hogwarts road",
-
     },
     {
        first_name: "Jane",
@@ -29,10 +28,12 @@ const ExampleKeys = [
 // Usage:
     <SiteTable
         data={ExampleData}
-        keys={ExampleKeys}
+        width={90}
         overflow
     />
 
 
 // Props:
-    data: 
+    data: an array of objects which must all contain the same keys
+    width: must be a multiple of 10, number or string (90 is default)
+    overflow: if applied the table size will not exceed 60hz and is scrollable.
