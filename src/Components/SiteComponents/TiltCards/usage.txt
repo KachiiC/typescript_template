@@ -2,12 +2,15 @@
 
 const ExampleData = [
     {
-
-    }
+        content: ""
+        image: ""
+        name: ""
+        type: ""
+    },
 ]
 
 // Usage:
-    <Example 
+    <TiltCards 
         data={}
     />
 

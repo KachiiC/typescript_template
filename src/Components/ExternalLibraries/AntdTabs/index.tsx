@@ -3,7 +3,7 @@ import SingleTab from "./components/SingleTab"
 import { Tabs } from "antd"
 // CSS
 import "./AntdTabs.css"
-import "antd/dist/antd.css"
+import 'antd/dist/antd.css'
 // PROPS
 import { AntdTabsProps } from "./AntdTabsProps"
 // TOOLS

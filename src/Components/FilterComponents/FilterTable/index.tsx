@@ -1,7 +1,7 @@
 import { useState } from "react"
 // COMPONENTS
 import { FilterInput, FilterSelect } from "./components/FilterSearch"
-import SiteTable from "@components/SiteTable"
+import SiteTable from "Components/SiteComponents//SiteTable"
 // CSS
 import "./FilterTable.css"
 import { Empty } from "antd"

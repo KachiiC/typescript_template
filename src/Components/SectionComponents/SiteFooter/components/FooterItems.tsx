@@ -20,7 +20,7 @@ export const FooterLogos = (props: footerSectionDataProps) => {
 
     const iconImage = (
         <SiteIcon 
-            type={icon} 
+            type={RenderLogic(icon, 'html')} 
             size="2x"
         />
     )

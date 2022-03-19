@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom"
+import { Routes ,Route } from 'react-router-dom';
 // DATA
 import DisplayedData from "Data/Main/Displayed/PagesData"
 import { FooterPages } from "Data/Footer/FooterData"
@@ -8,13 +8,13 @@ import Home from "Pages/Hidden/Home"
 import { LinkRenderer, RoutesRender } from "./tools/PageRouterTools"
 // TOOLS
 
-const Routes = [
+const routesData = [
     DisplayedData,
     FooterPages,
     HiddenData,
 ]
 
-const RenderRoutes = Routes.map(route => {
+const RenderRoutes = routesData.map(route => {
 
     // Creates a Route for each link
     LinkRenderer(route)
@@ -26,16 +26,15 @@ const RenderRoutes = Routes.map(route => {
 const HomeRoute = (
     <Route key="home" 
         path="/"
-    >
-        {Home}
-    </Route>
+        element={Home}
+    />
 )
 
 const PagesRouter = ( 
-    <Switch>
+    <Routes>
         {RenderRoutes}
         {HomeRoute}
-    </Switch>
+    </Routes>
 )
 
 export default PagesRouter

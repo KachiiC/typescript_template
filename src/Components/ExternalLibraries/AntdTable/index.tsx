@@ -1,7 +1,7 @@
 //COMPONENTS
 import { Table } from "antd"
 // CSS
-import "antd/dist/antd.css"
+import 'antd/dist/antd.css'
 // PROPS
 import { AntdTableProps } from "./AntdTableProps"
 // TOOLS

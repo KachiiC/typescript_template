@@ -1,5 +1,5 @@
 import { ChangeEventHandler } from "react"
-import { SizeProp } from "@fortawesome/fontawesome-svg-core"
+import { SizeProp, IconDefinition } from "@fortawesome/fontawesome-svg-core"
 // PROPS
 import { pageDataProps } from "Props/MainProps"
 
@@ -17,9 +17,13 @@ export interface TargetProps {
 
 // SITE ICON
 export interface SiteIconProps {
-    color?: string
-    size: SizeProp | undefined
-    type: string | undefined; 
+    type: string;
+    size: SizeProp;
+    color?: string;
+}
+
+export interface IconList {
+    [k: string]: IconDefinition
 }
 
 // SITE LINK PROPS

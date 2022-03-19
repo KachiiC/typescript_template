@@ -1,6 +1,6 @@
 import { MouseEventHandler } from "react"
 // PROPS
-import { IconDataProps } from "@components/IconsList/IconsListProps";
+import { IconDataProps } from "Components/SiteComponents//IconsList/IconsListProps";
 
 export interface FilterIconButtonsProps { 
     data: string[]

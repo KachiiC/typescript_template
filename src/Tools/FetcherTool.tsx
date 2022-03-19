@@ -1,7 +1,6 @@
 import { useEffect, useReducer, useState } from "react"
 // CSS
-import { SiteLoading } from "CSS/Transitions"
-import { Empty } from "antd"
+import { Empty, Spin } from "antd"
 // PROPS
 import { SiteRenderProps } from "Props/Tools/ToolProps"
 
@@ -47,7 +46,7 @@ export const SiteRender = (props: SiteRenderProps) => {
     const { error, loading } = fetch
 
     const displayLogic = loading ? 
-        <SiteLoading />
+        <Spin />
         : 
         error ?
             <Empty />

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 // COMPONENTS
 import FilterButtons from "./components/FilterButtons"
-import IconsList from "@components/IconsList"
+import IconsList from "Components/SiteComponents//IconsList"
 // CSS 
 import "./FilterIcons.css"
 // PROPS

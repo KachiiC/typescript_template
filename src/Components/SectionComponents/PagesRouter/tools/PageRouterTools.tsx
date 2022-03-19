@@ -35,9 +35,9 @@ const Menu_Routes = (input: pageDataProps) => {
         <Route 
             path={`/${link}`} 
             key={title}
-        >
-            {content}
-        </Route>
+            element={content}
+        />
+        
     )
 }
 

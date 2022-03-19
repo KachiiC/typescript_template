@@ -2,11 +2,11 @@ import MediaQuery from "react-responsive"
 // COMPONENTS
 import { Timeline } from "antd"
 // CSS
-import "antd/dist/antd.css"
+import 'antd/dist/antd.css'
 import "./AntdTimeline.css"
 // PROPS
 import { AntdTimelineProps } from "./AntdTimelineProps"
-import AntdToolTip from "@libraries/AntdToolTip"
+import AntdToolTip from "Components/ExternalLibraries/AntdToolTip"
 // TOOLS
 import { RenderLogic } from "Tools/FunctionTools"
 
