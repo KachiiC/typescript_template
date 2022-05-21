@@ -1,30 +1,25 @@
 // COMPONENTS
-import { RenderLogic } from "Tools/FunctionTools"
+import { RenderLogic } from "Tools/FunctionTools";
 // PROPS
-import { YoutubeProps } from "./YoutubeProps"
+import { YoutubeProps } from "./YoutubeProps";
 
-const YoutubePlayer = (props: YoutubeProps) => {
-
-    const { height, id, width } = props
-
-    return (
-        <iframe 
-            allow="
+const YoutubePlayer = ({ height, id, width }: YoutubeProps) => (
+  <iframe
+    allow="
                 accelerometer;
                 autoplay; 
                 clipboard-write; 
                 encrypted-media; 
                 gyroscope; 
                 picture-in-picture
-            " 
-            allowFullScreen 
-            frameBorder="0"
-            height={RenderLogic(height, "315")}
-            src={`https://www.youtube.com/embed/${id}?controls=0&rel=0`}
-            title={`${id}`}
-            width={RenderLogic(width, "560")}
-        />
-    )
-}
+            "
+    allowFullScreen
+    frameBorder="0"
+    height={RenderLogic(height, "315")}
+    src={`https://www.youtube.com/embed/${id}?controls=0&rel=0`}
+    title={`${id}`}
+    width={RenderLogic(width, "560")}
+  />
+);
 
-export default YoutubePlayer
+export default YoutubePlayer;

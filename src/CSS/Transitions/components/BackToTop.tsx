@@ -1,19 +1,15 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
 // COMPONENTS
-import { BackTop } from "antd"
-import { useLocation } from "react-router"
-// CSS
-import "antd/dist/antd.css"
+import { BackTop } from "antd";
+import { useLocation } from "react-router";
 
-export const ScrollToTop = (props: { children: undefined; }) => {
+export const ScrollToTop = () => {
   const location = useLocation();
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
-  
+  return null;
+};
 
-  return <>{props.children}</>
-}
-
-export const AntdBackToTop = <BackTop />
+export const AntdBackToTop = <BackTop />;

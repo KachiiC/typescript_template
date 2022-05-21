@@ -4,14 +4,23 @@ import { SizeProp, IconDefinition } from "@fortawesome/fontawesome-svg-core"
 import { pageDataProps } from "Props/MainProps"
 
 // EXAMPLE TOOLS
-export interface ObjectDataProps { 
-    [x: string]: string | JSX.Element 
+export interface ObjectDataProps {
+    [x: string]: string | JSX.Element
+}
+
+// GRID TOOLS
+export interface spanLogicProps {
+    [x: string]: number | undefined
+}
+
+export interface displayTitleProps {
+    [x: string]: JSX.Element;
 }
 
 export interface TargetProps {
     preventDefault: ChangeEventHandler<HTMLInputElement>
-    target: { 
-        value: string 
+    target: {
+        value: string
     }
 }
 
@@ -42,9 +51,9 @@ export interface SiteLinkProps {
     type: "local" | "external" | undefined | string
 }
 
-export interface SiteRenderProps { 
+export interface SiteRenderProps {
     component: JSX.IntrinsicAttributes
-    fetch: { 
+    fetch: {
         loading: boolean
         error: boolean
         response: Object | never[]

@@ -1,3 +1,2 @@
-export const TestData = [
-   {}
-]
+export const TestData = [];
+

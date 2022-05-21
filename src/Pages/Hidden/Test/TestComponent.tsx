@@ -1,19 +1,7 @@
-// DATA
-// import { TestData } from "./TestData"
-// COMPONENTS
-
-export const TestSingleComponent = () => {
-    return (
-        <>
-        </>
-    )
-}
-
 export const TestComponent = () => {
-
-    return (
-        <>
-          
-        </>
-    )
-}
+  return (
+    <>
+      <h1>Component</h1>
+    </>
+  );
+};

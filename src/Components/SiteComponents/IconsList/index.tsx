@@ -3,10 +3,7 @@ import { IconsListProps } from "./IconsListProps"
 // TOOLS
 import IconItem from "./components/IconItem"
 
-const IconsList = (props: IconsListProps) => {
-
-    // PROPS
-    const { data } = props
+const IconsList = ({ data }: IconsListProps) => {
 
     const displayedIcons = data.map(obj => 
         <IconItem

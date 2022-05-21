@@ -14,7 +14,7 @@ export interface YoutubeItemProps {
     video_title: string
 }
 
-export interface YoutubeModalProps { 
+export interface YoutubeModalProps {
     component?: JSX.Element
     current: YoutubeItemProps
     data: YoutubeItemProps[]

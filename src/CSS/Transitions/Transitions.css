@@ -1,10 +1,10 @@
 /* HOME */
 .home-header {
-    animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .home-portfolio {
-    animation: fadeInUp 1.5s;
+  animation: fadeInUp 1.5s;
 }
 
 /* ABOUT */
@@ -17,5 +17,5 @@
 .components-page,
 /* PROJECTS */
 .projects-page {
-    animation: fadeInUp 2s;
+  animation: fadeInUp 2s;
 }

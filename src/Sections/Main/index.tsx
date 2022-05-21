@@ -1,14 +1,14 @@
 // COMPONENTS
-import PagesRouter from "Components/SectionComponents/PagesRouter"
+import PagesRouter from "Components/SectionComponents/PagesRouter";
 // CSS
-import { AntdBackToTop } from "CSS/Transitions/components/BackToTop"
-import "./Main.css"
+import { AntdBackToTop } from "CSS/Transitions/components/BackToTop";
+import "./Main.css";
 
 const SiteMain = (
-    <main>
-        {PagesRouter}
-        {AntdBackToTop}
-    </main>
-)
+  <main>
+    {PagesRouter}
+    {AntdBackToTop}
+  </main>
+);
 
-export default SiteMain
+export default SiteMain;

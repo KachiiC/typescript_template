@@ -1,36 +1,36 @@
 .site-tabs-component {
-    animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .site-tab-rows {
-    display: flex;
-    overflow-x: scroll;
+  display: flex;
+  overflow-x: scroll;
 }
 
 .site-tab-link {
-    background-color: black;
-    border-right: 1px solid white;
-    border-radius: 10px 10px 0px 0px;
-    color: white;
-    font-size: 15px;
-    font-weight: 800;
-    min-width: 200px;
-    padding: 15px;
-    text-transform: uppercase;
-    user-select: none;
+  background-color: black;
+  border-right: 1px solid white;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+  min-width: 200px;
+  padding: 15px;
+  text-transform: uppercase;
+  user-select: none;
 }
 
 .site-tab-link:last-child {
-    border: none;
+  border: none;
 }
 
 .site-tab-content {
-    min-height: 350px;
-    overflow-y: scroll;
-    padding: 20px;
+  min-height: 350px;
+  overflow-y: scroll;
+  padding: 20px;
 }
 
 .site-tab-rows::-webkit-scrollbar,
 .site-tab-content::-webkit-scrollbar {
-    display: none;
+  display: none;
 }

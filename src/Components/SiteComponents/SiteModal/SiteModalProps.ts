@@ -5,13 +5,13 @@ export interface closeButtonProps {
     type: "blank" | "modal"
 }
 
-export interface ModalComponent { 
+export interface ModalComponent {
     component: JSX.Element
     content: JSX.Element
     type: "blank" | "modal"
 }
 
-export interface modalContentProps { 
+export interface modalContentProps {
     click: MouseEventHandler<HTMLDivElement>
     content: JSX.Element
     type: "blank" | "modal"

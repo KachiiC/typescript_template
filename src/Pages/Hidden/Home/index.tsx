@@ -1,11 +1,11 @@
 // COMPONENTS
 // CSS
-import "./Home.css"
+import "./Home.css";
 
 const Home = (
-    <div className="home-container">
-        <h1>Home</h1>
-    </div>
-)
+  <div className="home-container">
+    <h1>Home</h1>
+  </div>
+);
 
-export default Home
+export default Home;

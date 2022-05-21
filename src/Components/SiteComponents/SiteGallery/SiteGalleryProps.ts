@@ -9,7 +9,7 @@ export interface GalleryImageProps {
     type?: "row" | "selected"
 }
 
-export interface GalleryImageRowProps { 
+export interface GalleryImageRowProps {
     data: GalleryImageProps[]
     row_number: number
     setFunction: Function

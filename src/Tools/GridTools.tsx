@@ -1,34 +1,23 @@
 // Sizes for grid system out of 12
-export const GridSpanSwitcher = (input_size: "xs"| "small" | "medium"| "large"| "xl" | undefined) => {
-    
-    var spanLogic
+import { spanLogicProps } from "Props/Tools/ToolProps";
 
-    switch(input_size) {
-        case "xs":
-            spanLogic = 2
-            break
-        case "small":
-            spanLogic = 3
-            break
-        case "medium":
-            spanLogic = 4
-            break
-        case "large":
-            spanLogic = 6
-            break
-        case "xl":
-            spanLogic = 12
-            break
-        default:
-            spanLogic = 3
-    }
+export const GridSpanSwitcher = (
+  input_size: "xs" | "small" | "medium" | "large" | "xl" | undefined
+) => {
+  const spanlogic: spanLogicProps = {
+    xs: 2,
+    small: 3,
+    medium: 4,
+    large: 6,
+    xl: 12
+  };
 
-    return spanLogic
-}
+  return input_size ? spanlogic[input_size] : 3;
+};
 
 // grid template based on input number
 export const GridStyle = (number: number) => {
-    return {
-        "gridTemplateColumns": `repeat(${number}, 1fr)`
-    }
-}
+  return {
+    gridTemplateColumns: `repeat(${number}, 1fr)`
+  };
+};

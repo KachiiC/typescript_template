@@ -1,14 +1,11 @@
 // COMPONENTS
-import SiteNavbar from "Components/SectionComponents/SiteNavbar"
+import SiteNavbar from "Components/SectionComponents/SiteNavbar";
 // DATA
-import DataOverview from "Data/DataOverview"
-import PagesData from "Data/Main/Displayed/PagesData"
+import DataOverview from "Data/DataOverview";
+import PagesData from "Data/Main/Displayed/PagesData";
 
 const SiteHeader = (
-    <SiteNavbar 
-        data={PagesData} 
-        title={DataOverview.navbar_data.title}
-    />
-)
+  <SiteNavbar data={PagesData} title={DataOverview.navbar_data.title} />
+);
 
-export default SiteHeader
+export default SiteHeader;

@@ -8,9 +8,7 @@ import {  SiteArticleProps } from "./SiteArticlesProps"
 import { TitleTrimmer } from "Tools/StringTools"
 import { RenderLogic } from "Tools/FunctionTools"
 
-const SiteArticle = (props: SiteArticleProps) => {
-
-    const { data, link_type } = props
+const SiteArticle = ({ data, link_type }: SiteArticleProps) => {
 
     const displayCards = data.map(card => {
 
@@ -25,9 +23,9 @@ const SiteArticle = (props: SiteArticleProps) => {
         const linkLogic = link_type === "external" ? link : `/${link}`
 
         const SingleArticle = {
-            date: date,
-            description: description,
-            image: image,
+            date,
+            description,
+            image,
             key: title,
             link: linkLogic,
             link_type: RenderLogic(card.link_type, link_type),

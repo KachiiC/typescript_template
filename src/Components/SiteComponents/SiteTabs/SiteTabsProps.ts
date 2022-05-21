@@ -1,7 +1,7 @@
 import { Dispatch, MouseEventHandler, SetStateAction } from "react"
 
 export interface SingleTab {
-    title: string; 
+    title: string;
     content: JSX.Element
 }
 
@@ -12,16 +12,16 @@ export interface SiteTabsProps {
     text_color?: string
 }
 
-export interface TabContentProps { 
-    content: JSX.Element 
+export interface TabContentProps {
+    content: JSX.Element
 }
 
-export interface TabLinkProps { 
+export interface TabLinkProps {
     click: MouseEventHandler<HTMLDivElement>;
     title: string
     background_color?: string
     text_color?: string
-} 
+}
 
 export interface TabLinkRowProps {
     data: SingleTab[]

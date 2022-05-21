@@ -1,18 +1,13 @@
 // COMPONENTS
-import { TestComponent } from "./TestComponent"
+import { TestComponent } from "./TestComponent";
 // CSS
-import "./Test.css"
+import "./Test.css";
 // DATA
 // import { TestData } from "./TestData"
 // TOOLS
 
 const Test = () => {
+  return <TestComponent />;
+};
 
-    return (
-        <div className="test-page">
-            <TestComponent />
-        </div>
-    )
-}
-
-export default Test
+export default Test;

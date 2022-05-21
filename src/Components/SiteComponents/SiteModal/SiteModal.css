@@ -1,52 +1,52 @@
 .modal-component {
-    background-color: #000000e6;
-    background-color: (0, 0, 0);
-    display: block;
-    left: 0;
-    height: 100%;
-    padding-top: 100px;
-    position: fixed;
-    top: 0;
-    z-index: 1;
+  background-color: #000000e6;
+  background-color: (0, 0, 0);
+  display: block;
+  left: 0;
+  height: 100%;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 .modal-container {
-    background: #ffffff;
-    margin: auto;
+  background: #ffffff;
+  margin: auto;
 }
 
 .modal-container-content {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .modal-container,
 .modal-container-content {
-    height: 90%;
+  height: 90%;
 }
 
 .modal-container-content::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* The Close Button */
 .blank-close {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    color: #ffffff;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  color: #ffffff;
 }
 
 .modal-close {
-    float: right;
-    color: black;
-    margin: 3px 5px;
+  float: right;
+  color: black;
+  margin: 3px 5px;
 }
 
 .blank-close:hover,
 .blank-close:focus {
-    color: #d0c900;
+  color: #d0c900;
 }
 
 .modal-example-button {
-    margin: 10px auto;
+  margin: 10px auto;
 }

@@ -1,31 +1,31 @@
 .site-table-overflow {
-    max-height: 60vh;
-    overflow: scroll;
+  max-height: 60vh;
+  overflow: scroll;
 }
 
 .site-table {
-    margin: 20px auto;
-    width: 100%;
-    overflow-y: scroll;
-    min-width: 800px;
+  margin: 20px auto;
+  width: 100%;
+  overflow-y: scroll;
+  min-width: 800px;
 }
 
 .site-table tr,
 .site-table th {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .site-table td,
 .site-table th {
-    padding: 10px;
-    font-size: 15px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 .site-table tr th {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 .site-table tr:nth-child(odd) {
-    background: #e6e6e6;
+  background: #e6e6e6;
 }
