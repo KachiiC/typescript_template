@@ -1,5 +1,5 @@
-import About from "Pages/Displayed/About";
-import FAQ from "Pages/Displayed/FAQ";
+import About from "pages/Displayed/About";
+import FAQ from "pages/Displayed/FAQ";
 
 const DataOverview = {
   // Replace the strings with your social media handles

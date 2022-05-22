@@ -1,5 +1,5 @@
 // PROPS
-import { RenderLogic } from "Tools/FunctionTools";
+import { TernaryLogic } from "tools/FunctionTools";
 import {
   TabContentProps,
   TabLinkProps,
@@ -11,8 +11,8 @@ export const TabLink = (props: TabLinkProps) => {
   const { click, title, background_color, text_color } = props;
 
   const styleLogic = {
-    backgroundColor: RenderLogic(background_color, "black"),
-    color: RenderLogic(text_color, "white")
+    backgroundColor: TernaryLogic(background_color, "black"),
+    color: TernaryLogic(text_color, "white")
   };
 
   return (

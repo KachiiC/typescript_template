@@ -1,6 +1,6 @@
 import { MouseEventHandler } from "react";
 // PROPS
-import { pageDataProps } from "Props/MainProps";
+import { pageDataProps } from "props/MainProps";
 
 export interface DisplayMenuListProps {
     click?: MouseEventHandler<HTMLDivElement>

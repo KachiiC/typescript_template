@@ -6,7 +6,7 @@ import "./YoutubeModal.css";
 // PROPS
 import { YoutubeModalProps } from "./YoutubeModalProps";
 // TOOLS
-import { RenderLogic } from "Tools/FunctionTools";
+import { TernaryLogic } from "tools/FunctionTools";
 
 const YoutubeModal = ({ component, current, data }: YoutubeModalProps) => {
   const { video_thumbnail, video_title } = current;
@@ -19,7 +19,7 @@ const YoutubeModal = ({ component, current, data }: YoutubeModalProps) => {
   return (
     <SiteModalComponent
       // If no component is specificed, the thumbnail for current object is used instead
-      component={RenderLogic(component, currentThumbnail)}
+      component={TernaryLogic(component, currentThumbnail)}
       content={modalContent}
       type="modal"
     />

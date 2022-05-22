@@ -1,0 +1,71 @@
+Example Data:
+    const ExampleColumn = [
+        {
+            title: 'Example Name',
+            dataIndex: 'name',
+        },
+        // Example of sort column
+        {
+            title: 'Example Sort',
+            dataIndex: 'example_sort',
+            defaultSortOrder: 'descend',
+            sorter: (a, b) => a.example_sort - b.example_sort,
+        },
+        // Example of filter column
+        {
+            title: 'Example Filter',
+            dataIndex: 'example_filter',
+            filters: [
+                {
+                    text: 'Filter 1',
+                    value: 'filter_1',
+                },
+                {
+                    text: 'Filter 2',
+                    value: 'filter_2',
+                },
+                {
+                    text: 'Filter 3',
+                    value: 'filter_3',
+                },
+            ],
+            filterMultiple: false,
+            onFilter: (value, record) => record.example_filter.indexOf(value) === 0,
+            sorter: (a, b) => a.example_filter.length - b.example_filter.length,
+            sortDirections: ['descend', 'ascend'],
+        }
+    ]
+
+    const ExampleData = [
+        {
+            name: 'example 1',
+            example_sort: 1,
+            example_filter: 'Odd',
+        },
+        {
+            name: 'example 2',
+            example_sort: 2,
+            example_filter: 'Even',
+        },
+        {
+            name: 'example 3',
+            example_sort: 3,
+            example_filter: 'Odd',
+        },
+    ]
+
+    const ExampleCaptions = [
+        "First caption",
+        "Second caption"
+    ]
+
+Example Usage:
+
+  <AntdTable
+    title="The Unified Rules of MMA Weight Classes"
+    columns={ExampleColumn} 
+    data={ExampleData}
+    captions={ExampleCaptions}
+    // Pagination on by default
+    pagination={false}
+  />

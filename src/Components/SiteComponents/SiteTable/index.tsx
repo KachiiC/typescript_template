@@ -6,8 +6,8 @@ import "./SiteTable.css";
 // PROPS
 import { SiteTableProps } from "./SiteTableProps";
 // TOOLS
-import { ArrrayObjectKeys } from "Tools/ObjectDataTools";
-import { RenderLogic } from "Tools/FunctionTools";
+import { ArrrayObjectKeys } from "tools/ObjectDataTools";
+import { TernaryLogic } from "tools/FunctionTools";
 
 const SiteTable = ({ data, overflow, width }: SiteTableProps) => {
   const overflowStyle = () => {
@@ -16,7 +16,7 @@ const SiteTable = ({ data, overflow, width }: SiteTableProps) => {
 
   return (
     <div
-      className={`site-table-container ${overflowStyle()} w-${RenderLogic(
+      className={`site-table-container ${overflowStyle()} w-${TernaryLogic(
         width,
         90
       )}`}

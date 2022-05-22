@@ -1,24 +1,24 @@
 // COMPONENTS
-import { RenderLogic } from "Tools/FunctionTools";
+import { TernaryLogic } from "tools/FunctionTools";
 // PROPS
 import { YoutubeProps } from "./YoutubeProps";
 
 const YoutubePlayer = ({ height, id, width }: YoutubeProps) => (
   <iframe
     allow="
-                accelerometer;
-                autoplay; 
-                clipboard-write; 
-                encrypted-media; 
-                gyroscope; 
-                picture-in-picture
-            "
+      accelerometer;
+      autoplay; 
+      clipboard-write; 
+      encrypted-media; 
+      gyroscope;
+      picture-in-picture
+      "
     allowFullScreen
     frameBorder="0"
-    height={RenderLogic(height, "315")}
+    height={TernaryLogic(height, "315")}
     src={`https://www.youtube.com/embed/${id}?controls=0&rel=0`}
     title={`${id}`}
-    width={RenderLogic(width, "560")}
+    width={TernaryLogic(width, "560")}
   />
 );
 

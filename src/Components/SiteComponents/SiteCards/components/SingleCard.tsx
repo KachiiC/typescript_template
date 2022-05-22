@@ -1,5 +1,5 @@
 //COMPONENTS
-import { SiteLink } from "Tools/LinkTools"
+import { SiteLink } from "tools/LinkTools"
 // PROPS
 import { SiteSingleCardProps } from "../SiteCardProps"
 

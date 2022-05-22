@@ -1,6 +1,6 @@
 import { MouseEventHandler } from "react"
 // PROPS
-import { widthProps } from "Props/PropsTemplates"
+import { widthProps } from "props/PropsTemplates"
 
 export interface GalleryImageProps {
     click?: MouseEventHandler<HTMLDivElement>

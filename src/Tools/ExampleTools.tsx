@@ -1,5 +1,5 @@
 // PROPS
-import { pageDataProps } from "Props/MainProps";
+import { pageDataProps } from "props/MainProps";
 // TOOLS
 
 // If page has a title but no content use this to render an example

@@ -1,7 +1,7 @@
 // PROPS
 import { SiteTableHeaderProps } from "../SiteTableProps"
 // TOOLS
-import { StringJoin } from "Tools/StringTools"
+import { StringJoin } from "tools/StringTools"
 
 const SiteTableHeaders = (props: SiteTableHeaderProps) => {
 

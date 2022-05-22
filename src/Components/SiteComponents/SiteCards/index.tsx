@@ -5,7 +5,7 @@ import "./SiteCard.css";
 // PROPS
 import { SiteCardProps } from "./SiteCardProps";
 // TOOLS
-import { GridSpanSwitcher } from "Tools/GridTools";
+import { GridSpanSwitcher } from "tools/GridTools";
 
 const SiteCards = (props: SiteCardProps) => {
   // PROPS

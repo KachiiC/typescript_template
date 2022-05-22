@@ -30,7 +30,7 @@ import {
   faScroll,
   faTimes
 } from "@fortawesome/free-solid-svg-icons";
-import { IconList } from "Props/Tools/ToolProps";
+import { IconList } from "props/Tools/ToolProps";
 
 const Icons = (input: string) => {
   const Icons: IconList = {

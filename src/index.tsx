@@ -2,6 +2,8 @@
 import App from "./App";
 import { render } from "react-dom";
 // CSS
-import "CSS/index.css";
+import "css/index.css";
 
-render(App, document.getElementById("root"));
+const root = document.getElementById("root");
+
+render(App, root);

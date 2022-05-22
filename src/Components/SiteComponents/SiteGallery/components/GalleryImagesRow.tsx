@@ -3,7 +3,7 @@ import { GalleryImage } from "./GalleryImage";
 // PROPS
 import { GalleryImageProps, GalleryImageRowProps } from "../SiteGalleryProps";
 // TOOLS
-import { GridStyle } from "Tools/GridTools";
+import { GridStyle } from "tools/GridTools";
 
 const SingleRowImage = ({ title, click, image }: GalleryImageProps) => (
   <div className="site-col-1">

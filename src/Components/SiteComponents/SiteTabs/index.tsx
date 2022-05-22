@@ -6,7 +6,7 @@ import "./SiteTabs.css";
 // PROPS
 import { SiteTabsProps } from "./SiteTabsProps";
 // TOOLS
-import { RenderLogic } from "Tools/FunctionTools";
+import { TernaryLogic } from "tools/FunctionTools";
 
 const SiteTabs = (props: SiteTabsProps) => {
   // PROPS
@@ -17,7 +17,7 @@ const SiteTabs = (props: SiteTabsProps) => {
 
   return (
     // By default width of component is 90%
-    <div className={`site-tabs-component  w-${RenderLogic(width, 90)}`}>
+    <div className={`site-tabs-component  w-${TernaryLogic(width, 90)}`}>
       <TabLinksRow
         data={data}
         setFunction={setDisplayTab}

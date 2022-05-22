@@ -1,7 +1,7 @@
 // PROPS
 import { IconDataProps } from "../IconsListProps"
 // TOOLS
-import SiteIcon from "Tools/SiteIcon"
+import SiteIcon from "tools/SiteIcon"
 
 const IconItem = (props: IconDataProps) => (
     <div className="site-col-2 filter-icons-icon" 

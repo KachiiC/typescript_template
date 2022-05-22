@@ -5,13 +5,13 @@ import {
     SiteNavLinkProps, 
     SmallMenuIconProps
 } from "../SiteNavbarProps"
-import { subMenuProps } from "Props/MainProps"
+import { subMenuProps } from "props/MainProps"
 // TOOLS
 import { DisplayMenuType } from "../tools/SiteNavbarTools"
-import { RenderLogic } from "Tools/FunctionTools"
-import SiteIcon from "Tools/SiteIcon"
-import { SiteLink } from "Tools/LinkTools"
-import { StringJoin } from "Tools/StringTools"
+import { TernaryLogic } from "tools/FunctionTools"
+import SiteIcon from "tools/SiteIcon"
+import { SiteLink } from "tools/LinkTools"
+import { StringJoin } from "tools/StringTools"
 
 // NAV LINK
 export const SiteNavLink = (props: SiteNavLinkProps) => {
@@ -25,7 +25,7 @@ export const SiteNavLink = (props: SiteNavLinkProps) => {
     } = props
 
     const LinkProps = {
-        link: RenderLogic(link, `/${StringJoin(title, " ", "-")}`),
+        link: TernaryLogic(link, `/${StringJoin(title, " ", "-")}`),
         placeholder: title,
         type: link ? "external" : "local"
     }
@@ -75,7 +75,7 @@ export const SiteLogo = (props: subMenuProps) => {
     return (
         <div className="site-nav-logo">
             <SiteLink
-                link={`/${RenderLogic(link, "")}`}
+                link={`/${TernaryLogic(link, "")}`}
                 placeholder={title}
                 type="local"
             />

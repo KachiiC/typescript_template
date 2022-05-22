@@ -1,7 +1,7 @@
 // PROPS
-import { ObjectDataProps } from "Props/Tools/ToolProps";
+import { ObjectDataProps } from "props/Tools/ToolProps";
 // TOOLS
-import { ObjKeys, ObjValue } from "Tools/ObjectDataTools";
+import { ObjKeys, ObjValue } from "tools/ObjectDataTools";
 
 // Returns data for each item in footer data
 export const FooterDataRender = (data: ObjectDataProps, type: string) => {

@@ -1,18 +1,18 @@
 import { useState } from "react"
 // COMPONENTS
 import { FilterInput, FilterSelect } from "./components/FilterSearch"
-import SiteTable from "Components/SiteComponents//SiteTable"
+import SiteTable from "components/SiteComponents/SiteTable"
 // CSS
 import "./FilterTable.css"
 import { Empty } from "antd"
 // PROPS
 import { FilterTableProps } from "./FilterTableProps"
-import { TargetProps } from "Props/Tools/ToolProps"
+import { TargetProps } from "props/Tools/ToolProps"
 // TOOLS
-import { ArrrayObjectKeys } from "Tools/ObjectDataTools"
-import { ParseIntChecker } from "Tools/IntergerTools"
-import { RenderLogic } from "Tools/FunctionTools"
-import { StringJoin } from "Tools/StringTools"
+import { ArrrayObjectKeys } from "tools/ObjectDataTools"
+import { ParseIntChecker } from "tools/IntergerTools"
+import { TernaryLogic } from "tools/FunctionTools"
+import { StringJoin } from "tools/StringTools"
 
 const FilterTable = (props: FilterTableProps) => {
 
@@ -29,7 +29,7 @@ const FilterTable = (props: FilterTableProps) => {
     // ** Make sure all objects have the same keys **
     const columnOptions = ArrrayObjectKeys(data)
     // Column which can be searched can be defined, set to first key by default
-    const columnLogic = RenderLogic(default_column, columnOptions[0])
+    const columnLogic = TernaryLogic(default_column, columnOptions[0])
     const [column, setColumn] = useState(columnLogic)
 
     // Column can be changed and can be set in form  
@@ -41,9 +41,9 @@ const FilterTable = (props: FilterTableProps) => {
     const [foundResults, setFoundResults] = useState(data)
 
     // Width of table
-    const widthLogic = RenderLogic(width, 90)
+    const widthLogic = TernaryLogic(width, 90)
     // Placeholder for input detirmined by input search column
-    const placeholderLogic = RenderLogic(placeholder,`SEARCH ${StringJoin(column, "_", " ")}S`)
+    const placeholderLogic = TernaryLogic(placeholder,`SEARCH ${StringJoin(column, "_", " ")}S`)
     
     // Filters the data and returns the column type which begin with the same letters as input 
     const filterFunction = (e: TargetProps) => {
@@ -70,7 +70,7 @@ const FilterTable = (props: FilterTableProps) => {
         <SiteTable
             keys={columnOptions}
             data={foundResults} 
-            overflow={RenderLogic(overflow, true)}
+            overflow={TernaryLogic(overflow, true)}
         />
         : 
         <Empty />

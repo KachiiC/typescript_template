@@ -1,0 +1,14 @@
+Example Data:
+    ExamplePanelData = [
+        {
+            title: "example title 1",
+            content: "example_content 1"
+        },
+        {
+            title: "example title 2",
+            content: "example content 2"
+        },
+    ]
+
+Example Usage:
+    <AntdPanel data={ExamplePanelData} />

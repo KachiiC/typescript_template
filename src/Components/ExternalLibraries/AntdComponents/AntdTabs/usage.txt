@@ -1,0 +1,14 @@
+Example Data:
+
+    const ExampleData = [
+        {
+            title: "Example Title"
+            content: "Example Content"
+        }
+    ]
+
+Example Usage:
+
+    <AntdTabs 
+        data={ExampleData}
+    />

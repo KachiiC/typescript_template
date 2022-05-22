@@ -6,7 +6,7 @@ export interface subMenuProps {
 }
 
 export interface pageDataProps {
-    content?: string | JSX.Element | undefined
+    content?: string | JSX.Element
     external_link?: string
     link?: string
     sub_menu?: subMenuProps[]

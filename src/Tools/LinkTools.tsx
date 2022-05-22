@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // PROPS
-import { SiteLinkProps } from "Props/Tools/ToolProps";
+import { SiteLinkProps } from "props/Tools/ToolProps";
 
 // A site Link for local and external
 export const SiteLink = (props: SiteLinkProps) => {

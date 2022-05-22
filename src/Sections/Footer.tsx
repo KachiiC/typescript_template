@@ -1,8 +1,8 @@
 // DATA
-import DataOverview from "Data/DataOverview";
-import { FooterLogoData, FooterPages } from "Data/Footer/FooterData";
+import DataOverview from "data/DataOverview";
+import { FooterLogoData, FooterPages } from "data/Footer/FooterData";
 // COMPONENTS
-import SiteFooter from "Components/SectionComponents/SiteFooter";
+import SiteFooter from "components/SectionComponents/SiteFooter";
 
 const { heading, name, year } = DataOverview.footer_data;
 

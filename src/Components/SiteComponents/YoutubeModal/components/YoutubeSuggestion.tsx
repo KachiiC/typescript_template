@@ -1,7 +1,7 @@
 // PROPS
 import { SingleYoutubeSuggestionProps, YoutubeSuggestionProps } from "../YoutubeModalProps"
 // TOOLS
-import { TitleTrimmer } from "Tools/StringTools"
+import { TitleTrimmer } from "tools/StringTools"
 
 const SingleYoutubeSuggestion = (props: SingleYoutubeSuggestionProps) => {
     

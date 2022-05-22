@@ -1,0 +1,8 @@
+.panel-title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.ant-collapse-content-box {
+  animation: fadeIn 1.5s;
+}

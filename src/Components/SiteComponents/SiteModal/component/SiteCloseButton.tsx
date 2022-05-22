@@ -1,7 +1,7 @@
 // PROPS
 import { closeButtonProps } from "../SiteModalProps";
 // TOOLS
-import SiteIcon from "Tools/SiteIcon";
+import SiteIcon from "tools/SiteIcon";
 
 const SiteCloseButton = ({ click, type }: closeButtonProps) => (
   <div className={`${type}-close cursor-pointer`} onClick={click}>

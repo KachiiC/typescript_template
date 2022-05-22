@@ -1,29 +1,29 @@
 footer {
-    background: black;
-    color: white;
-    padding: 10px 0px 20px;
-    text-align: center;
-    width: 100%;
+  background: black;
+  color: white;
+  padding: 10px 0px 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .footer-section {
-    margin: 30px auto;
-    width: 95%;
+  margin: 30px auto;
+  width: 95%;
 }
 
 footer h3,
 .footer-section a,
 .footer-copyright {
-    color: white;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 footer i {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .footer-link {
-    margin: 5px;
+  margin: 5px;
 }

@@ -9,10 +9,10 @@ import SiteModalComponent from "../SiteModal";
 // CSS
 import "./SiteGallery.css";
 // PROPS
-import { GalleryProps } from ".//SiteGalleryProps";
+import { GalleryProps } from "./SiteGalleryProps";
 // TOOLS
-import { RenderLogic } from "Tools/FunctionTools";
-import { TitleLogic } from "Tools/StringTools";
+import { TernaryLogic } from "tools/FunctionTools";
+import { TitleLogic } from "tools/StringTools";
 
 const SiteGallery = (props: GalleryProps) => {
   const { data, title, width, number } = props;
@@ -24,7 +24,7 @@ const SiteGallery = (props: GalleryProps) => {
   const gallerySelectedImage = (
     <GallerySelectedImage
       image={data[displayedImage].image}
-      width={RenderLogic(width, 80)}
+      width={TernaryLogic(width, 80)}
     />
   );
 
@@ -47,9 +47,9 @@ const SiteGallery = (props: GalleryProps) => {
       />
       <GalleryImagesRow
         data={data}
-        row_number={RenderLogic(number, data.length)}
+        row_number={TernaryLogic(number, data.length)}
         setFunction={setDisplayedImage}
-        width={RenderLogic(width, 80)}
+        width={TernaryLogic(width, 80)}
       />
     </div>
   );

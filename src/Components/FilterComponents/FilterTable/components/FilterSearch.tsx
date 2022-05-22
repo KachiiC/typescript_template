@@ -1,7 +1,7 @@
 // PROPS
 import { FilterInputProps, FilterSelectProps } from "../FilterTableProps"
 // TOOLS
-import { StringJoin } from "Tools/StringTools"
+import { StringJoin } from "tools/StringTools"
 
 export const FilterInput = (props: FilterInputProps) => {
     

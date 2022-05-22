@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react"
 // COMPONENTS
 import FilterButtons from "./components/FilterButtons"
-import IconsList from "Components/SiteComponents//IconsList"
+import IconsList from "components/SiteComponents/IconsList"
 // CSS 
 import "./FilterIcons.css"
 // PROPS
 import { FilterIconsProps } from "./FilterIconsProps"
 // TOOLS
-import { UnqiueValues } from "Tools/ObjectDataTools"
+import { UnqiueValues } from "tools/ObjectDataTools"
 
 const FilterIcons = (props: FilterIconsProps) => {
 

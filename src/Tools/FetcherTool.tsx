@@ -2,7 +2,7 @@ import { useEffect, useReducer, useState } from "react";
 // CSS
 import { Empty, Spin } from "antd";
 // PROPS
-import { SiteRenderProps } from "Props/Tools/ToolProps";
+import { SiteRenderProps } from "props/Tools/ToolProps";
 
 // Fetchs data from api
 export const SiteFetcher = (url: string, argument?: string) => {

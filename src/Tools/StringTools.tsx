@@ -1,10 +1,10 @@
 // TOOLS
-import { displayTitleProps } from "Props/Tools/ToolProps";
-import { RenderLogic } from "./FunctionTools";
+import { displayTitleProps } from "props/Tools/ToolProps";
+import { TernaryLogic } from "./FunctionTools";
 
 // Returns String in uppercase depending on split and join
 export const StringJoin = (string: string, split?: string, join?: string) => {
-  return string.split(RenderLogic(split, "")).join(join).toUpperCase();
+  return string.split(TernaryLogic(split, "")).join(join).toUpperCase();
 };
 
 // Returns title and size default is h2

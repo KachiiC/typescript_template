@@ -1,5 +1,5 @@
 // Sizes for grid system out of 12
-import { spanLogicProps } from "Props/Tools/ToolProps";
+import { spanLogicProps } from "props/Tools/ToolProps";
 
 export const GridSpanSwitcher = (
   input_size: "xs" | "small" | "medium" | "large" | "xl" | undefined

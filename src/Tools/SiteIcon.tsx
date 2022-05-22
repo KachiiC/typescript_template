@@ -1,9 +1,9 @@
 // DATA
-import Icons from "Data/IconsData";
+import Icons from "data/IconsData";
 // ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // TOOLS
-import { SiteIconProps } from "Props/Tools/ToolProps";
+import { SiteIconProps } from "props/Tools/ToolProps";
 
 // Returns icon based on type, size and color
 const SiteIcon = (props: SiteIconProps) => {

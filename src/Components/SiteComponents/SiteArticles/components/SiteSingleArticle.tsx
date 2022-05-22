@@ -1,8 +1,8 @@
 // PROPS
 import { SingleArticleProps } from "../SiteArticlesProps"
 // TOOLS
-import { IfStatement } from "Tools/FunctionTools"
-import { SiteLink } from "Tools/LinkTools"
+import { IfStatement } from "tools/FunctionTools"
+import { SiteLink } from "tools/LinkTools"
 
 const SiteSingleArticle = (props: SingleArticleProps) => {
 

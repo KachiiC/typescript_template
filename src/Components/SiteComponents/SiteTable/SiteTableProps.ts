@@ -1,4 +1,4 @@
-import { objectData, widthProps } from "Props/PropsTemplates";
+import { objectData, widthProps } from "props/PropsTemplates";
 
 export interface SiteTableProps {
     data: objectData[];

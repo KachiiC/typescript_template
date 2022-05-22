@@ -1,3 +1,9 @@
+@import url("./App.css");
+@import url("./KachiiStrap.css");
+@import url("./Transitions/Animations.css");
+@import url("./Transitions/Transitions.css");
+@import url("antd/dist/antd.min.css");
+
 body {
   margin: 0;
   background: black;

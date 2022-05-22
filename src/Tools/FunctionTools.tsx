@@ -4,4 +4,4 @@ export const IfStatement = (arg: any) => {
 };
 
 // if argument 1 returns argument 1, else its argument 2 is given as default.
-export const RenderLogic = (arg1: any, arg2: any) => (arg1 ? arg1 : arg2);
+export const TernaryLogic = (arg1: any, arg2: any) => (arg1 ? arg1 : arg2);

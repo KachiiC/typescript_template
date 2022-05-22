@@ -1,5 +1,5 @@
 // PAGES
-import Test from "Pages/Hidden/Test";
+import Test from "pages/Hidden/Test";
 // TOOLS
 // import { ExampleContentRender } from "Tools/ExampleTools"
 

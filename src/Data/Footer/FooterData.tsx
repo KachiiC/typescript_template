@@ -1,5 +1,5 @@
 // DATA
-import DataOverview from "Data/DataOverview";
+import DataOverview from "data/DataOverview";
 // TOOLS
 import { FooterDataRender } from "./tools/FooterDataTools";
 

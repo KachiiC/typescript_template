@@ -5,23 +5,21 @@ import {
   footerSectionDataProps
 } from "../SiteFooterProps";
 // TOOLS
-import { RenderLogic } from "Tools/FunctionTools";
-import SiteIcon from "Tools/SiteIcon";
-import { SiteLink } from "Tools/LinkTools";
-import { StringJoin } from "Tools/StringTools";
+import { IfStatement, TernaryLogic } from "tools/FunctionTools";
+import SiteIcon from "tools/SiteIcon";
+import { SiteLink } from "tools/LinkTools";
+import { StringJoin } from "tools/StringTools";
 
 export const FooterHeading = (props: footerHeadingProps) =>
-  RenderLogic(<h3>{props.heading}</h3>, "");
+  IfStatement(<h3>{props.heading}</h3>);
 
-export const FooterLogos = (props: footerSectionDataProps) => {
-  const { icon, link } = props;
-
-  const iconImage = <SiteIcon type={RenderLogic(icon, "html")} size="2x" />;
+export const FooterLogos = ({ icon, link }: footerSectionDataProps) => {
+  const iconImage = <SiteIcon type={TernaryLogic(icon, "html")} size="2x" />;
 
   return (
     <div className="site-col-1">
       <SiteLink
-        link={RenderLogic(link, "")}
+        link={TernaryLogic(link, "")}
         placeholder={iconImage}
         type="external"
       />
@@ -35,7 +33,7 @@ export const FooterLinks = (props: footerSectionDataProps) => {
   const FooterLink = (props: { input: any }) => (
     <div className={`site-col-${props.input} footer-link`} key={title}>
       <SiteLink
-        link={`${RenderLogic(external_link, `/${link}`)}`}
+        link={`${TernaryLogic(external_link, `/${link}`)}`}
         type={external_link ? "external" : "local"}
         placeholder={StringJoin(title, "_", "")}
       />
@@ -44,13 +42,12 @@ export const FooterLinks = (props: footerSectionDataProps) => {
 
   return (
     <>
-      <FooterLink input={1} />
       <FooterLink input={span} />
     </>
   );
 };
 
-export const FooterCopyRight = ({name, year}: footerCopyrightProps) => (
+export const FooterCopyRight = ({ name, year }: footerCopyrightProps) => (
   <div className="footer-copyright">
     &copy;{" "}
     <i>

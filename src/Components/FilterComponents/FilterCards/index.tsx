@@ -5,10 +5,10 @@ import FilterGalleryComponent from "./components/FilterCardsComponent";
 // CSS
 import "./FilterCards.css";
 // PROPS
-import { SiteCardProps } from "Components/SiteComponents//SiteCards/SiteCardProps";
+import { SiteCardProps } from "components/SiteComponents/SiteCards/SiteCardProps";
 // TOOLS
-import { RenderLogic } from "Tools/FunctionTools";
-import { UnqiueValues } from "Tools/ObjectDataTools";
+import { TernaryLogic } from "tools/FunctionTools";
+import { UnqiueValues } from "tools/ObjectDataTools";
 
 const FilterCardsGallery = (props: SiteCardProps) => {
   // PROPS
@@ -40,7 +40,7 @@ const FilterCardsGallery = (props: SiteCardProps) => {
     <FilterGalleryComponent
       buttons={filterButtons}
       // If card size is not defined, it is set to medium as a default.
-      card_size={RenderLogic(card_size, "medium")}
+      card_size={TernaryLogic(card_size, "medium")}
       data={resultsData}
     />
   );

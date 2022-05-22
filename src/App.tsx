@@ -1,26 +1,21 @@
-import { BrowserRouter } from "react-router-dom"
-import { StrictMode } from "react"
+import { BrowserRouter } from "react-router-dom";
+import { StrictMode } from "react";
 // CSS
-import "CSS/App.css"
-import "CSS/KachiiStrap.css"
-import "CSS/Transitions/Animations.css"
-import "CSS/Transitions/Transitions.css"
-import { ScrollToTop } from "CSS/Transitions/components/BackToTop"
-import "antd/dist/antd.min.css";
+import { ScrollToTop } from "css/Transitions/components/BackToTop";
 // SECTIONS
-import SiteFooter from "Sections/Footer"
-import SiteHeader from "Sections/Header"
-import SiteMain from "Sections/Main"
+import SiteFooter from "sections/Footer";
+import SiteHeader from "sections/Header";
+import SiteMain from "sections/Main";
 
 const App = (
-    <StrictMode>
-      <BrowserRouter>
-          <ScrollToTop  />
-            {SiteHeader}
-            {SiteMain}
-            {SiteFooter}
-      </BrowserRouter>
-    </StrictMode>
-)
+  <StrictMode>
+    <BrowserRouter>
+      <ScrollToTop />
+      {SiteHeader}
+      {SiteMain}
+      {SiteFooter}
+    </BrowserRouter>
+  </StrictMode>
+);
 
-export default App
+export default App;

@@ -5,7 +5,7 @@ import {
   GallerySelectedImageProps
 } from "../SiteGalleryProps";
 // TOOLS
-import { IfStatement } from "Tools/FunctionTools";
+import { IfStatement } from "tools/FunctionTools";
 
 export const GalleryImage = (props: GalleryImageProps) => {
   // PROPS

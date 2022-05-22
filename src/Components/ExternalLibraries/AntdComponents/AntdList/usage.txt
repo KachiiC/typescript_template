@@ -1,0 +1,14 @@
+Example Data:
+    const ExampleData = [
+        {
+            icon: <ExampleIcon />,
+            description: "Example Description"
+        },
+    ]
+
+Example Usage: 
+    
+    <AntdList 
+        data={ExampleData} 
+        title="Example Title" 
+    />
